@@ -12,7 +12,8 @@ extension Int {
 	public init(randomBelow upperLimit: Int) {
 		if upperLimit <= 0 {
 			self.init(0)
+		} else {
+			self.init(arc4random_uniform(UInt32(upperLimit)))
 		}
-		self.init(arc4random_uniform(UInt32(upperLimit)))
 	}
 }
