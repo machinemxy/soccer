@@ -13,6 +13,11 @@ class Side {
 	var abilities: [Ability]
 	var score: Int = 0
 	var log: String = ""
+	var direction: Int!
+	
+	var currentAbility: Ability {
+		return abilities[direction]
+	}
 	
 	init(teamName: String, abilities: [Ability]) {
 		self.teamName = teamName
