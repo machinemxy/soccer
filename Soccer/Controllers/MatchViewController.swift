@@ -26,7 +26,7 @@ class MatchViewController: UIViewController {
 
 		//test: set two sides' abilities
 		sides = [
-			Side(teamName: "Team1", abilities: [
+			Side(teamName: UserDefaults.standard.string(forKey: "test")!, abilities: [
 				Ability(off: 10, org: 20, def: 30),
 				Ability(off: 40, org: 50, def: 60),
 				Ability(off: 70, org: 80, def: 90)

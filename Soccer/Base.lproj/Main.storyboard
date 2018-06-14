@@ -61,6 +61,7 @@
                                 <state key="normal" title="Proceed"/>
                                 <connections>
                                     <action selector="proceed:" destination="IdI-JN-Zrx" eventType="touchUpInside" id="cu0-oq-nva"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="BAh-G6-sgx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovc-6e-Zt5">
@@ -104,27 +105,11 @@
                         <outlet property="btnProceed" destination="aAs-Gv-bCQ" id="TMT-3P-mqs"/>
                         <outlet property="lblBadge" destination="Pti-CO-Hwg" id="8sf-Po-zvn"/>
                         <outlet property="lblTeam" destination="yWe-ci-7P2" id="5Hq-vs-lEy"/>
-                        <segue destination="sp0-zj-l7p" kind="show" id="mkt-qw-8nx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dua-lO-8zS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-693" y="131"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="n0k-JE-9G9">
-            <objects>
-                <viewController id="sp0-zj-l7p" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9QQ-Oe-Hhq">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="ylj-4i-BcX"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hX4-Fq-gya" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-276" y="131"/>
+            <point key="canvasLocation" x="-493" y="131"/>
         </scene>
         <!--Match View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -239,7 +224,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.875" y="132.04225352112675"/>
+            <point key="canvasLocation" x="407" y="131"/>
         </scene>
     </scenes>
 </document>
