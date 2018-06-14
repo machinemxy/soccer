@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2207DF3B20D29DD900D5E706 /* SoccerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207DF3A20D29DD900D5E706 /* SoccerTests.swift */; };
+		2207DF4320D29E3500D5E706 /* IntExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207DF4220D29E3500D5E706 /* IntExtensionTests.swift */; };
+		2207DF4520D2A84800D5E706 /* BadgeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207DF4420D2A84800D5E706 /* BadgeGenerator.swift */; };
+		2207DF4720D2AE0300D5E706 /* LetterGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207DF4620D2AE0300D5E706 /* LetterGenerator.swift */; };
+		2207DF4920D2B1A100D5E706 /* TeamNameChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207DF4820D2B1A100D5E706 /* TeamNameChooseViewController.swift */; };
+		2207DF4B20D2B96200D5E706 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207DF4A20D2B96200D5E706 /* GameData.swift */; };
 		2233ADBB20CE5B1D00659178 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233ADBA20CE5B1D00659178 /* AppDelegate.swift */; };
-		2233ADBD20CE5B1D00659178 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233ADBC20CE5B1D00659178 /* ViewController.swift */; };
 		2233ADC020CE5B1D00659178 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2233ADBE20CE5B1D00659178 /* Main.storyboard */; };
 		2233ADC220CE5B1E00659178 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2233ADC120CE5B1E00659178 /* Assets.xcassets */; };
 		2233ADC520CE5B1E00659178 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2233ADC320CE5B1E00659178 /* LaunchScreen.storyboard */; };
@@ -18,10 +23,27 @@
 		2233ADD920D1551200659178 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233ADD820D1551200659178 /* IntExtension.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2207DF3D20D29DD900D5E706 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2233ADAF20CE5B1D00659178 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2233ADB620CE5B1D00659178;
+			remoteInfo = Soccer;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		2207DF3820D29DD900D5E706 /* SoccerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoccerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2207DF3A20D29DD900D5E706 /* SoccerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoccerTests.swift; sourceTree = "<group>"; };
+		2207DF3C20D29DD900D5E706 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2207DF4220D29E3500D5E706 /* IntExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensionTests.swift; sourceTree = "<group>"; };
+		2207DF4420D2A84800D5E706 /* BadgeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeGenerator.swift; sourceTree = "<group>"; };
+		2207DF4620D2AE0300D5E706 /* LetterGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterGenerator.swift; sourceTree = "<group>"; };
+		2207DF4820D2B1A100D5E706 /* TeamNameChooseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamNameChooseViewController.swift; sourceTree = "<group>"; };
+		2207DF4A20D2B96200D5E706 /* GameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
 		2233ADB720CE5B1D00659178 /* Soccer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soccer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2233ADBA20CE5B1D00659178 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2233ADBC20CE5B1D00659178 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2233ADBF20CE5B1D00659178 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2233ADC120CE5B1E00659178 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2233ADC420CE5B1E00659178 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -33,6 +55,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2207DF3520D29DD900D5E706 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2233ADB420CE5B1D00659178 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -43,10 +72,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2207DF3920D29DD900D5E706 /* SoccerTests */ = {
+			isa = PBXGroup;
+			children = (
+				2207DF3A20D29DD900D5E706 /* SoccerTests.swift */,
+				2207DF3C20D29DD900D5E706 /* Info.plist */,
+				2207DF4220D29E3500D5E706 /* IntExtensionTests.swift */,
+			);
+			path = SoccerTests;
+			sourceTree = "<group>";
+		};
 		2233ADAE20CE5B1D00659178 = {
 			isa = PBXGroup;
 			children = (
 				2233ADB920CE5B1D00659178 /* Soccer */,
+				2207DF3920D29DD900D5E706 /* SoccerTests */,
 				2233ADB820CE5B1D00659178 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				2233ADB720CE5B1D00659178 /* Soccer.app */,
+				2207DF3820D29DD900D5E706 /* SoccerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,11 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				2233ADD720D154A300659178 /* Tools */,
-				2233ADD420D153E000659178 /* Enums */,
 				2233ADCF20D00EED00659178 /* Models */,
 				2233ADCC20D009D400659178 /* Controllers */,
 				2233ADBA20CE5B1D00659178 /* AppDelegate.swift */,
-				2233ADBC20CE5B1D00659178 /* ViewController.swift */,
 				2233ADBE20CE5B1D00659178 /* Main.storyboard */,
 				2233ADC120CE5B1E00659178 /* Assets.xcassets */,
 				2233ADC320CE5B1E00659178 /* LaunchScreen.storyboard */,
@@ -79,6 +118,7 @@
 		2233ADCC20D009D400659178 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2207DF4820D2B1A100D5E706 /* TeamNameChooseViewController.swift */,
 				2233ADCD20D00B0400659178 /* MatchViewController.swift */,
 			);
 			path = Controllers;
@@ -89,21 +129,17 @@
 			children = (
 				2233ADD020D0100000659178 /* Ability.swift */,
 				2233ADD220D0106400659178 /* Side.swift */,
+				2207DF4A20D2B96200D5E706 /* GameData.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		2233ADD420D153E000659178 /* Enums */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Enums;
 			sourceTree = "<group>";
 		};
 		2233ADD720D154A300659178 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
 				2233ADD820D1551200659178 /* IntExtension.swift */,
+				2207DF4420D2A84800D5E706 /* BadgeGenerator.swift */,
+				2207DF4620D2AE0300D5E706 /* LetterGenerator.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -111,6 +147,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2207DF3720D29DD900D5E706 /* SoccerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2207DF3F20D29DD900D5E706 /* Build configuration list for PBXNativeTarget "SoccerTests" */;
+			buildPhases = (
+				2207DF3420D29DD900D5E706 /* Sources */,
+				2207DF3520D29DD900D5E706 /* Frameworks */,
+				2207DF3620D29DD900D5E706 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2207DF3E20D29DD900D5E706 /* PBXTargetDependency */,
+			);
+			name = SoccerTests;
+			productName = SoccerTests;
+			productReference = 2207DF3820D29DD900D5E706 /* SoccerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		2233ADB620CE5B1D00659178 /* Soccer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2233ADC920CE5B1E00659178 /* Build configuration list for PBXNativeTarget "Soccer" */;
@@ -138,6 +192,10 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Ma Xueyuan";
 				TargetAttributes = {
+					2207DF3720D29DD900D5E706 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 2233ADB620CE5B1D00659178;
+					};
 					2233ADB620CE5B1D00659178 = {
 						CreatedOnToolsVersion = 9.4;
 					};
@@ -157,11 +215,19 @@
 			projectRoot = "";
 			targets = (
 				2233ADB620CE5B1D00659178 /* Soccer */,
+				2207DF3720D29DD900D5E706 /* SoccerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2207DF3620D29DD900D5E706 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2233ADB520CE5B1D00659178 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -175,20 +241,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2207DF3420D29DD900D5E706 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2207DF3B20D29DD900D5E706 /* SoccerTests.swift in Sources */,
+				2207DF4320D29E3500D5E706 /* IntExtensionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2233ADB320CE5B1D00659178 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2233ADCE20D00B0400659178 /* MatchViewController.swift in Sources */,
-				2233ADBD20CE5B1D00659178 /* ViewController.swift in Sources */,
+				2207DF4920D2B1A100D5E706 /* TeamNameChooseViewController.swift in Sources */,
 				2233ADD920D1551200659178 /* IntExtension.swift in Sources */,
+				2207DF4720D2AE0300D5E706 /* LetterGenerator.swift in Sources */,
 				2233ADD320D0106400659178 /* Side.swift in Sources */,
+				2207DF4520D2A84800D5E706 /* BadgeGenerator.swift in Sources */,
 				2233ADD120D0100000659178 /* Ability.swift in Sources */,
+				2207DF4B20D2B96200D5E706 /* GameData.swift in Sources */,
 				2233ADBB20CE5B1D00659178 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2207DF3E20D29DD900D5E706 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2233ADB620CE5B1D00659178 /* Soccer */;
+			targetProxy = 2207DF3D20D29DD900D5E706 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2233ADBE20CE5B1D00659178 /* Main.storyboard */ = {
@@ -210,6 +296,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2207DF4020D29DD900D5E706 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EQC88F8HW8;
+				INFOPLIST_FILE = SoccerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mxy.SoccerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Soccer.app/Soccer";
+			};
+			name = Debug;
+		};
+		2207DF4120D29DD900D5E706 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EQC88F8HW8;
+				INFOPLIST_FILE = SoccerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mxy.SoccerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Soccer.app/Soccer";
+			};
+			name = Release;
+		};
 		2233ADC720CE5B1E00659178 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -363,6 +489,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2207DF3F20D29DD900D5E706 /* Build configuration list for PBXNativeTarget "SoccerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2207DF4020D29DD900D5E706 /* Debug */,
+				2207DF4120D29DD900D5E706 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2233ADB220CE5B1D00659178 /* Build configuration list for PBXProject "Soccer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

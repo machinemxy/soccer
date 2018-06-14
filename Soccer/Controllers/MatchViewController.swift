@@ -93,6 +93,7 @@ class MatchViewController: UIViewController {
 			//goal
 			sides[offSide].score += 1
 			let goalTime = time - Int(randomBelow: 10)
+			let strGoalTime = goalTime < 10 ? " \(goalTime)'" : "\(goalTime)'"
 			let goalDirection: String
 			switch sides[offSide].direction {
 			case 0:
@@ -105,7 +106,7 @@ class MatchViewController: UIViewController {
 			
 			//update ui
 			lblScores[offSide].text = "\(sides[offSide].score)"
-			textLogs[offSide].text! += "⚽️ \(goalTime)' \(goalDirection)\n"
+			textLogs[offSide].text! += "⚽️\(strGoalTime) \(goalDirection)\n"
 			textLogs[defSide].text! += "\n"
 		}
 	}
