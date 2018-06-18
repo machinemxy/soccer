@@ -7,37 +7,55 @@
 //
 
 import UIKit
+import Realm
+import RealmSwift
 
 class TeamNameChooseViewController: UIViewController {
-	@IBOutlet weak var lblBadge: UILabel!
-	@IBOutlet weak var lblTeam: UILabel!
-	@IBOutlet weak var btnProceed: UIButton!
+	var teamBadge = ""
+	var teamName = ""
+	@IBOutlet weak var txtInfo: UITextView!
+	@IBOutlet weak var btnDecide: UIButton!
 	
 	@IBAction func randomizeBadgeAndName(_ sender: Any) {
 		//randomize badge
-		lblBadge.text = BadgeGenerator.pickBadge()
+		teamBadge = BadgeGenerator.pickBadge()
 		
 		//randomize team name
-		var teamName = ""
+		var tempName = ""
 		for _ in 1...3 {
-			teamName += LetterGenerator.pickLetter()
+			tempName += LetterGenerator.pickLetter()
 		}
-		lblTeam.text = teamName
+		teamName = tempName
+		
+		//set txtInfo
+		fillTxtInfo()
 		
 		//enable proceed button
-		btnProceed.isEnabled = true
-	}
-	
-	@IBAction func proceed(_ sender: Any) {
-		
+		btnDecide.isEnabled = true
 	}
 	
     override func viewDidLoad() {
         super.viewDidLoad()
+		fillTxtInfo()
     }
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        UserDefaults.standard.set(lblBadge.text! + lblTeam.text!, forKey: "test")
-    }
-
+	private func fillTxtInfo() {
+		let info = """
+		Press "Randomize" to generate randomly.
+		
+		Badge: \(teamBadge)
+		Name: \(teamName)
+		"""
+		txtInfo.text = info
+	}
+	
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		//save teamName
+		let gameData = GameData()
+		gameData.teamName = teamBadge + teamName
+		let realm = try! Realm()
+		try! realm.write {
+			realm.add(gameData)
+		}
+	}
 }

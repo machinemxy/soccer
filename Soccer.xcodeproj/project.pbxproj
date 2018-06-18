@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2207DF3B20D29DD900D5E706 /* SoccerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207DF3A20D29DD900D5E706 /* SoccerTests.swift */; };
 		2207DF4320D29E3500D5E706 /* IntExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207DF4220D29E3500D5E706 /* IntExtensionTests.swift */; };
 		2207DF4520D2A84800D5E706 /* BadgeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207DF4420D2A84800D5E706 /* BadgeGenerator.swift */; };
 		2207DF4720D2AE0300D5E706 /* LetterGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207DF4620D2AE0300D5E706 /* LetterGenerator.swift */; };
 		2207DF4920D2B1A100D5E706 /* TeamNameChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207DF4820D2B1A100D5E706 /* TeamNameChooseViewController.swift */; };
 		2207DF4B20D2B96200D5E706 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207DF4A20D2B96200D5E706 /* GameData.swift */; };
+		2207DF4D20D3F64800D5E706 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207DF4C20D3F64800D5E706 /* MainViewController.swift */; };
 		2233ADBB20CE5B1D00659178 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233ADBA20CE5B1D00659178 /* AppDelegate.swift */; };
 		2233ADC020CE5B1D00659178 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2233ADBE20CE5B1D00659178 /* Main.storyboard */; };
 		2233ADC220CE5B1E00659178 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2233ADC120CE5B1E00659178 /* Assets.xcassets */; };
@@ -21,6 +21,8 @@
 		2233ADD120D0100000659178 /* Ability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233ADD020D0100000659178 /* Ability.swift */; };
 		2233ADD320D0106400659178 /* Side.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233ADD220D0106400659178 /* Side.swift */; };
 		2233ADD920D1551200659178 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233ADD820D1551200659178 /* IntExtension.swift */; };
+		223C16F420D54FFE00F36C6E /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223C16F220D54FFE00F36C6E /* RealmSwift.framework */; };
+		223C16F520D54FFE00F36C6E /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223C16F320D54FFE00F36C6E /* Realm.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,13 +37,13 @@
 
 /* Begin PBXFileReference section */
 		2207DF3820D29DD900D5E706 /* SoccerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoccerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2207DF3A20D29DD900D5E706 /* SoccerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoccerTests.swift; sourceTree = "<group>"; };
 		2207DF3C20D29DD900D5E706 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2207DF4220D29E3500D5E706 /* IntExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensionTests.swift; sourceTree = "<group>"; };
 		2207DF4420D2A84800D5E706 /* BadgeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeGenerator.swift; sourceTree = "<group>"; };
 		2207DF4620D2AE0300D5E706 /* LetterGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterGenerator.swift; sourceTree = "<group>"; };
 		2207DF4820D2B1A100D5E706 /* TeamNameChooseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamNameChooseViewController.swift; sourceTree = "<group>"; };
 		2207DF4A20D2B96200D5E706 /* GameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
+		2207DF4C20D3F64800D5E706 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2233ADB720CE5B1D00659178 /* Soccer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soccer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2233ADBA20CE5B1D00659178 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2233ADBF20CE5B1D00659178 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,6 +54,8 @@
 		2233ADD020D0100000659178 /* Ability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ability.swift; sourceTree = "<group>"; };
 		2233ADD220D0106400659178 /* Side.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Side.swift; sourceTree = "<group>"; };
 		2233ADD820D1551200659178 /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
+		223C16F220D54FFE00F36C6E /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		223C16F320D54FFE00F36C6E /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				223C16F420D54FFE00F36C6E /* RealmSwift.framework in Frameworks */,
+				223C16F520D54FFE00F36C6E /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,7 +81,6 @@
 		2207DF3920D29DD900D5E706 /* SoccerTests */ = {
 			isa = PBXGroup;
 			children = (
-				2207DF3A20D29DD900D5E706 /* SoccerTests.swift */,
 				2207DF3C20D29DD900D5E706 /* Info.plist */,
 				2207DF4220D29E3500D5E706 /* IntExtensionTests.swift */,
 			);
@@ -88,6 +93,7 @@
 				2233ADB920CE5B1D00659178 /* Soccer */,
 				2207DF3920D29DD900D5E706 /* SoccerTests */,
 				2233ADB820CE5B1D00659178 /* Products */,
+				223C16F120D54FFE00F36C6E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,6 +124,7 @@
 		2233ADCC20D009D400659178 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2207DF4C20D3F64800D5E706 /* MainViewController.swift */,
 				2207DF4820D2B1A100D5E706 /* TeamNameChooseViewController.swift */,
 				2233ADCD20D00B0400659178 /* MatchViewController.swift */,
 			);
@@ -144,6 +151,15 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		223C16F120D54FFE00F36C6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				223C16F320D54FFE00F36C6E /* Realm.framework */,
+				223C16F220D54FFE00F36C6E /* RealmSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,6 +170,7 @@
 				2207DF3420D29DD900D5E706 /* Sources */,
 				2207DF3520D29DD900D5E706 /* Frameworks */,
 				2207DF3620D29DD900D5E706 /* Resources */,
+				223C16F720D5512200F36C6E /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -172,6 +189,7 @@
 				2233ADB320CE5B1D00659178 /* Sources */,
 				2233ADB420CE5B1D00659178 /* Frameworks */,
 				2233ADB520CE5B1D00659178 /* Resources */,
+				223C16F620D5504A00F36C6E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -240,12 +258,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		223C16F620D5504A00F36C6E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Realm.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		223C16F720D5512200F36C6E /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+			);
+			name = "Run Script";
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Realm.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2207DF3420D29DD900D5E706 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2207DF3B20D29DD900D5E706 /* SoccerTests.swift in Sources */,
 				2207DF4320D29E3500D5E706 /* IntExtensionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +318,7 @@
 				2233ADD120D0100000659178 /* Ability.swift in Sources */,
 				2207DF4B20D2B96200D5E706 /* GameData.swift in Sources */,
 				2233ADBB20CE5B1D00659178 /* AppDelegate.swift in Sources */,
+				2207DF4D20D3F64800D5E706 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +512,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EQC88F8HW8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Soccer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -474,6 +534,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EQC88F8HW8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Soccer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
