@@ -15,7 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-		// Override point for customization after application launch.
+		//get player names list
+		let names: [String] = JsonHelper.parse(jsonFileName: "names")
+		NameGenerator.names = names
 		return true
 	}
 

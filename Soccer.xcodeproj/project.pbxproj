@@ -23,6 +23,13 @@
 		2233ADD920D1551200659178 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233ADD820D1551200659178 /* IntExtension.swift */; };
 		223C16F420D54FFE00F36C6E /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223C16F220D54FFE00F36C6E /* RealmSwift.framework */; };
 		223C16F520D54FFE00F36C6E /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223C16F320D54FFE00F36C6E /* Realm.framework */; };
+		223C16F920D8116000F36C6E /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C16F820D8116000F36C6E /* Player.swift */; };
+		223C16FC20DBF22C00F36C6E /* names.json in Resources */ = {isa = PBXBuildFile; fileRef = 223C16FB20DBF22C00F36C6E /* names.json */; };
+		223C16FE20DBF28B00F36C6E /* JsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C16FD20DBF28B00F36C6E /* JsonHelper.swift */; };
+		223C170020DBF4B200F36C6E /* NameGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C16FF20DBF4B200F36C6E /* NameGenerator.swift */; };
+		223C170220DBF72A00F36C6E /* NameGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C170120DBF72A00F36C6E /* NameGeneratorTests.swift */; };
+		223C170320DBF9B100F36C6E /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223C16F320D54FFE00F36C6E /* Realm.framework */; };
+		223C170420DBF9B400F36C6E /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223C16F220D54FFE00F36C6E /* RealmSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +63,11 @@
 		2233ADD820D1551200659178 /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
 		223C16F220D54FFE00F36C6E /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		223C16F320D54FFE00F36C6E /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		223C16F820D8116000F36C6E /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		223C16FB20DBF22C00F36C6E /* names.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = names.json; sourceTree = "<group>"; };
+		223C16FD20DBF28B00F36C6E /* JsonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonHelper.swift; sourceTree = "<group>"; };
+		223C16FF20DBF4B200F36C6E /* NameGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameGenerator.swift; sourceTree = "<group>"; };
+		223C170120DBF72A00F36C6E /* NameGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameGeneratorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				223C170420DBF9B400F36C6E /* RealmSwift.framework in Frameworks */,
+				223C170320DBF9B100F36C6E /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +97,7 @@
 			children = (
 				2207DF3C20D29DD900D5E706 /* Info.plist */,
 				2207DF4220D29E3500D5E706 /* IntExtensionTests.swift */,
+				223C170120DBF72A00F36C6E /* NameGeneratorTests.swift */,
 			);
 			path = SoccerTests;
 			sourceTree = "<group>";
@@ -109,6 +124,7 @@
 		2233ADB920CE5B1D00659178 /* Soccer */ = {
 			isa = PBXGroup;
 			children = (
+				223C16FA20DBF1F200F36C6E /* Data */,
 				2233ADD720D154A300659178 /* Tools */,
 				2233ADCF20D00EED00659178 /* Models */,
 				2233ADCC20D009D400659178 /* Controllers */,
@@ -137,6 +153,7 @@
 				2233ADD020D0100000659178 /* Ability.swift */,
 				2233ADD220D0106400659178 /* Side.swift */,
 				2207DF4A20D2B96200D5E706 /* GameData.swift */,
+				223C16F820D8116000F36C6E /* Player.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -147,6 +164,8 @@
 				2233ADD820D1551200659178 /* IntExtension.swift */,
 				2207DF4420D2A84800D5E706 /* BadgeGenerator.swift */,
 				2207DF4620D2AE0300D5E706 /* LetterGenerator.swift */,
+				223C16FF20DBF4B200F36C6E /* NameGenerator.swift */,
+				223C16FD20DBF28B00F36C6E /* JsonHelper.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -158,6 +177,14 @@
 				223C16F220D54FFE00F36C6E /* RealmSwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		223C16FA20DBF1F200F36C6E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				223C16FB20DBF22C00F36C6E /* names.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +279,7 @@
 			files = (
 				2233ADC520CE5B1E00659178 /* LaunchScreen.storyboard in Resources */,
 				2233ADC220CE5B1E00659178 /* Assets.xcassets in Resources */,
+				223C16FC20DBF22C00F36C6E /* names.json in Resources */,
 				2233ADC020CE5B1D00659178 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				223C170220DBF72A00F36C6E /* NameGeneratorTests.swift in Sources */,
 				2207DF4320D29E3500D5E706 /* IntExtensionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,14 +338,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				223C16F920D8116000F36C6E /* Player.swift in Sources */,
 				2233ADCE20D00B0400659178 /* MatchViewController.swift in Sources */,
 				2207DF4920D2B1A100D5E706 /* TeamNameChooseViewController.swift in Sources */,
 				2233ADD920D1551200659178 /* IntExtension.swift in Sources */,
 				2207DF4720D2AE0300D5E706 /* LetterGenerator.swift in Sources */,
 				2233ADD320D0106400659178 /* Side.swift in Sources */,
+				223C170020DBF4B200F36C6E /* NameGenerator.swift in Sources */,
 				2207DF4520D2A84800D5E706 /* BadgeGenerator.swift in Sources */,
 				2233ADD120D0100000659178 /* Ability.swift in Sources */,
 				2207DF4B20D2B96200D5E706 /* GameData.swift in Sources */,
+				223C16FE20DBF28B00F36C6E /* JsonHelper.swift in Sources */,
 				2233ADBB20CE5B1D00659178 /* AppDelegate.swift in Sources */,
 				2207DF4D20D3F64800D5E706 /* MainViewController.swift in Sources */,
 			);
@@ -358,6 +390,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EQC88F8HW8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SoccerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -378,6 +414,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EQC88F8HW8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SoccerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
