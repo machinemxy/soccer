@@ -6,7 +6,7 @@
 //  Copyright © 2018年 Ma Xueyuan. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import Realm
 import RealmSwift
 
@@ -24,12 +24,19 @@ class Player: Object {
 	@objc dynamic var rdf = 0
 	@objc dynamic var potential = 0
 	
-	var gradeMark: String {
-		var gradeMark = ""
-		for _ in 1...grade {
-			gradeMark += "⭐️"
+	var gradeMark: UIImage {
+		switch grade {
+		case 1:
+			return #imageLiteral(resourceName: "star-1")
+		case 2:
+			return #imageLiteral(resourceName: "star-2")
+		case 3:
+			return #imageLiteral(resourceName: "star-3")
+		case 4:
+			return #imageLiteral(resourceName: "star-4")
+		default:
+			return #imageLiteral(resourceName: "star-5")
 		}
-		return gradeMark
 	}
 	
 	var position: String {
@@ -46,17 +53,17 @@ class Player: Object {
 	
 	var potentialPredict: String {
 		if potential <= 0 {
-			return "None"
+			return "F"
 		} else if potential < 10 {
-			return "Very Low"
+			return "E"
 		} else if potential < 20 {
-			return "Low"
+			return "D"
 		} else if potential < 30 {
-			return "Medium"
+			return "C"
 		} else if potential < 40 {
-			return "High"
+			return "B"
 		} else {
-			return "Very High"
+			return "A"
 		}
 	}
 }

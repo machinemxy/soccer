@@ -66,13 +66,14 @@ class MainViewController: UIViewController {
 	private func resetUIAfterPickTeam() {
 		btnNextGame.setTitle("Next Game", for: .normal)
 		btnTeamManage.isEnabled = true
-		btnScout.isEnabled = true
 		btnExtra.isEnabled = true
 	}
 	
 	private func showGameData() {
 		let realm = try! Realm()
 		gameData = realm.objects(GameData.self).first
+		
+		//txtInfo
 		txtInfo.text = """
 		\(gameData.teamName)
 		League Lv: \(gameData.leagueLv)
@@ -81,5 +82,9 @@ class MainViewController: UIViewController {
 		Points to Stay: \(gameData.pointsToStay)
 		Points to Upgrade: \(gameData.pointsToUpgrade)
 		"""
+		
+		//btnScout
+		btnScout.setTitle("Scout(\(gameData.scout))", for: .normal)
+		btnScout.isEnabled = gameData.scout > 0
 	}
 }

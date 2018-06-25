@@ -33,6 +33,7 @@
 		223C170620DD272D00F36C6E /* PlayerGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C170520DD272D00F36C6E /* PlayerGenerator.swift */; };
 		223C170820DF565900F36C6E /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C170720DF565900F36C6E /* ArrayExtension.swift */; };
 		223C170A20DFBC2700F36C6E /* PlayerGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C170920DFBC2700F36C6E /* PlayerGeneratorTests.swift */; };
+		223C170C20E1389900F36C6E /* TeamTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C170B20E1389900F36C6E /* TeamTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		223C170520DD272D00F36C6E /* PlayerGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerGenerator.swift; sourceTree = "<group>"; };
 		223C170720DF565900F36C6E /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 		223C170920DFBC2700F36C6E /* PlayerGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerGeneratorTests.swift; sourceTree = "<group>"; };
+		223C170B20E1389900F36C6E /* TeamTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 				2207DF4C20D3F64800D5E706 /* MainViewController.swift */,
 				2207DF4820D2B1A100D5E706 /* TeamNameChooseViewController.swift */,
 				2233ADCD20D00B0400659178 /* MatchViewController.swift */,
+				223C170B20E1389900F36C6E /* TeamTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				2207DF4920D2B1A100D5E706 /* TeamNameChooseViewController.swift in Sources */,
 				2233ADD920D1551200659178 /* IntExtension.swift in Sources */,
 				2207DF4720D2AE0300D5E706 /* LetterGenerator.swift in Sources */,
+				223C170C20E1389900F36C6E /* TeamTableViewController.swift in Sources */,
 				2233ADD320D0106400659178 /* Side.swift in Sources */,
 				223C170620DD272D00F36C6E /* PlayerGenerator.swift in Sources */,
 				223C170020DBF4B200F36C6E /* NameGenerator.swift in Sources */,

@@ -41,6 +41,17 @@ class PlayerGeneratorTests: XCTestCase {
 		printPlayer(player: player)
 	}
 	
+	func testScout() {
+		let player = PlayerGenerator.scout(leagueLevel: 2)
+		printPlayer(player: player)
+	}
+	
+	func testGenerateTeam() {
+		let players = PlayerGenerator.generateTeam(leagueLevel: 4)
+		for player in players {
+			print("\(player.name) grade:\(player.grade) position:\(player.position) rating:\(player.rating)")
+		}
+	}
 	
 	private func printPlayer(player: Player) {
 		print(player.name)
