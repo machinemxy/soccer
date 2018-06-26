@@ -34,6 +34,7 @@
 		223C170820DF565900F36C6E /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C170720DF565900F36C6E /* ArrayExtension.swift */; };
 		223C170A20DFBC2700F36C6E /* PlayerGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C170920DFBC2700F36C6E /* PlayerGeneratorTests.swift */; };
 		223C170C20E1389900F36C6E /* TeamTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C170B20E1389900F36C6E /* TeamTableViewController.swift */; };
+		223C170E20E292BB00F36C6E /* ScoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C170D20E292BB00F36C6E /* ScoutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		223C170720DF565900F36C6E /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 		223C170920DFBC2700F36C6E /* PlayerGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerGeneratorTests.swift; sourceTree = "<group>"; };
 		223C170B20E1389900F36C6E /* TeamTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewController.swift; sourceTree = "<group>"; };
+		223C170D20E292BB00F36C6E /* ScoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 				2207DF4820D2B1A100D5E706 /* TeamNameChooseViewController.swift */,
 				2233ADCD20D00B0400659178 /* MatchViewController.swift */,
 				223C170B20E1389900F36C6E /* TeamTableViewController.swift */,
+				223C170D20E292BB00F36C6E /* ScoutViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 			files = (
 				223C170820DF565900F36C6E /* ArrayExtension.swift in Sources */,
 				223C16F920D8116000F36C6E /* Player.swift in Sources */,
+				223C170E20E292BB00F36C6E /* ScoutViewController.swift in Sources */,
 				2233ADCE20D00B0400659178 /* MatchViewController.swift in Sources */,
 				2207DF4920D2B1A100D5E706 /* TeamNameChooseViewController.swift in Sources */,
 				2233ADD920D1551200659178 /* IntExtension.swift in Sources */,

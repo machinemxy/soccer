@@ -42,12 +42,12 @@ class PlayerGeneratorTests: XCTestCase {
 	}
 	
 	func testScout() {
-		let player = PlayerGenerator.scout(leagueLevel: 2)
+		let player = PlayerGenerator.scout(leagueLv: 2)
 		printPlayer(player: player)
 	}
 	
 	func testGenerateTeam() {
-		let players = PlayerGenerator.generateTeam(leagueLevel: 4)
+		let players = PlayerGenerator.generateTeam(leagueLv: 4)
 		for player in players {
 			print("\(player.name) grade:\(player.grade) position:\(player.position) rating:\(player.rating)")
 		}

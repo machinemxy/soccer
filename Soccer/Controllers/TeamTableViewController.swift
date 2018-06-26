@@ -11,13 +11,19 @@ import Realm
 import RealmSwift
 
 class TeamTableViewController: UITableViewController {
-	var lineUp: Results<Player>!
-	var sub: Results<Player>!
+	var lineUp: [Player]!
+	var sub: [Player]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        let realm = try! Realm()
+		lineUp = realm.objects(Player.self).filter("inLineUp = true").sorted(by: { (p1, p2) -> Bool in
+			return p1.positionOrder < p2.positionOrder
+		})
+		sub = realm.objects(Player.self).filter("inLineUp = false").sorted(by: { (p1, p2) -> Bool in
+			return p1.rating > p2.rating
+		})
     }
 
     // MARK: - Table view data source
@@ -36,53 +42,37 @@ class TeamTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+		if section == 0 {
+			return lineUp.count
+		} else {
+			return sub.count
+		}
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "playerCell", for: indexPath)
 
-        // Configure the cell...
-
+        //get player
+		let player: Player
+		if indexPath.section == 0 {
+			player = lineUp[indexPath.row]
+		} else {
+			player = sub[indexPath.row]
+		}
+		
+		//set cell
+		cell.imageView?.image = player.gradeMark
+		cell.textLabel?.text = "\(player.name)[\(player.position)]\(player.rating)"
+		if player.verticalPosition == "GK" {
+			cell.detailTextLabel?.text = "LDF:\(player.ldf) CDF:\(player.cdf) RDF:\(player.rdf) POT:\(player.potentialPredict)"
+		} else {
+			cell.detailTextLabel?.text = "OFF:\(player.off) ORG:\(player.org) DEF:\(player.def) POT:\(player.potentialPredict)"
+		}
+		
         return cell
     }
-    */
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
+	
 
     /*
     // MARK: - Navigation

@@ -57,10 +57,10 @@ class PlayerGenerator: NSObject {
 		return player
 	}
 	
-	static func generateTeam(leagueLevel: Int) -> [Player] {
+	static func generateTeam(leagueLv: Int) -> [Player] {
 		var players = [Player]()
 		//gk
-		let gk = generatePlayer(grade: randGrade(leagueLevel: leagueLevel), horizonPosition: "", verticalPosition: "GK", inLineUp: true)
+		let gk = generatePlayer(grade: randGrade(leagueLv: leagueLv), horizonPosition: "", verticalPosition: "GK", inLineUp: true)
 		players.append(gk)
 		
 		//player in each other positions
@@ -68,21 +68,21 @@ class PlayerGenerator: NSObject {
 		let verticalPositions = ["B", "M", "F"]
 		for i in 0...2 {
 			for j in 0...2 {
-				let grade = randGrade(leagueLevel: leagueLevel)
+				let grade = randGrade(leagueLv: leagueLv)
 				let player = generatePlayer(grade: grade, horizonPosition: horizionPositions[i], verticalPosition: verticalPositions[j], inLineUp: true)
 				players.append(player)
 			}
 		}
 		
 		//additional player
-		let additionalPlayer = generatePlayer(grade: randGrade(leagueLevel: leagueLevel), horizonPosition: "C", verticalPosition: verticalPositions[Int(randomBelow: 3)], inLineUp: true)
+		let additionalPlayer = generatePlayer(grade: randGrade(leagueLv: leagueLv), horizonPosition: "C", verticalPosition: verticalPositions[Int(randomBelow: 3)], inLineUp: true)
 		players.append(additionalPlayer)
 		
 		return players
 	}
 	
-	static func scout(leagueLevel: Int) -> Player {
-		let grade = randGrade(leagueLevel: leagueLevel)
+	static func scout(leagueLv: Int) -> Player {
+		let grade = randGrade(leagueLv: leagueLv)
 		let dice = Int(randomBelow: 11)
 		if dice == 0 {
 			//gk
@@ -114,10 +114,10 @@ class PlayerGenerator: NSObject {
 	//legueLevel 2: 40% grade 1, 60% grade 2
 	//legueLevel 3: 90% grade 2, 10% grade 3
 	//legueLevel 4: 40% grade 2, 60% grade 3
-	private static func randGrade(leagueLevel: Int) -> Int {
-		let minGrade = (leagueLevel + 1) / 2
+	private static func randGrade(leagueLv: Int) -> Int {
+		let minGrade = (leagueLv + 1) / 2
 		let percentageWall: Int
-		if leagueLevel % 2 == 1 {
+		if leagueLv % 2 == 1 {
 			percentageWall = 9
 		} else {
 			percentageWall = 4

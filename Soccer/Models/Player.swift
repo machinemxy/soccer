@@ -43,6 +43,32 @@ class Player: Object {
 		return horizonPosition + verticalPosition
 	}
 	
+	var positionOrder: Int {
+		let verticalNumber: Int
+		switch verticalPosition {
+		case "GK":
+			verticalNumber = 0
+		case "B":
+			verticalNumber = 10
+		case "M":
+			verticalNumber = 20
+		default:
+			verticalNumber = 30
+		}
+		
+		let horizonNumber: Int
+		switch horizonPosition {
+		case "L":
+			horizonNumber = 0
+		case "C":
+			horizonNumber = 1
+		default:
+			horizonNumber = 2
+		}
+		
+		return verticalNumber + horizonNumber
+	}
+	
 	var rating: Int {
 		if verticalPosition == "GK" {
 			return ldf + cdf + rdf

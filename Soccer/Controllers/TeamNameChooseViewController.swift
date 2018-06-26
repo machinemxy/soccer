@@ -50,12 +50,20 @@ class TeamNameChooseViewController: UIViewController {
 	}
 	
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-		//save teamName
+		//generate gameData
 		let gameData = GameData()
 		gameData.teamName = teamBadge + teamName
+		
+		//generate default players
+		let players = PlayerGenerator.generateTeam(leagueLv: 1)
+		
 		let realm = try! Realm()
 		try! realm.write {
+			//save gameData
 			realm.add(gameData)
+			
+			//save default players
+			realm.add(players)
 		}
 	}
 }
