@@ -35,7 +35,7 @@ class ScoutViewController: UIViewController {
 		Your scout bring these players to you: 
 		"""
 		for player in players {
-			info += "\n\(player.name)[\(player.position)]\(player.rating)"
+			info += "\n[\(player.position)]\(player.name) \(player.rating)"
 		}
 		txtInfo.text = info
     }

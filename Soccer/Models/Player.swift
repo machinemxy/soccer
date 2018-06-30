@@ -79,7 +79,7 @@ class Player: Object {
 	
 	var potentialPredict: String {
 		if potential <= 0 {
-			return "F"
+			return "-"
 		} else if potential < 10 {
 			return "E"
 		} else if potential < 20 {

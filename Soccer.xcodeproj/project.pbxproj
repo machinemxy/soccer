@@ -35,6 +35,8 @@
 		223C170A20DFBC2700F36C6E /* PlayerGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C170920DFBC2700F36C6E /* PlayerGeneratorTests.swift */; };
 		223C170C20E1389900F36C6E /* TeamTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C170B20E1389900F36C6E /* TeamTableViewController.swift */; };
 		223C170E20E292BB00F36C6E /* ScoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C170D20E292BB00F36C6E /* ScoutViewController.swift */; };
+		22C0D0F820E75C3D00D7ECEE /* TrainingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C0D0F720E75C3D00D7ECEE /* TrainingItem.swift */; };
+		22C0D0FA20E76C6C00D7ECEE /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C0D0F920E76C6C00D7ECEE /* UIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,8 @@
 		223C170920DFBC2700F36C6E /* PlayerGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerGeneratorTests.swift; sourceTree = "<group>"; };
 		223C170B20E1389900F36C6E /* TeamTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewController.swift; sourceTree = "<group>"; };
 		223C170D20E292BB00F36C6E /* ScoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoutViewController.swift; sourceTree = "<group>"; };
+		22C0D0F720E75C3D00D7ECEE /* TrainingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingItem.swift; sourceTree = "<group>"; };
+		22C0D0F920E76C6C00D7ECEE /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +171,7 @@
 				2233ADD220D0106400659178 /* Side.swift */,
 				2207DF4A20D2B96200D5E706 /* GameData.swift */,
 				223C16F820D8116000F36C6E /* Player.swift */,
+				22C0D0F720E75C3D00D7ECEE /* TrainingItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -176,6 +181,7 @@
 			children = (
 				2233ADD820D1551200659178 /* IntExtension.swift */,
 				223C170720DF565900F36C6E /* ArrayExtension.swift */,
+				22C0D0F920E76C6C00D7ECEE /* UIViewExtension.swift */,
 				223C16FD20DBF28B00F36C6E /* JsonHelper.swift */,
 				2207DF4420D2A84800D5E706 /* BadgeGenerator.swift */,
 				2207DF4620D2AE0300D5E706 /* LetterGenerator.swift */,
@@ -354,6 +360,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22C0D0F820E75C3D00D7ECEE /* TrainingItem.swift in Sources */,
 				223C170820DF565900F36C6E /* ArrayExtension.swift in Sources */,
 				223C16F920D8116000F36C6E /* Player.swift in Sources */,
 				223C170E20E292BB00F36C6E /* ScoutViewController.swift in Sources */,
@@ -366,6 +373,7 @@
 				223C170620DD272D00F36C6E /* PlayerGenerator.swift in Sources */,
 				223C170020DBF4B200F36C6E /* NameGenerator.swift in Sources */,
 				2207DF4520D2A84800D5E706 /* BadgeGenerator.swift in Sources */,
+				22C0D0FA20E76C6C00D7ECEE /* UIViewExtension.swift in Sources */,
 				2233ADD120D0100000659178 /* Ability.swift in Sources */,
 				2207DF4B20D2B96200D5E706 /* GameData.swift in Sources */,
 				223C16FE20DBF28B00F36C6E /* JsonHelper.swift in Sources */,
