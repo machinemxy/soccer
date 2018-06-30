@@ -101,7 +101,7 @@ class PlayerGenerator: NSObject {
 		var restAbility = rating
 		var abilities = [Int]()
 		for _ in 1...2 {
-			let randAbility = Int(randomBelow: restAbility + 1)
+			let randAbility = Int(randomBelow: restAbility * 4 / 5 + 1)
 			abilities.append(randAbility)
 			restAbility -= randAbility
 		}

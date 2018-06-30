@@ -3,6 +3,7 @@
 //  Soccer
 //
 //  Created by @ktaguchi 2016年07月21日に更新
+//  https://qiita.com/ktaguchi/items/c95821b6b1c53a79c5c2
 //
 
 import UIKit
@@ -26,17 +27,6 @@ extension UIView {
 		}
 		set {
 			layer.borderWidth = newValue
-		}
-	}
-	
-	// 角丸設定
-	@IBInspectable var cornerRadius: CGFloat {
-		get {
-			return layer.cornerRadius
-		}
-		set {
-			layer.cornerRadius = newValue
-			layer.masksToBounds = newValue > 0
 		}
 	}
 }

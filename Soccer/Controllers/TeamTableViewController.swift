@@ -70,15 +70,17 @@ class TeamTableViewController: UITableViewController {
 		//show action sheet
 		let actionSheet = UIAlertController(title: "Action", message: "", preferredStyle: .actionSheet)
 		let moveAction = UIAlertAction(title: moveTitle, style: .default) { (_) in
-			self.movePlayer(player: player)
+			self.movePlayer(player: player, indexPath: indexPath)
 		}
 		let trainAction = UIAlertAction(title: "Train", style: .default) { (_) in
 			//code
 		}
 		let sacrificeAction = UIAlertAction(title: "Sacrifice", style: .destructive) { (_) in
-			//code
+			self.sacrifice(player: player)
 		}
-		let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+		let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (_) in
+			self.tableView.deselectRow(at: indexPath, animated: true)
+		}
 		actionSheet.addAction(moveAction)
 		actionSheet.addAction(trainAction)
 		actionSheet.addAction(sacrificeAction)
@@ -86,7 +88,7 @@ class TeamTableViewController: UITableViewController {
 		
 		//iPad crash avoid
 		actionSheet.popoverPresentationController?.sourceView = view
-		actionSheet.popoverPresentationController?.sourceRect = self.tableView(tableView, cellForRowAt: indexPath).frame
+		actionSheet.popoverPresentationController?.sourceRect = tableView.cellForRow(at: indexPath)!.frame
 		self.present(actionSheet, animated: true, completion: nil)
 	}
 
@@ -128,7 +130,7 @@ class TeamTableViewController: UITableViewController {
 		self.present(alertController, animated: true, completion: nil)
 	}
 	
-	private func movePlayer(player: Player) {
+	private func movePlayer(player: Player, indexPath: IndexPath) {
 		let realm = try! Realm()
 		
 		if player.inLineUp {
@@ -140,6 +142,7 @@ class TeamTableViewController: UITableViewController {
 			//judge if the lineup already has 11 players
 			if lineUp.count >= 11 {
 				alert(title: "Illegal Lineup", message: "Your lineup already has 11 players. Please move somebody to sub first.")
+				tableView.deselectRow(at: indexPath, animated: true)
 				return
 			}
 			
@@ -156,6 +159,7 @@ class TeamTableViewController: UITableViewController {
 			let playerCountSamePosition = realm.objects(Player.self).filter("inLineUp = true && verticalPosition = %@ && horizonPosition = %@ ", player.verticalPosition, player.horizonPosition).count
 			if playerCountSamePosition >= maxPlayer {
 				self.alert(title: "Illegal Lineup", message: "Position \(player.position) only allow \(maxPlayer) player(s). Please move somebody to sub first.")
+				tableView.deselectRow(at: indexPath, animated: true)
 				return
 			}
 			
@@ -163,6 +167,45 @@ class TeamTableViewController: UITableViewController {
 			try! realm.write {
 				player.inLineUp = true
 			}
+		}
+		
+		//reload data
+		setLineUpAndSub()
+		tableView.reloadData()
+	}
+	
+	private func sacrifice(player: Player) {
+		//init the training item
+		let item = TrainingItem()
+		item.trainingPoint = player.grade
+		
+		//decide ability type
+		let randNumber = Int(randomBelow: player.rating)
+		if player.verticalPosition == "GK" {
+			if randNumber < player.ldf {
+				item.abilityType = 3
+			} else if randNumber < player.ldf + player.cdf {
+				item.abilityType = 4
+			} else {
+				item.abilityType = 5
+			}
+		} else {
+			if randNumber < player.def {
+				item.abilityType = 0
+			} else if randNumber < player.def + player.org {
+				item.abilityType = 1
+			} else {
+				item.abilityType = 2
+			}
+		}
+		
+		alert(title: "Sacrifice Done", message: "\(player.name) is sacrificed and training item '\(item.title)' is added to stock.")
+		
+		//sacrifice player and get training item
+		let realm = try! Realm()
+		try! realm.write {
+			realm.add(item)
+			realm.delete(player)
 		}
 		
 		//reload data

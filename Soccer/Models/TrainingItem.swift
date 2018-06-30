@@ -11,7 +11,7 @@ import Realm
 import RealmSwift
 
 class TrainingItem: Object {
-	@objc dynamic var abilityId = 0
+	@objc dynamic var abilityType = 0
 	@objc dynamic var trainingPoint = 1
 	
 	var trainingPointMark: UIImage {
@@ -31,13 +31,13 @@ class TrainingItem: Object {
 	
 	var title: String {
 		let preTitle: String
-		switch abilityId {
+		switch abilityType {
 		case 0:
-			preTitle = "OFF+"
+			preTitle = "DEF+"
 		case 1:
 			preTitle = "ORG+"
 		case 2:
-			preTitle = "DEF+"
+			preTitle = "OFF+"
 		case 3:
 			preTitle = "LDF+"
 		case 4:
