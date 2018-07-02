@@ -22,7 +22,6 @@ class TeamTableViewController: UITableViewController {
 
     // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 2
     }
 	
@@ -35,7 +34,6 @@ class TeamTableViewController: UITableViewController {
 	}
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
 		if section == 0 {
 			return lineUp.count
 		} else {
@@ -61,7 +59,7 @@ class TeamTableViewController: UITableViewController {
         return cell
     }
 
-	//Delegate
+	// MARK: - Table view delegate
 	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		//get player
 		let player = getPlayer(indexPath: indexPath)
@@ -72,8 +70,8 @@ class TeamTableViewController: UITableViewController {
 		let moveAction = UIAlertAction(title: moveTitle, style: .default) { (_) in
 			self.movePlayer(player: player, indexPath: indexPath)
 		}
-		let trainAction = UIAlertAction(title: "Train", style: .default) { (_) in
-			//code
+		let trainAction = UIAlertAction(title: "Training", style: .default) { (_) in
+			self.train(player: player, indexPath: indexPath)
 		}
 		let sacrificeAction = UIAlertAction(title: "Sacrifice", style: .destructive) { (_) in
 			self.sacrifice(player: player)
@@ -92,15 +90,19 @@ class TeamTableViewController: UITableViewController {
 		self.present(actionSheet, animated: true, completion: nil)
 	}
 
-    /*
     // MARK: - Navigation
+	@IBAction func unwindToTeam(segue: UIStoryboardSegue) {
+		if segue.identifier == "unwindToTeamFromItem" {
+			tableView.reloadData()
+		}
+	}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+		if segue.identifier == "toItemFromTeam" {
+			let target = segue.destination as! ItemTableViewController
+			target.player = sender as! Player
+		}
     }
-    */
 	
 	//private
 	private func setLineUpAndSub() {
@@ -172,6 +174,18 @@ class TeamTableViewController: UITableViewController {
 		//reload data
 		setLineUpAndSub()
 		tableView.reloadData()
+	}
+	
+	private func train(player: Player, indexPath: IndexPath) {
+		//player who has no potential cannot be trained
+		if player.potential <= 0 {
+			alert(title: "Training Failed", message: "\(player.name) has already reached his peak. Cannot train him any more.")
+			tableView.deselectRow(at: indexPath, animated: true)
+			return
+		}
+		
+		//perform segue to ItemTableView
+		performSegue(withIdentifier: "toItemFromTeam", sender: player)
 	}
 	
 	private func sacrifice(player: Player) {

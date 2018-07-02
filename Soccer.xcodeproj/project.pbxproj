@@ -13,6 +13,7 @@
 		2207DF4920D2B1A100D5E706 /* TeamNameChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207DF4820D2B1A100D5E706 /* TeamNameChooseViewController.swift */; };
 		2207DF4B20D2B96200D5E706 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207DF4A20D2B96200D5E706 /* GameData.swift */; };
 		2207DF4D20D3F64800D5E706 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207DF4C20D3F64800D5E706 /* MainViewController.swift */; };
+		2216B56120E8BA7E003B2854 /* ItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2216B56020E8BA7E003B2854 /* ItemTableViewController.swift */; };
 		2233ADBB20CE5B1D00659178 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233ADBA20CE5B1D00659178 /* AppDelegate.swift */; };
 		2233ADC020CE5B1D00659178 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2233ADBE20CE5B1D00659178 /* Main.storyboard */; };
 		2233ADC220CE5B1E00659178 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2233ADC120CE5B1E00659178 /* Assets.xcassets */; };
@@ -58,6 +59,7 @@
 		2207DF4820D2B1A100D5E706 /* TeamNameChooseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamNameChooseViewController.swift; sourceTree = "<group>"; };
 		2207DF4A20D2B96200D5E706 /* GameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
 		2207DF4C20D3F64800D5E706 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2216B56020E8BA7E003B2854 /* ItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewController.swift; sourceTree = "<group>"; };
 		2233ADB720CE5B1D00659178 /* Soccer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soccer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2233ADBA20CE5B1D00659178 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2233ADBF20CE5B1D00659178 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				2207DF4820D2B1A100D5E706 /* TeamNameChooseViewController.swift */,
 				2233ADCD20D00B0400659178 /* MatchViewController.swift */,
 				223C170B20E1389900F36C6E /* TeamTableViewController.swift */,
+				2216B56020E8BA7E003B2854 /* ItemTableViewController.swift */,
 				223C170D20E292BB00F36C6E /* ScoutViewController.swift */,
 			);
 			path = Controllers;
@@ -370,6 +373,7 @@
 				2207DF4720D2AE0300D5E706 /* LetterGenerator.swift in Sources */,
 				223C170C20E1389900F36C6E /* TeamTableViewController.swift in Sources */,
 				2233ADD320D0106400659178 /* Side.swift in Sources */,
+				2216B56120E8BA7E003B2854 /* ItemTableViewController.swift in Sources */,
 				223C170620DD272D00F36C6E /* PlayerGenerator.swift in Sources */,
 				223C170020DBF4B200F36C6E /* NameGenerator.swift in Sources */,
 				2207DF4520D2A84800D5E706 /* BadgeGenerator.swift in Sources */,
