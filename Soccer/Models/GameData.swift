@@ -17,8 +17,7 @@ class GameData: Object {
 	@objc dynamic var win = 0
 	@objc dynamic var draw = 0
 	@objc dynamic var lose = 0
-	//debug use
-	@objc dynamic var scout = 30
+	@objc dynamic var scout = 1
 	
 	var points: Int {
 		return win * 3 + draw

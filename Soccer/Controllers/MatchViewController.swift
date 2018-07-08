@@ -23,20 +23,6 @@ class MatchViewController: UIViewController {
 	
     override func viewDidLoad() {
         super.viewDidLoad()
-
-		//test: set two sides' abilities
-		sides = [
-			Side(teamName: UserDefaults.standard.string(forKey: "test")!, abilities: [
-				Ability(off: 10, org: 20, def: 30),
-				Ability(off: 40, org: 50, def: 60),
-				Ability(off: 70, org: 80, def: 90)
-			]),
-			Side(teamName: "Team2", abilities: [
-				Ability(off: 90, org: 80, def: 70),
-				Ability(off: 60, org: 50, def: 40),
-				Ability(off: 30, org: 20, def: 10)
-			]),
-		]
 		
 		//set team name
 		for i in 0...1 {

@@ -2,15 +2,13 @@
 //  UIViewExtension.swift
 //  Soccer
 //
-//  Created by @ktaguchi 2016年07月21日に更新
-//  https://qiita.com/ktaguchi/items/c95821b6b1c53a79c5c2
+//  Created by 马学渊 on 2018/07/07.
+//  Copyright © 2018年 Ma Xueyuan. All rights reserved.
 //
 
 import UIKit
 
 extension UIView {
-	
-	// 枠線の色
 	@IBInspectable var borderColor: UIColor? {
 		get {
 			return layer.borderColor.map { UIColor(cgColor: $0) }
@@ -20,7 +18,6 @@ extension UIView {
 		}
 	}
 	
-	// 枠線のWidth
 	@IBInspectable var borderWidth: CGFloat {
 		get {
 			return layer.borderWidth

@@ -10,7 +10,7 @@ import Foundation
 
 class Side {
 	var teamName: String
-	var abilities: [Ability]
+	var abilities: [Ability]!
 	var score: Int = 0
 	var log: String = ""
 	var direction: Int!
@@ -19,8 +19,38 @@ class Side {
 		return abilities[direction]
 	}
 	
-	init(teamName: String, abilities: [Ability]) {
+	var overall: Int {
+		var overall = 0
+		for ability in abilities {
+			overall += ability.off
+			overall += ability.org
+			overall += ability.def
+		}
+		return overall
+	}
+	
+	init(teamName: String, players: [Player]) {
 		self.teamName = teamName
-		self.abilities = abilities
+		abilities = [Ability(), Ability(), Ability()]
+		for player in players {
+			if player.verticalPosition == "GK" {
+				abilities[0].def += player.ldf
+				abilities[1].def += player.cdf
+				abilities[2].def += player.rdf
+			} else {
+				let sideIndex: Int
+				switch player.horizonPosition {
+				case "L":
+					sideIndex = 0
+				case "C":
+					sideIndex = 1
+				default:
+					sideIndex = 2
+				}
+				abilities[sideIndex].def += player.def
+				abilities[sideIndex].org += player.org
+				abilities[sideIndex].off += player.off
+			}
+		}
 	}
 }

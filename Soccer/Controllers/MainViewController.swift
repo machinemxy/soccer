@@ -34,8 +34,13 @@ class MainViewController: UIViewController {
     }
 
 	@IBAction func nextGame(_ sender: Any) {
-		if btnNextGame.title(for: .normal) == "Pick Team" {
+		switch btnNextGame.title(for: .normal) {
+		case "Pick Team":
 			performSegue(withIdentifier: "toTeamNameChooseFromMain", sender: nil)
+		case "Next Game":
+			performSegue(withIdentifier: "toPreviewFromMain", sender: nil)
+		default:
+			return
 		}
 	}
 	// MARK: - Navigation
@@ -46,10 +51,15 @@ class MainViewController: UIViewController {
 		showGameData()
 	}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+		if segue.identifier == "toPreviewFromMain" {
+			//week + 1
+			let realm = try! Realm()
+			let gameData = realm.objects(GameData.self).first!
+			try! realm.write {
+				gameData.week += 1
+			}
+		}
     }
 	
 	private func setUIForPickTeam() {

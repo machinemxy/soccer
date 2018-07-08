@@ -17,15 +17,10 @@ class TeamNameChooseViewController: UIViewController {
 	@IBOutlet weak var btnDecide: UIButton!
 	
 	@IBAction func randomizeBadgeAndName(_ sender: Any) {
-		//randomize badge
-		teamBadge = BadgeGenerator.pickBadge()
-		
-		//randomize team name
-		var tempName = ""
-		for _ in 1...3 {
-			tempName += LetterGenerator.pickLetter()
-		}
-		teamName = tempName
+		//get rand teamName
+		let fullTeamName = TeamNameGenerator.pickTeamName()
+		teamBadge = String(fullTeamName[fullTeamName.startIndex...fullTeamName.startIndex])
+		teamName = String(fullTeamName[fullTeamName.index(fullTeamName.startIndex, offsetBy: 1)...])
 		
 		//set txtInfo
 		fillTxtInfo()
@@ -49,6 +44,7 @@ class TeamNameChooseViewController: UIViewController {
 		txtInfo.text = info
 	}
 	
+	// MARK: - Navigation
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		//generate gameData
 		let gameData = GameData()

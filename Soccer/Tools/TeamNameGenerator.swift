@@ -8,11 +8,11 @@
 
 import Foundation
 
-class BadgeGenerator {
+class TeamNameGenerator {
 	static let badges =
 	[
 		"😈","👹","🤡","💩","👻","☠️","👽","👾","🤖","🎃",
-		"👁","🧠","👒","👑","🐶","🐱","🐭","🐹","🐰","🦊",
+		"👁","🧠","👒","⚰️","🐶","🐱","🐭","🐹","🐰","🦊",
 		"🐻","🐼","🐨","🐯","🦁","🐮","🐷","🐸","🐵","🐔",
 		"🐥","🦆","🦅","🦉","🦇","🐺","🐗","🐴","🦄","🐝",
 		"🐛","🦋","🐌","🐚","🐞","🕷","🦂","🐢","🐍","🦎",
@@ -23,8 +23,25 @@ class BadgeGenerator {
 		"🍕","🎱","🏹","🎸","🎲","🎯","🎰","🚀","🛸","💣"
 	]
 	
-	static func pickBadge() -> String {
+	static let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+	
+	static func pickTeamName() -> String {
+		var teamName = pickBadge()
+		for _ in 1...3 {
+			teamName += pickLetter()
+		}
+		return teamName
+	}
+	
+	private static func pickBadge() -> String {
 		let index = Int(randomBelow: badges.count)
 		return badges[index]
+	}
+	
+	private static func pickLetter() -> String {
+		let index = Int(randomBelow: letters.count)
+		let from = letters.index(letters.startIndex, offsetBy: index)
+		let to = from
+		return String(letters[from...to])
 	}
 }

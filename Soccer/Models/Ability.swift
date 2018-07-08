@@ -9,13 +9,7 @@
 import Foundation
 
 class Ability {
-	var off: Int
-	var org: Int
-	var def: Int
-	
-	init(off: Int, org: Int, def: Int) {
-		self.off = off
-		self.org = org
-		self.def = def
-	}
+	var off = 0
+	var org = 0
+	var def = 0
 }
