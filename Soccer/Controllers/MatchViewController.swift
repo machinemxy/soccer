@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Realm
+import RealmSwift
 
 class MatchViewController: UIViewController {
 	@IBOutlet weak var lblTime: UILabel!
@@ -29,20 +31,14 @@ class MatchViewController: UIViewController {
 			lblTeams[i].text = sides[i].teamName
 		}
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+	
 	@IBAction func proceed(_ sender: Any) {
 		if time >= 90 {
 			//show time up alert
 			let alert = UIAlertController(title: "Time Up", message: nil, preferredStyle: .alert)
-			let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+			let action = UIAlertAction(title: "OK", style: .default) { (_) in
+				self.timeUp()
+			}
 			alert.addAction(action)
 			self.present(alert, animated: true, completion: nil)
 			
@@ -95,5 +91,26 @@ class MatchViewController: UIViewController {
 			textLogs[offSide].text! += "⚽️\(strGoalTime) \(goalDirection)\n"
 			textLogs[defSide].text! += "\n"
 		}
+	}
+	
+	private func timeUp() {
+		let realm = try! Realm()
+		let gameData = realm.objects(GameData.self).first!
+		try! realm.write {
+			//judge match result
+			if sides[0].score > sides[1].score {
+				gameData.win += 1
+			} else if sides[0].score == sides[1].score {
+				gameData.draw += 1
+			} else {
+				gameData.lose += 1
+			}
+			
+			//add scout
+			gameData.scout += 1
+		}
+		
+		//segue to ResultTableView
+		performSegue(withIdentifier: "toResultFromMatch", sender: nil)
 	}
 }
