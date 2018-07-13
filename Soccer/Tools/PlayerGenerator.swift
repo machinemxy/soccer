@@ -82,7 +82,12 @@ class PlayerGenerator: NSObject {
 	}
 	
 	static func scout(leagueLv: Int) -> Player {
-		let grade = randGrade(leagueLv: leagueLv)
+		//player cannot get player whose grade is over 5
+		var grade = randGrade(leagueLv: leagueLv)
+		if grade > 5 {
+			grade = 5
+		}
+		
 		let dice = Int(randomBelow: 11)
 		if dice == 0 {
 			//gk

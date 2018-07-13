@@ -31,7 +31,11 @@ class GameData: Object {
 		}
 	}
 	
-	var pointsToUpgrade: Int {
-		return 18
+	var pointsToPromote: Int {
+		if leagueLv == 13 {
+			return 22
+		} else {
+			return 18
+		}
 	}
 }

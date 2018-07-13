@@ -12,6 +12,7 @@
 		2207DF4920D2B1A100D5E706 /* TeamNameChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207DF4820D2B1A100D5E706 /* TeamNameChooseViewController.swift */; };
 		2207DF4B20D2B96200D5E706 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207DF4A20D2B96200D5E706 /* GameData.swift */; };
 		2207DF4D20D3F64800D5E706 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207DF4C20D3F64800D5E706 /* MainViewController.swift */; };
+		2207E7EE20F86E8B0045C9D6 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207E7ED20F86E8B0045C9D6 /* UIViewControllerExtension.swift */; };
 		2216B56120E8BA7E003B2854 /* ItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2216B56020E8BA7E003B2854 /* ItemTableViewController.swift */; };
 		2216B56320F093A5003B2854 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2216B56220F093A5003B2854 /* PreviewViewController.swift */; };
 		2216B56520F4EDB9003B2854 /* ResultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2216B56420F4EDB9003B2854 /* ResultTableViewController.swift */; };
@@ -59,6 +60,7 @@
 		2207DF4820D2B1A100D5E706 /* TeamNameChooseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamNameChooseViewController.swift; sourceTree = "<group>"; };
 		2207DF4A20D2B96200D5E706 /* GameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
 		2207DF4C20D3F64800D5E706 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2207E7ED20F86E8B0045C9D6 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		2216B56020E8BA7E003B2854 /* ItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewController.swift; sourceTree = "<group>"; };
 		2216B56220F093A5003B2854 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 		2216B56420F4EDB9003B2854 /* ResultTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewController.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				2233ADD820D1551200659178 /* IntExtension.swift */,
 				223C170720DF565900F36C6E /* ArrayExtension.swift */,
 				22C0D0F920E76C6C00D7ECEE /* UIViewExtension.swift */,
+				2207E7ED20F86E8B0045C9D6 /* UIViewControllerExtension.swift */,
 				223C16FD20DBF28B00F36C6E /* JsonHelper.swift */,
 				2207DF4420D2A84800D5E706 /* TeamNameGenerator.swift */,
 				223C16FF20DBF4B200F36C6E /* NameGenerator.swift */,
@@ -386,6 +389,7 @@
 				2207DF4B20D2B96200D5E706 /* GameData.swift in Sources */,
 				223C16FE20DBF28B00F36C6E /* JsonHelper.swift in Sources */,
 				2233ADBB20CE5B1D00659178 /* AppDelegate.swift in Sources */,
+				2207E7EE20F86E8B0045C9D6 /* UIViewControllerExtension.swift in Sources */,
 				2207DF4D20D3F64800D5E706 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

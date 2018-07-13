@@ -39,6 +39,8 @@ class MainViewController: UIViewController {
 			performSegue(withIdentifier: "toTeamNameChooseFromMain", sender: nil)
 		case "Next Game":
 			performSegue(withIdentifier: "toPreviewFromMain", sender: nil)
+		case "Next Season":
+			nextSeason()
 		default:
 			return
 		}
@@ -84,17 +86,74 @@ class MainViewController: UIViewController {
 		gameData = realm.objects(GameData.self).first
 		
 		//txtInfo
-		txtInfo.text = """
-		\(gameData.teamName)
-		League Lv: \(gameData.leagueLv)
-		Weeks: \(gameData.week)/10
-		Points: \(gameData.points) (W\(gameData.win)/D\(gameData.draw)/L\(gameData.lose))
-		Points to Stay: \(gameData.pointsToStay)
-		Points to Upgrade: \(gameData.pointsToUpgrade)
-		"""
+		var info = "\(gameData.teamName)\n"
+		info += "League Lv: \(gameData.leagueLv)\n"
+		if gameData.week > 10 {
+			info += "Season ended. "
+			if gameData.points < gameData.pointsToStay {
+				info += "Your team got relegated."
+			} else if gameData.points >= gameData.pointsToPromote {
+				if gameData.leagueLv == 13 {
+					info += "Congratulations! Your team won the world champion!"
+				} else {
+					info += "Your team got promoted!"
+				}
+			} else {
+				info += "Your team got stayed."
+			}
+			info += "\n"
+		} else {
+			info += "Weeks: \(gameData.week)/10\n"
+		}
+		info += "Points: \(gameData.points) (W\(gameData.win)/D\(gameData.draw)/L\(gameData.lose))\n"
+		info += "Points to Stay: \(gameData.pointsToStay)\n"
+		if gameData.leagueLv < 13 {
+			info += "Points to Upgrade: \(gameData.pointsToPromote)"
+		} else {
+			info += "Points to World Champion: \(gameData.pointsToPromote)"
+		}
+		txtInfo.text = info
+		
+		//btnNextGame
+		if gameData.week > 10 {
+			btnNextGame.setTitle("Next Season", for: .normal)
+		} else {
+			btnNextGame.setTitle("Next Game", for: .normal)
+		}
 		
 		//btnScout
 		btnScout.setTitle("Scout(\(gameData.scout))", for: .normal)
 		btnScout.isEnabled = gameData.scout > 0
+	}
+	
+	private func nextSeason() {
+		let realm = try! Realm()
+		let gameData = realm.objects(GameData.self).first!
+		if gameData.scout > 0 {
+			alert(title: "Scout Report Left", message: "Please check your scout report before entering next season.")
+			return
+		}
+		
+		//reset gameData
+		try! realm.write {
+			if gameData.points < gameData.pointsToStay {
+				gameData.leagueLv -= 1
+			} else if gameData.points > gameData.pointsToPromote {
+				if gameData.leagueLv == 13 {
+					let startIndex = gameData.teamName.index(gameData.teamName.startIndex, offsetBy: 1)
+					let subTeamName = String(gameData.teamName[startIndex...])
+					gameData.teamName = "👑" + subTeamName
+				} else {
+					gameData.leagueLv += 1
+				}
+			}
+			
+			gameData.week = 1
+			gameData.win = 0
+			gameData.draw = 0
+			gameData.lose = 0
+		}
+		
+		showGameData()
 	}
 }

@@ -125,13 +125,6 @@ class TeamTableViewController: UITableViewController {
 		return player
 	}
 	
-	private func alert(title: String, message: String) {
-		let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-		let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-		alertController.addAction(alertAction)
-		self.present(alertController, animated: true, completion: nil)
-	}
-	
 	private func movePlayer(player: Player, indexPath: IndexPath) {
 		let realm = try! Realm()
 		
