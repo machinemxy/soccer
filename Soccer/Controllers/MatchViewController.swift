@@ -107,7 +107,9 @@ class MatchViewController: UIViewController {
 			}
 			
 			//add scout
-			gameData.scout += 1
+			if gameData.week % 2 == 1 {
+				gameData.scout += 1
+			}
 		}
 		
 		//segue to ResultTableView

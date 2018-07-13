@@ -76,7 +76,6 @@ class MainViewController: UIViewController {
 	}
 	
 	private func resetUIAfterPickTeam() {
-		btnNextGame.setTitle("Next Game", for: .normal)
 		btnTeamManage.isEnabled = true
 		btnExtra.isEnabled = true
 	}
