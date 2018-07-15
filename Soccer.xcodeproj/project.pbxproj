@@ -13,6 +13,7 @@
 		2207DF4B20D2B96200D5E706 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207DF4A20D2B96200D5E706 /* GameData.swift */; };
 		2207DF4D20D3F64800D5E706 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207DF4C20D3F64800D5E706 /* MainViewController.swift */; };
 		2207E7EE20F86E8B0045C9D6 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207E7ED20F86E8B0045C9D6 /* UIViewControllerExtension.swift */; };
+		2207E7F420F8E1900045C9D6 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2207E7F320F8E1900045C9D6 /* StoreKit.framework */; };
 		2216B56120E8BA7E003B2854 /* ItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2216B56020E8BA7E003B2854 /* ItemTableViewController.swift */; };
 		2216B56320F093A5003B2854 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2216B56220F093A5003B2854 /* PreviewViewController.swift */; };
 		2216B56520F4EDB9003B2854 /* ResultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2216B56420F4EDB9003B2854 /* ResultTableViewController.swift */; };
@@ -61,6 +62,7 @@
 		2207DF4A20D2B96200D5E706 /* GameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
 		2207DF4C20D3F64800D5E706 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2207E7ED20F86E8B0045C9D6 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		2207E7F320F8E1900045C9D6 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		2216B56020E8BA7E003B2854 /* ItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewController.swift; sourceTree = "<group>"; };
 		2216B56220F093A5003B2854 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 		2216B56420F4EDB9003B2854 /* ResultTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2207E7F420F8E1900045C9D6 /* StoreKit.framework in Frameworks */,
 				223C16F420D54FFE00F36C6E /* RealmSwift.framework in Frameworks */,
 				223C16F520D54FFE00F36C6E /* Realm.framework in Frameworks */,
 			);
@@ -203,6 +206,7 @@
 		223C16F120D54FFE00F36C6E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2207E7F320F8E1900045C9D6 /* StoreKit.framework */,
 				223C16F320D54FFE00F36C6E /* Realm.framework */,
 				223C16F220D54FFE00F36C6E /* RealmSwift.framework */,
 			);
@@ -273,6 +277,11 @@
 					};
 					2233ADB620CE5B1D00659178 = {
 						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};

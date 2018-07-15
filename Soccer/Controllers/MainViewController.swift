@@ -137,7 +137,7 @@ class MainViewController: UIViewController {
 		try! realm.write {
 			if gameData.points < gameData.pointsToStay {
 				gameData.leagueLv -= 1
-			} else if gameData.points > gameData.pointsToPromote {
+			} else if gameData.points >= gameData.pointsToPromote {
 				if gameData.leagueLv == 13 {
 					let startIndex = gameData.teamName.index(gameData.teamName.startIndex, offsetBy: 1)
 					let subTeamName = String(gameData.teamName[startIndex...])
