@@ -18,6 +18,7 @@ class GameData: Object {
 	@objc dynamic var draw = 0
 	@objc dynamic var lose = 0
 	@objc dynamic var scout = 1
+    let maxLeagueLv = 13
 	
 	var points: Int {
 		return win * 3 + draw

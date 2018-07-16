@@ -107,7 +107,9 @@ class MatchViewController: UIViewController {
 			}
 			
 			//add scout
-			if gameData.week % 2 == 1 {
+            if UserDefaults.standard.bool(forKey: "PremiumManager") {
+                gameData.scout += 1
+            } else if gameData.week % 2 == 1 {
 				gameData.scout += 1
 			}
 		}

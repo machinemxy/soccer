@@ -92,7 +92,7 @@ class MainViewController: UIViewController {
 			if gameData.points < gameData.pointsToStay {
 				info += "Your team got relegated."
 			} else if gameData.points >= gameData.pointsToPromote {
-				if gameData.leagueLv == 13 {
+				if gameData.leagueLv == gameData.maxLeagueLv {
 					info += "Congratulations! Your team won the world champion!"
 				} else {
 					info += "Your team got promoted!"
@@ -106,7 +106,7 @@ class MainViewController: UIViewController {
 		}
 		info += "Points: \(gameData.points) (W\(gameData.win)/D\(gameData.draw)/L\(gameData.lose))\n"
 		info += "Points to Stay: \(gameData.pointsToStay)\n"
-		if gameData.leagueLv < 13 {
+		if gameData.leagueLv < gameData.maxLeagueLv {
 			info += "Points to Upgrade: \(gameData.pointsToPromote)"
 		} else {
 			info += "Points to World Champion: \(gameData.pointsToPromote)"
@@ -138,7 +138,7 @@ class MainViewController: UIViewController {
 			if gameData.points < gameData.pointsToStay {
 				gameData.leagueLv -= 1
 			} else if gameData.points >= gameData.pointsToPromote {
-				if gameData.leagueLv == 13 {
+				if gameData.leagueLv == gameData.maxLeagueLv {
 					let startIndex = gameData.teamName.index(gameData.teamName.startIndex, offsetBy: 1)
 					let subTeamName = String(gameData.teamName[startIndex...])
 					gameData.teamName = "👑" + subTeamName

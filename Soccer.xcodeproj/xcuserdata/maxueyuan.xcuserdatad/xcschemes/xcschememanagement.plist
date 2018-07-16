@@ -7,11 +7,16 @@
 		<key>Soccer.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>2207DF3720D29DD900D5E706</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>2233ADB620CE5B1D00659178</key>
 		<dict>
 			<key>primary</key>

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyStoreKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +19,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		//get player names list
 		let names: [String] = JsonHelper.parse(jsonFileName: "names")
 		NameGenerator.names = names
+        
+        //solving pending transactions
+        SwiftyStoreKit.completeTransactions(atomically: true) { purchases in
+            for purchase in purchases {
+                switch purchase.transaction.transactionState {
+                case .purchased, .restored:
+                    if purchase.needsFinishTransaction {
+                        // Deliver content from server, then:
+                        SwiftyStoreKit.finishTransaction(purchase.transaction)
+                    }
+                    // Unlock content
+                    UserDefaults.standard.set(true, forKey: purchase.productId)
+                case .failed, .purchasing, .deferred:
+                    break // do nothing
+                }
+            }
+        }
+        
 		return true
 	}
 

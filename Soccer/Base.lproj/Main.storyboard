@@ -125,7 +125,6 @@
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="30"/>
                                 <state key="normal" title="OK"/>
                                 <connections>
-                                    <action selector="proceed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hwj-gZ-GGV"/>
                                     <segue destination="fK2-Hu-s25" kind="unwind" identifier="unwindToMainFromScout" unwindAction="unwindToMainWithSegue:" id="BU3-el-cOx"/>
                                 </connections>
                             </button>
@@ -157,10 +156,10 @@
             </objects>
             <point key="canvasLocation" x="-1254" y="859"/>
         </scene>
-        <!--View Controller-->
+        <!--Extra View Controller-->
         <scene sceneID="5dG-po-2on">
             <objects>
-                <viewController id="j2S-JQ-Vnn" sceneMemberID="viewController">
+                <viewController id="j2S-JQ-Vnn" customClass="ExtraViewController" customModule="Soccer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aag-Hx-hdw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -174,34 +173,99 @@
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="30"/>
                                 <state key="normal" title="Return"/>
                                 <connections>
-                                    <action selector="proceed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fVg-RL-cQv"/>
                                     <segue destination="wBG-Uo-nIk" kind="unwind" identifier="unwindToMainFromExtra" unwindAction="unwindToMainWithSegue:" id="zta-OP-Ddy"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="The player grade icon used in this app is made by Freepik from www.flaticon.com" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xya-c2-LNh">
-                                <rect key="frame" x="0.0" y="20" width="320" height="440"/>
-                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnu-hD-g9K">
+                                <rect key="frame" x="0.0" y="113" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="XKx-UA-aZC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                <state key="normal" title="Get Premium Manager"/>
+                                <connections>
+                                    <action selector="getPremiumManager:" destination="j2S-JQ-Vnn" eventType="touchUpInside" id="ICp-6G-onE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xE2-lq-vLa">
+                                <rect key="frame" x="0.0" y="171" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="gzB-2f-ygk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                <state key="normal" title="Restore Purchase"/>
+                                <connections>
+                                    <action selector="restorePurchase:" destination="j2S-JQ-Vnn" eventType="touchUpInside" id="MiE-NI-bUx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Benefits of Premium Manager: ・Getting a new player after each match ・Knowing player's potential exactly" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWq-yC-ghK">
+                                <rect key="frame" x="0.0" y="20" width="320" height="85"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you are beginner of this game, you can read the following tutorial." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFf-zB-ygX">
+                                <rect key="frame" x="0.0" y="229" width="320" height="51"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wU-oO-kM8">
+                                <rect key="frame" x="0.0" y="288" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Fvp-U1-pzN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                <state key="normal" title="Read Tutorial"/>
+                                <connections>
+                                    <action selector="readTutorial:" destination="j2S-JQ-Vnn" eventType="touchUpInside" id="I7v-2U-jP7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The player grade icon used in this app is made by Freepik from www.flaticon.com" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dhw-TG-5uW">
+                                <rect key="frame" x="0.0" y="346" width="320" height="51"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Xya-c2-LNh" firstAttribute="top" secondItem="f7E-OC-qaa" secondAttribute="top" id="3Gc-lD-H7e"/>
+                            <constraint firstItem="xE2-lq-vLa" firstAttribute="trailing" secondItem="f7E-OC-qaa" secondAttribute="trailing" id="5yy-gM-BH3"/>
+                            <constraint firstItem="XWq-yC-ghK" firstAttribute="top" secondItem="f7E-OC-qaa" secondAttribute="top" id="FTZ-xG-15E"/>
+                            <constraint firstItem="1wU-oO-kM8" firstAttribute="leading" secondItem="f7E-OC-qaa" secondAttribute="leading" id="HFd-Yd-jD4"/>
                             <constraint firstItem="4Jp-nU-z5L" firstAttribute="leading" secondItem="f7E-OC-qaa" secondAttribute="leading" id="I68-E3-bxk"/>
-                            <constraint firstItem="4Jp-nU-z5L" firstAttribute="top" secondItem="Xya-c2-LNh" secondAttribute="bottom" constant="8" id="LUT-ji-dnr"/>
-                            <constraint firstItem="Xya-c2-LNh" firstAttribute="trailing" secondItem="f7E-OC-qaa" secondAttribute="trailing" id="NHx-0p-F90"/>
-                            <constraint firstItem="Xya-c2-LNh" firstAttribute="leading" secondItem="f7E-OC-qaa" secondAttribute="leading" id="Oan-rP-WpN"/>
+                            <constraint firstItem="Dhw-TG-5uW" firstAttribute="top" secondItem="1wU-oO-kM8" secondAttribute="bottom" constant="8" id="Jzf-V1-MF7"/>
+                            <constraint firstItem="xE2-lq-vLa" firstAttribute="top" secondItem="nnu-hD-g9K" secondAttribute="bottom" constant="8" id="NVq-AQ-yV3"/>
                             <constraint firstItem="4Jp-nU-z5L" firstAttribute="bottom" secondItem="f7E-OC-qaa" secondAttribute="bottom" id="TAo-7u-JFu"/>
+                            <constraint firstItem="Dhw-TG-5uW" firstAttribute="leading" secondItem="f7E-OC-qaa" secondAttribute="leading" id="Trf-e4-O0X"/>
+                            <constraint firstAttribute="trailing" secondItem="Dhw-TG-5uW" secondAttribute="trailing" id="VSD-tA-vWN"/>
+                            <constraint firstItem="1wU-oO-kM8" firstAttribute="top" secondItem="OFf-zB-ygX" secondAttribute="bottom" constant="8" id="Wl0-8C-14E"/>
+                            <constraint firstItem="nnu-hD-g9K" firstAttribute="top" secondItem="XWq-yC-ghK" secondAttribute="bottom" constant="8" id="bV9-K5-jvO"/>
+                            <constraint firstItem="OFf-zB-ygX" firstAttribute="leading" secondItem="f7E-OC-qaa" secondAttribute="leading" id="bWg-Qr-wJv"/>
+                            <constraint firstItem="nnu-hD-g9K" firstAttribute="leading" secondItem="f7E-OC-qaa" secondAttribute="leading" id="eel-Nc-ZsP"/>
+                            <constraint firstItem="nnu-hD-g9K" firstAttribute="trailing" secondItem="f7E-OC-qaa" secondAttribute="trailing" id="gJj-SW-HTA"/>
+                            <constraint firstItem="OFf-zB-ygX" firstAttribute="top" secondItem="xE2-lq-vLa" secondAttribute="bottom" constant="8" id="kMY-ie-2jG"/>
                             <constraint firstItem="4Jp-nU-z5L" firstAttribute="trailing" secondItem="f7E-OC-qaa" secondAttribute="trailing" id="lV5-30-1hb"/>
+                            <constraint firstItem="OFf-zB-ygX" firstAttribute="trailing" secondItem="f7E-OC-qaa" secondAttribute="trailing" id="mhK-Qv-s1m"/>
+                            <constraint firstItem="xE2-lq-vLa" firstAttribute="leading" secondItem="f7E-OC-qaa" secondAttribute="leading" id="thW-nx-bro"/>
+                            <constraint firstItem="f7E-OC-qaa" firstAttribute="trailing" secondItem="XWq-yC-ghK" secondAttribute="trailing" id="uZq-BI-dkg"/>
+                            <constraint firstItem="1wU-oO-kM8" firstAttribute="trailing" secondItem="f7E-OC-qaa" secondAttribute="trailing" id="veh-v7-zuD"/>
+                            <constraint firstItem="XWq-yC-ghK" firstAttribute="leading" secondItem="f7E-OC-qaa" secondAttribute="leading" id="z2e-c7-nqE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="f7E-OC-qaa"/>
                     </view>
+                    <connections>
+                        <outlet property="btnGetPremiumManager" destination="nnu-hD-g9K" id="ZGF-d4-NOO"/>
+                        <outlet property="btnRestorePurchase" destination="xE2-lq-vLa" id="EnY-h3-atC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Kg-Gg-cm7" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="wBG-Uo-nIk" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-429" y="859"/>
+            <point key="canvasLocation" x="-429.375" y="858.80281690140851"/>
         </scene>
         <!--Team Table View Controller-->
         <scene sceneID="njM-ZZ-c2H">
@@ -635,7 +699,6 @@
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="30"/>
                                 <state key="normal" title="Randomize"/>
                                 <connections>
-                                    <action selector="proceed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yIM-AB-l3x"/>
                                     <action selector="randomizeBadgeAndName:" destination="IdI-JN-Zrx" eventType="touchUpInside" id="6qP-FR-lgX"/>
                                 </connections>
                             </button>

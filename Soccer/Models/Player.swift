@@ -78,6 +78,10 @@ class Player: Object {
 	}
 	
 	var potentialPredict: String {
+        if UserDefaults.standard.bool(forKey: "PremiumManager") {
+            return "\(potential)"
+        }
+        
 		if potential <= 0 {
 			return "-"
 		} else if potential < 10 {
