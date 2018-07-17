@@ -156,9 +156,7 @@ class MainViewController: UIViewController {
         
         //ask user to rate the app
         let llv = gameData.leagueLv
-        //debug
-        if llv == 2 {
-        //if llv == 5 || llv == 10 || llv == 13 {
+        if llv == 5 || llv == 10 || llv == 13 {
             SKStoreReviewController.requestReview()
         }
 		
