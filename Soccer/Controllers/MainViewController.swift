@@ -9,6 +9,7 @@
 import UIKit
 import Realm
 import RealmSwift
+import StoreKit
 
 class MainViewController: UIViewController {
 	@IBOutlet weak var txtInfo: UITextView!
@@ -152,6 +153,14 @@ class MainViewController: UIViewController {
 			gameData.draw = 0
 			gameData.lose = 0
 		}
+        
+        //ask user to rate the app
+        let llv = gameData.leagueLv
+        //debug
+        if llv == 2 {
+        //if llv == 5 || llv == 10 || llv == 13 {
+            SKStoreReviewController.requestReview()
+        }
 		
 		showGameData()
 	}

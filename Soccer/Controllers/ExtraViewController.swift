@@ -75,6 +75,9 @@ class ExtraViewController: UIViewController {
     }
     
     @IBAction func readTutorial(_ sender: Any) {
+        if let url = URL(string: "https://cecilma2018.blogspot.com") {
+            UIApplication.shared.open(url, options: [:])
+        }
     }
     
     
