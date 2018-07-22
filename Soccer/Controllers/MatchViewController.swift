@@ -15,13 +15,15 @@ class MatchViewController: UIViewController {
 	@IBOutlet var lblTeams: [UILabel]!
 	@IBOutlet var lblScores: [UILabel]!
 	@IBOutlet var textLogs: [UITextView]!
-	
+    @IBOutlet weak var btnProceed: UIButton!
+    
 	var time = 0 {
 		didSet {
 			lblTime.text = "\(time)'"
 		}
 	}
 	var sides: [Side]!
+    var timer: Timer!
 	
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,21 +32,39 @@ class MatchViewController: UIViewController {
 		for i in 0...1 {
 			lblTeams[i].text = sides[i].teamName
 		}
+        
+        //shedule timer
+        timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true, block: { (_) in
+            self.proceed()
+        })
     }
-	
-	@IBAction func proceed(_ sender: Any) {
-		if time >= 90 {
-			//show time up alert
-			let alert = UIAlertController(title: "Time Up", message: nil, preferredStyle: .alert)
-			let action = UIAlertAction(title: "OK", style: .default) { (_) in
-				self.timeUp()
-			}
-			alert.addAction(action)
-			self.present(alert, animated: true, completion: nil)
-			
-			return
-		}
-		
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toResultFromMatch" {
+            let realm = try! Realm()
+            let gameData = realm.objects(GameData.self).first!
+            try! realm.write {
+                //judge match result
+                if sides[0].score > sides[1].score {
+                    gameData.win += 1
+                } else if sides[0].score == sides[1].score {
+                    gameData.draw += 1
+                } else {
+                    gameData.lose += 1
+                }
+                
+                //add scout
+                if UserDefaults.standard.bool(forKey: "PremiumManager") {
+                    gameData.scout += 1
+                } else if gameData.week % 2 == 1 {
+                    gameData.scout += 1
+                }
+            }
+        }
+    }
+    
+	private func proceed() {
 		//time proceeded
 		time += 10
 		
@@ -91,30 +111,10 @@ class MatchViewController: UIViewController {
 			textLogs[offSide].text! += "⚽️\(strGoalTime) \(goalDirection)\n"
 			textLogs[defSide].text! += "\n"
 		}
-	}
-	
-	private func timeUp() {
-		let realm = try! Realm()
-		let gameData = realm.objects(GameData.self).first!
-		try! realm.write {
-			//judge match result
-			if sides[0].score > sides[1].score {
-				gameData.win += 1
-			} else if sides[0].score == sides[1].score {
-				gameData.draw += 1
-			} else {
-				gameData.lose += 1
-			}
-			
-			//add scout
-            if UserDefaults.standard.bool(forKey: "PremiumManager") {
-                gameData.scout += 1
-            } else if gameData.week % 2 == 1 {
-				gameData.scout += 1
-			}
-		}
-		
-		//segue to ResultTableView
-		performSegue(withIdentifier: "toResultFromMatch", sender: nil)
+        
+        if time >= 90 {
+            timer.invalidate()
+            btnProceed.isEnabled = true
+        }
 	}
 }

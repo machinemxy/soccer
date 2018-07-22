@@ -35,4 +35,35 @@ class GameData: Object {
 	var pointsToPromote: Int {
 		return 18
 	}
+    
+    var leagueLvDescription: String {
+        switch leagueLv {
+        case 1:
+            return "Amateur 1"
+        case 2:
+            return "Amateur 2"
+        case 3:
+            return "Amateur 3"
+        case 4:
+            return "Amateur 4"
+        case 5:
+            return "Semipro 1"
+        case 6:
+            return "Semipro 2"
+        case 7:
+            return "Semipro 3"
+        case 8:
+            return "Semipro 4"
+        case 9:
+            return "Professional 1"
+        case 10:
+            return "Professional 2"
+        case 11:
+            return "Professional 3"
+        case 12:
+            return "Professional 4"
+        default:
+            return "World Class"
+        }
+    }
 }

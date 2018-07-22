@@ -46,6 +46,7 @@ class MainViewController: UIViewController {
 			return
 		}
 	}
+    
 	// MARK: - Navigation
 	@IBAction func unwindToMain(segue: UIStoryboardSegue) {
 		if segue.identifier == "unwindToMainFromTeamNameChoose" {
@@ -87,7 +88,7 @@ class MainViewController: UIViewController {
 		
 		//txtInfo
 		var info = "\(gameData.teamName)\n"
-		info += "League Lv: \(gameData.leagueLv)\n"
+		info += "League Lv: \(gameData.leagueLvDescription)\n"
 		if gameData.week > 10 {
 			info += "Season ended. "
 			if gameData.points < gameData.pointsToStay {
@@ -156,7 +157,7 @@ class MainViewController: UIViewController {
         
         //ask user to rate the app
         let llv = gameData.leagueLv
-        if llv == 5 || llv == 10 || llv == 13 {
+        if llv % 3 == 0 {
             SKStoreReviewController.requestReview()
         }
 		

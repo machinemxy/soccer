@@ -807,7 +807,7 @@
                                     </textView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLo-Bh-c3q">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLo-Bh-c3q">
                                 <rect key="frame" x="0.0" y="468" width="320" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -816,7 +816,7 @@
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="30"/>
                                 <state key="normal" title="Proceed"/>
                                 <connections>
-                                    <action selector="proceed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Pz-tN-T5a"/>
+                                    <segue destination="BVx-jc-0N4" kind="show" identifier="toResultFromMatch" id="uo2-ON-Vsy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -836,6 +836,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="btnProceed" destination="ZLo-Bh-c3q" id="jps-gn-RrW"/>
                         <outlet property="lblTime" destination="of4-iX-Xmu" id="VFg-oV-r3D"/>
                         <outletCollection property="lblTeams" destination="UsI-bi-Yq1" collectionClass="NSMutableArray" id="LAo-Gn-KKi"/>
                         <outletCollection property="lblTeams" destination="ppL-BA-BDI" collectionClass="NSMutableArray" id="FbG-WZ-Nq4"/>
@@ -843,7 +844,6 @@
                         <outletCollection property="lblScores" destination="lda-AW-4Fn" collectionClass="NSMutableArray" id="In3-CJ-Uh3"/>
                         <outletCollection property="textLogs" destination="ztP-sN-Vxq" collectionClass="NSMutableArray" id="wBV-CU-0kD"/>
                         <outletCollection property="textLogs" destination="NcB-Ry-EeT" collectionClass="NSMutableArray" id="uBF-Vf-LmP"/>
-                        <segue destination="BVx-jc-0N4" kind="show" identifier="toResultFromMatch" id="ERQ-Dm-VZO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
