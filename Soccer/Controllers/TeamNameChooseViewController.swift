@@ -11,44 +11,74 @@ import Realm
 import RealmSwift
 
 class TeamNameChooseViewController: UIViewController {
-	var teamBadge = ""
-	var teamName = ""
-	@IBOutlet weak var txtInfo: UITextView!
-	@IBOutlet weak var btnDecide: UIButton!
-	
-	@IBAction func randomizeBadgeAndName(_ sender: Any) {
-		//get rand teamName
-		let fullTeamName = TeamNameGenerator.pickTeamName()
-		teamBadge = String(fullTeamName[fullTeamName.startIndex...fullTeamName.startIndex])
-		teamName = String(fullTeamName[fullTeamName.index(fullTeamName.startIndex, offsetBy: 1)...])
-		
-		//set txtInfo
-		fillTxtInfo()
-		
-		//enable proceed button
-		btnDecide.isEnabled = true
-	}
-	
-    override func viewDidLoad() {
-        super.viewDidLoad()
-		fillTxtInfo()
+    @IBOutlet weak var lblBadge: UILabel!
+    @IBOutlet var lblLetters: [UILabel]!
+    
+    var badgeIndex = 0 {
+        didSet {
+            lblBadge.text = TeamNameGenerator.badges[badgeIndex]
+        }
     }
-
-	private func fillTxtInfo() {
-		let info = """
-		Press "Randomize" to generate randomly.
-		
-		Badge: \(teamBadge)
-		Name: \(teamName)
-		"""
-		txtInfo.text = info
+    
+    var letterIndexs = [0, 0, 0] {
+        didSet {
+            for i in 0...2 {
+                lblLetters[i].text = TeamNameGenerator.getLetter(index: letterIndexs[i])
+            }
+        }
+    }
+    
+    @IBAction func reduceBadgeIndex(_ sender: Any) {
+        if badgeIndex == 0 {
+            badgeIndex = TeamNameGenerator.badges.count - 1
+        } else {
+            badgeIndex -= 1
+        }
+    }
+    
+    @IBAction func increaseBadgeIndex(_ sender: Any) {
+        if badgeIndex == TeamNameGenerator.badges.count - 1 {
+            badgeIndex = 0
+        } else {
+            badgeIndex += 1
+        }
+    }
+    
+    @IBAction func increaseLetterIndex(_ sender: UIButton) {
+        if letterIndexs[sender.tag] == TeamNameGenerator.letters.count - 1 {
+            letterIndexs[sender.tag] = 0
+        } else {
+            letterIndexs[sender.tag] += 1
+        }
+    }
+    
+    @IBAction func reduceLetterIndex(_ sender: UIButton) {
+        if letterIndexs[sender.tag] == 0 {
+            letterIndexs[sender.tag] = TeamNameGenerator.letters.count - 1
+        } else {
+            letterIndexs[sender.tag] -= 1
+        }
+    }
+    
+	@IBAction func randomizeBadgeAndName(_ sender: Any) {
+		badgeIndex = Int(randomBelow: TeamNameGenerator.badges.count)
+        for i in 0...2 {
+            letterIndexs[i] = Int(randomBelow: TeamNameGenerator.letters.count)
+        }
 	}
 	
 	// MARK: - Navigation
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		//generate gameData
 		let gameData = GameData()
-		gameData.teamName = teamBadge + teamName
+        
+        //set teamName
+        var teamName = ""
+        teamName.append(lblBadge.text!)
+        for i in 0...2 {
+            teamName.append(lblLetters[i].text!)
+        }
+		gameData.teamName = teamName
 		
 		//generate default players
 		let players = PlayerGenerator.generateTeam(leagueLv: 1)
