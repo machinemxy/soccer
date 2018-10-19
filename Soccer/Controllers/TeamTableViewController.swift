@@ -100,7 +100,7 @@ class TeamTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		if segue.identifier == "toItemFromTeam" {
 			let target = segue.destination as! ItemTableViewController
-			target.player = sender as! Player
+            target.player = (sender as! Player)
 		}
     }
 	

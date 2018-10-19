@@ -75,11 +75,16 @@ class ExtraViewController: UIViewController {
     }
     
     @IBAction func readTutorial(_ sender: Any) {
-        if let url = URL(string: "https://cecilma2018.blogspot.com") {
+        if let url = URL(string: "https://cecilma2018.blogspot.com/2018/07/tutorial-of-light-football-manager.html") {
             UIApplication.shared.open(url, options: [:])
         }
     }
     
+    @IBAction func seeMoreApps(_ sender: Any) {
+        if let url = URL(string: "https://machinemxy.github.io") {
+            UIApplication.shared.open(url, options: [:])
+        }
+    }
     
     /*
     // MARK: - Navigation

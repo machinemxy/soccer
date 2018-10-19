@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="F8c-IG-juI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="F8c-IG-juI">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -230,11 +229,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nH5-IV-fpd">
+                                <rect key="frame" x="0.0" y="405" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="c8a-OE-I7r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                <state key="normal" title="More Amazing Apps"/>
+                                <connections>
+                                    <action selector="seeMoreApps:" destination="j2S-JQ-Vnn" eventType="touchUpInside" id="z6b-p1-FJk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="xE2-lq-vLa" firstAttribute="trailing" secondItem="f7E-OC-qaa" secondAttribute="trailing" id="5yy-gM-BH3"/>
                             <constraint firstItem="XWq-yC-ghK" firstAttribute="top" secondItem="f7E-OC-qaa" secondAttribute="top" id="FTZ-xG-15E"/>
+                            <constraint firstItem="nH5-IV-fpd" firstAttribute="trailing" secondItem="f7E-OC-qaa" secondAttribute="trailing" id="H34-bI-7gK"/>
                             <constraint firstItem="1wU-oO-kM8" firstAttribute="leading" secondItem="f7E-OC-qaa" secondAttribute="leading" id="HFd-Yd-jD4"/>
                             <constraint firstItem="4Jp-nU-z5L" firstAttribute="leading" secondItem="f7E-OC-qaa" secondAttribute="leading" id="I68-E3-bxk"/>
                             <constraint firstItem="Dhw-TG-5uW" firstAttribute="top" secondItem="1wU-oO-kM8" secondAttribute="bottom" constant="8" id="Jzf-V1-MF7"/>
@@ -245,12 +257,14 @@
                             <constraint firstItem="1wU-oO-kM8" firstAttribute="top" secondItem="OFf-zB-ygX" secondAttribute="bottom" constant="8" id="Wl0-8C-14E"/>
                             <constraint firstItem="nnu-hD-g9K" firstAttribute="top" secondItem="XWq-yC-ghK" secondAttribute="bottom" constant="8" id="bV9-K5-jvO"/>
                             <constraint firstItem="OFf-zB-ygX" firstAttribute="leading" secondItem="f7E-OC-qaa" secondAttribute="leading" id="bWg-Qr-wJv"/>
+                            <constraint firstItem="nH5-IV-fpd" firstAttribute="leading" secondItem="f7E-OC-qaa" secondAttribute="leading" id="d8w-JG-srH"/>
                             <constraint firstItem="nnu-hD-g9K" firstAttribute="leading" secondItem="f7E-OC-qaa" secondAttribute="leading" id="eel-Nc-ZsP"/>
                             <constraint firstItem="nnu-hD-g9K" firstAttribute="trailing" secondItem="f7E-OC-qaa" secondAttribute="trailing" id="gJj-SW-HTA"/>
                             <constraint firstItem="OFf-zB-ygX" firstAttribute="top" secondItem="xE2-lq-vLa" secondAttribute="bottom" constant="8" id="kMY-ie-2jG"/>
                             <constraint firstItem="4Jp-nU-z5L" firstAttribute="trailing" secondItem="f7E-OC-qaa" secondAttribute="trailing" id="lV5-30-1hb"/>
                             <constraint firstItem="OFf-zB-ygX" firstAttribute="trailing" secondItem="f7E-OC-qaa" secondAttribute="trailing" id="mhK-Qv-s1m"/>
                             <constraint firstItem="xE2-lq-vLa" firstAttribute="leading" secondItem="f7E-OC-qaa" secondAttribute="leading" id="thW-nx-bro"/>
+                            <constraint firstItem="nH5-IV-fpd" firstAttribute="top" secondItem="Dhw-TG-5uW" secondAttribute="bottom" constant="8" id="twT-lK-QY4"/>
                             <constraint firstItem="f7E-OC-qaa" firstAttribute="trailing" secondItem="XWq-yC-ghK" secondAttribute="trailing" id="uZq-BI-dkg"/>
                             <constraint firstItem="1wU-oO-kM8" firstAttribute="trailing" secondItem="f7E-OC-qaa" secondAttribute="trailing" id="veh-v7-zuD"/>
                             <constraint firstItem="XWq-yC-ghK" firstAttribute="leading" secondItem="f7E-OC-qaa" secondAttribute="leading" id="z2e-c7-nqE"/>
@@ -293,21 +307,21 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="[CF]Name 300" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mh5-pE-3Eu">
-                                            <rect key="frame" x="63" y="7" width="122.5" height="17"/>
+                                            <rect key="frame" x="75" y="7" width="122.5" height="17"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="OFF:100 ORG:100 DEF:100 POT:A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Dv8-h7-cbC">
-                                            <rect key="frame" x="63" y="24" width="226.5" height="13"/>
+                                            <rect key="frame" x="75" y="24" width="226.5" height="13"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="13"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="star-1" id="1Or-Hl-Wtu">
-                                            <rect key="frame" x="16" y="5" width="32" height="32"/>
+                                            <rect key="frame" x="16" y="0.0" width="44" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
                                     </subviews>
@@ -354,14 +368,14 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YTb-zl-V67">
-                                            <rect key="frame" x="63" y="0.0" width="241" height="43.5"/>
+                                            <rect key="frame" x="75" y="0.0" width="229" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="star-1" id="7cZ-ot-t3S">
-                                            <rect key="frame" x="16" y="5" width="32" height="32"/>
+                                            <rect key="frame" x="16" y="0.0" width="44" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
                                     </subviews>
@@ -525,47 +539,24 @@
                                         <rect key="frame" x="0.0" y="209" width="320" height="209"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="V8h-jH-YJJ">
-                                                <rect key="frame" x="0.0" y="-0.5" width="320" height="209.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="209"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5tk-gS-e3b">
-                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="px8-Jg-Crb">
-                                                                <rect key="frame" x="0.0" y="0.0" width="106.5" height="70"/>
-                                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ra3-pL-qu9">
-                                                                <rect key="frame" x="106.5" y="0.0" width="107" height="70"/>
-                                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lf-6E-hUF">
-                                                                <rect key="frame" x="213.5" y="0.0" width="106.5" height="70"/>
-                                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4OI-m4-pa7">
-                                                        <rect key="frame" x="0.0" y="70" width="320" height="69.5"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hes-77-wNN">
                                                                 <rect key="frame" x="0.0" y="0.0" width="106.5" height="69.5"/>
                                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1H0-zv-Esk">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ra3-pL-qu9">
                                                                 <rect key="frame" x="106.5" y="0.0" width="107" height="69.5"/>
                                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mrq-94-HaV">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lf-6E-hUF">
                                                                 <rect key="frame" x="213.5" y="0.0" width="106.5" height="69.5"/>
                                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
                                                                 <nil key="textColor"/>
@@ -573,17 +564,40 @@
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="UDZ-kw-ThY">
-                                                        <rect key="frame" x="0.0" y="139.5" width="320" height="70"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4OI-m4-pa7">
+                                                        <rect key="frame" x="0.0" y="69.5" width="320" height="70"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LDF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwG-qW-hbI">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hes-77-wNN">
                                                                 <rect key="frame" x="0.0" y="0.0" width="106.5" height="70"/>
                                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CDF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFd-4q-91H">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1H0-zv-Esk">
                                                                 <rect key="frame" x="106.5" y="0.0" width="107" height="70"/>
+                                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mrq-94-HaV">
+                                                                <rect key="frame" x="213.5" y="0.0" width="106.5" height="70"/>
+                                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="UDZ-kw-ThY">
+                                                        <rect key="frame" x="0.0" y="139.5" width="320" height="69.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LDF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwG-qW-hbI">
+                                                                <rect key="frame" x="0.0" y="0.0" width="106.5" height="69.5"/>
+                                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CDF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFd-4q-91H">
+                                                                <rect key="frame" x="106.5" y="0.0" width="107" height="69.5"/>
                                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -597,7 +611,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RDF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ngh-7i-9hP">
-                                                                <rect key="frame" x="213.5" y="0.0" width="106.5" height="70"/>
+                                                                <rect key="frame" x="213.5" y="0.0" width="106.5" height="69.5"/>
                                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -721,7 +735,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEv-pt-jVA">
-                                <rect key="frame" x="99" y="54" width="30" height="36"/>
+                                <rect key="frame" x="99.5" y="54" width="30" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="⬅️"/>
                                 <connections>
@@ -729,7 +743,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVC-kU-7LV">
-                                <rect key="frame" x="190" y="54" width="30" height="36"/>
+                                <rect key="frame" x="190.5" y="54" width="30" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="➡️"/>
                                 <connections>
@@ -740,7 +754,7 @@
                                 <rect key="frame" x="77" y="132" width="50" height="100"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJ9-kZ-cvF">
-                                        <rect key="frame" x="9.5" y="0.0" width="30" height="36"/>
+                                        <rect key="frame" x="10" y="0.0" width="30" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="⬆️"/>
                                         <connections>
@@ -754,7 +768,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9l5-OT-TC4">
-                                        <rect key="frame" x="9.5" y="64" width="30" height="36"/>
+                                        <rect key="frame" x="10" y="64" width="30" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="⬇️"/>
                                         <connections>
@@ -777,7 +791,7 @@
                                 <rect key="frame" x="135" y="132" width="50" height="100"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0f-45-t7D">
-                                        <rect key="frame" x="9.5" y="0.0" width="30" height="36"/>
+                                        <rect key="frame" x="10" y="0.0" width="30" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="⬆️"/>
                                         <connections>
@@ -791,7 +805,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CU7-AU-S8b">
-                                        <rect key="frame" x="9.5" y="64" width="30" height="36"/>
+                                        <rect key="frame" x="10" y="64" width="30" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="⬇️"/>
                                         <connections>
@@ -814,7 +828,7 @@
                                 <rect key="frame" x="193" y="132" width="50" height="100"/>
                                 <subviews>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ksl-FB-Yeg">
-                                        <rect key="frame" x="9.5" y="0.0" width="30" height="36"/>
+                                        <rect key="frame" x="10" y="0.0" width="30" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="⬆️"/>
                                         <connections>
@@ -828,7 +842,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ev2-7q-rB3">
-                                        <rect key="frame" x="9.5" y="64" width="30" height="36"/>
+                                        <rect key="frame" x="10" y="64" width="30" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="⬇️"/>
                                         <connections>
@@ -868,10 +882,10 @@
                             <constraint firstItem="kVN-hm-qnv" firstAttribute="leading" secondItem="Ohz-zp-SnZ" secondAttribute="leading" id="fWR-zj-GFO"/>
                             <constraint firstItem="aAs-Gv-bCQ" firstAttribute="leading" secondItem="Ohz-zp-SnZ" secondAttribute="leading" id="i4G-kl-feI"/>
                             <constraint firstItem="lqk-Up-8oY" firstAttribute="top" secondItem="kVN-hm-qnv" secondAttribute="bottom" constant="8" id="jnj-Rq-2b8"/>
-                            <constraint firstItem="IVC-kU-7LV" firstAttribute="leading" secondItem="YUt-1c-08x" secondAttribute="trailing" constant="7.5" id="kaN-C1-k5U"/>
+                            <constraint firstItem="IVC-kU-7LV" firstAttribute="leading" secondItem="YUt-1c-08x" secondAttribute="trailing" constant="8" id="kaN-C1-k5U"/>
                             <constraint firstItem="4eR-Ju-cxp" firstAttribute="top" secondItem="kVN-hm-qnv" secondAttribute="bottom" constant="8" id="odH-GV-wSh"/>
                             <constraint firstItem="UEv-pt-jVA" firstAttribute="centerY" secondItem="YUt-1c-08x" secondAttribute="centerY" id="rGE-1D-lAC"/>
-                            <constraint firstItem="YUt-1c-08x" firstAttribute="leading" secondItem="UEv-pt-jVA" secondAttribute="trailing" constant="8.5" id="sAt-7J-QeR"/>
+                            <constraint firstItem="YUt-1c-08x" firstAttribute="leading" secondItem="UEv-pt-jVA" secondAttribute="trailing" constant="8" id="sAt-7J-QeR"/>
                             <constraint firstItem="lqk-Up-8oY" firstAttribute="leading" secondItem="VbI-aw-zoY" secondAttribute="trailing" constant="8" id="wAP-t0-uDx"/>
                             <constraint firstItem="aAs-Gv-bCQ" firstAttribute="bottom" secondItem="Ohz-zp-SnZ" secondAttribute="bottom" id="xft-YD-HyG"/>
                         </constraints>
@@ -1031,21 +1045,21 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="[CF]Name 300(OFF+1)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wHl-vE-llc">
-                                            <rect key="frame" x="63" y="7" width="194" height="17"/>
+                                            <rect key="frame" x="75" y="7" width="194" height="17"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="OFF:100 ORG:100 DEF:100 POT:A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MXC-UU-HZG">
-                                            <rect key="frame" x="63" y="24" width="226.5" height="13"/>
+                                            <rect key="frame" x="75" y="24" width="226.5" height="13"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="13"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="star-1" id="rho-Sm-B3o">
-                                            <rect key="frame" x="16" y="5" width="32" height="32"/>
+                                            <rect key="frame" x="16" y="0.0" width="44" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
                                     </subviews>
@@ -1065,6 +1079,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="star-1" width="32" height="32"/>
+        <image name="star-1" width="51.200000762939453" height="51.200000762939453"/>
     </resources>
 </document>
