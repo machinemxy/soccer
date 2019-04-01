@@ -45,6 +45,9 @@ class ExtraViewController: UIViewController {
                 case .cloudServicePermissionDenied: print("Access to cloud service information is not allowed")
                 case .cloudServiceNetworkConnectionFailed: print("Could not connect to the network")
                 case .cloudServiceRevoked: print("User has revoked permission to use this cloud service")
+                default:
+                    let errorMessage = (error as NSError).localizedDescription
+                    print(errorMessage)
                 }
             }
         }
