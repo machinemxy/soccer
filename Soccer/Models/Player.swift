@@ -23,8 +23,13 @@ class Player: Object {
 	@objc dynamic var cdf = 0
 	@objc dynamic var rdf = 0
 	@objc dynamic var potential = 0
+    @objc dynamic var injuryTime = 0
 	
 	var gradeMark: UIImage {
+        if injuryTime > 0 {
+            return #imageLiteral(resourceName: "disabled")
+        }
+        
 		switch grade {
 		case 1:
 			return #imageLiteral(resourceName: "star-1")

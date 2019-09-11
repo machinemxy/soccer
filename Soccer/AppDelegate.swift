@@ -8,6 +8,8 @@
 
 import UIKit
 import SwiftyStoreKit
+import Realm
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -36,6 +38,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 }
             }
         }
+        
+        //realm version
+        let config = Realm.Configuration(
+            schemaVersion: 1,  //Increment this each time your schema changes
+            migrationBlock: { migration, oldSchemaVersion in
+                if (oldSchemaVersion < 1) {
+                }
+        })
+        Realm.Configuration.defaultConfiguration = config
         
 		return true
 	}
