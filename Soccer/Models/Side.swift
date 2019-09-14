@@ -53,4 +53,18 @@ class Side {
 			}
 		}
 	}
+    
+    init(nextEnemyTeam: NextEnemyTeam) {
+        self.teamName = nextEnemyTeam.teamName
+        abilities = [Ability(), Ability(), Ability()]
+        abilities[0].def = nextEnemyTeam.ldef
+        abilities[0].org = nextEnemyTeam.lorg
+        abilities[0].off = nextEnemyTeam.loff
+        abilities[1].def = nextEnemyTeam.cdef
+        abilities[1].org = nextEnemyTeam.corg
+        abilities[1].off = nextEnemyTeam.coff
+        abilities[2].def = nextEnemyTeam.rdef
+        abilities[2].org = nextEnemyTeam.rorg
+        abilities[2].off = nextEnemyTeam.roff
+    }
 }

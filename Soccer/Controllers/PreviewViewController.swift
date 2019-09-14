@@ -47,11 +47,20 @@ class PreviewViewController: UIViewController {
 		sides = [Side]()
 		sides.append(Side(teamName: gameData.teamName, players: myPlayers))
 		
-		//add cpu's team into sides
-		let cpuTeamName = TeamNameGenerator.pickTeamName()
-		let cpuPlayers = PlayerGenerator.generateTeam(leagueLv: gameData.leagueLv)
-		sides.append(Side(teamName: cpuTeamName, players: cpuPlayers))
-		
+        //check if nextEnemyTeam exist
+        let nextEnemyTeams = realm.objects(NextEnemyTeam.self)
+        if nextEnemyTeams.count > 0 {
+            sides.append(Side(nextEnemyTeam: nextEnemyTeams.first!))
+            try! realm.write {
+                realm.delete(nextEnemyTeams)
+            }
+        } else {
+            //generate cpu's team and add into sides
+            let cpuTeamName = TeamNameGenerator.pickTeamName()
+            let cpuPlayers = PlayerGenerator.generateTeam(leagueLv: gameData.leagueLv)
+            sides.append(Side(teamName: cpuTeamName, players: cpuPlayers))
+        }
+        
 		//setUI
 		setUI()
     }
@@ -59,9 +68,18 @@ class PreviewViewController: UIViewController {
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		if segue.identifier == "toMatchFromPreview" {
+            //week + 1
+            let realm = try! Realm()
+            let gameData = realm.objects(GameData.self).first!
+            try! realm.write {
+                gameData.week += 1
+            }
+            
 			let target = segue.destination as! MatchViewController
 			target.sides = sides
-		}
+        } else if segue.identifier == "unwindToMainFromPreview" {
+            saveEnemyTeam()
+        }
     }
 
 	private func setUI() {
@@ -87,4 +105,24 @@ class PreviewViewController: UIViewController {
 		lblCof2.text = "\(sides[1].abilities[1].off)"
 		lblRof2.text = "\(sides[1].abilities[2].off)"
 	}
+    
+    private func saveEnemyTeam() {
+        let nextEnemyTeam = NextEnemyTeam()
+        let enemySide = sides[1]
+        nextEnemyTeam.teamName = enemySide.teamName
+        nextEnemyTeam.ldef = enemySide.abilities[0].def
+        nextEnemyTeam.lorg = enemySide.abilities[0].org
+        nextEnemyTeam.loff = enemySide.abilities[0].off
+        nextEnemyTeam.cdef = enemySide.abilities[1].def
+        nextEnemyTeam.corg = enemySide.abilities[1].org
+        nextEnemyTeam.coff = enemySide.abilities[1].off
+        nextEnemyTeam.rdef = enemySide.abilities[2].def
+        nextEnemyTeam.rorg = enemySide.abilities[2].org
+        nextEnemyTeam.roff = enemySide.abilities[2].off
+        
+        let realm = try! Realm()
+        try! realm.write {
+            realm.add(nextEnemyTeam)
+        }
+    }
 }

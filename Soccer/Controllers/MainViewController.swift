@@ -56,17 +56,6 @@ class MainViewController: UIViewController {
         }
 		showGameData()
 	}
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-		if segue.identifier == "toPreviewFromMain" {
-			//week + 1
-			let realm = try! Realm()
-			let gameData = realm.objects(GameData.self).first!
-			try! realm.write {
-				gameData.week += 1
-			}
-		}
-    }
 	
 	private func setUIForPickTeam() {
 		txtInfo.text = """

@@ -17,6 +17,7 @@
 		2216B56120E8BA7E003B2854 /* ItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2216B56020E8BA7E003B2854 /* ItemTableViewController.swift */; };
 		2216B56320F093A5003B2854 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2216B56220F093A5003B2854 /* PreviewViewController.swift */; };
 		2216B56520F4EDB9003B2854 /* ResultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2216B56420F4EDB9003B2854 /* ResultTableViewController.swift */; };
+		222BDEDF232D20710036D575 /* NextEnemyTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222BDEDE232D20710036D575 /* NextEnemyTeam.swift */; };
 		2233ADBB20CE5B1D00659178 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233ADBA20CE5B1D00659178 /* AppDelegate.swift */; };
 		2233ADC020CE5B1D00659178 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2233ADBE20CE5B1D00659178 /* Main.storyboard */; };
 		2233ADC220CE5B1E00659178 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2233ADC120CE5B1E00659178 /* Assets.xcassets */; };
@@ -68,6 +69,7 @@
 		2216B56020E8BA7E003B2854 /* ItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewController.swift; sourceTree = "<group>"; };
 		2216B56220F093A5003B2854 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 		2216B56420F4EDB9003B2854 /* ResultTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewController.swift; sourceTree = "<group>"; };
+		222BDEDE232D20710036D575 /* NextEnemyTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextEnemyTeam.swift; sourceTree = "<group>"; };
 		2233ADB720CE5B1D00659178 /* Soccer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soccer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2233ADBA20CE5B1D00659178 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2233ADBF20CE5B1D00659178 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				2207DF4A20D2B96200D5E706 /* GameData.swift */,
 				223C16F820D8116000F36C6E /* Player.swift */,
 				22C0D0F720E75C3D00D7ECEE /* TrainingItem.swift */,
+				222BDEDE232D20710036D575 /* NextEnemyTeam.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 			files = (
 				22B3066120FC7F9A00562852 /* ExtraViewController.swift in Sources */,
 				22C0D0F820E75C3D00D7ECEE /* TrainingItem.swift in Sources */,
+				222BDEDF232D20710036D575 /* NextEnemyTeam.swift in Sources */,
 				223C170820DF565900F36C6E /* ArrayExtension.swift in Sources */,
 				2216B56320F093A5003B2854 /* PreviewViewController.swift in Sources */,
 				223C16F920D8116000F36C6E /* Player.swift in Sources */,
