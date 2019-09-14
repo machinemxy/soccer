@@ -51,9 +51,17 @@ class TeamTableViewController: UITableViewController {
 		cell.imageView?.image = player.gradeMark
 		cell.textLabel?.text = "[\(player.position)]\(player.name) \(player.rating)"
 		if player.verticalPosition == "GK" {
-			cell.detailTextLabel?.text = "LDF:\(player.ldf) CDF:\(player.cdf) RDF:\(player.rdf) POT:\(player.potentialPredict)"
+            var detail = "LDF:\(player.ldf) CDF:\(player.cdf) RDF:\(player.rdf) POT:\(player.potentialPredict)"
+            if player.injuryTime > 0 {
+                detail += " INJ:\(player.injuryTime)"
+            }
+			cell.detailTextLabel?.text = detail
 		} else {
-			cell.detailTextLabel?.text = "OFF:\(player.off) ORG:\(player.org) DEF:\(player.def) POT:\(player.potentialPredict)"
+            var detail = "OFF:\(player.off) ORG:\(player.org) DEF:\(player.def) POT:\(player.potentialPredict)"
+            if player.injuryTime > 0 {
+                detail += " INJ:\(player.injuryTime)"
+            }
+			cell.detailTextLabel?.text = detail
 		}
 		
         return cell
@@ -157,6 +165,13 @@ class TeamTableViewController: UITableViewController {
 				tableView.deselectRow(at: indexPath, animated: true)
 				return
 			}
+            
+            //the play is injured
+            if player.injuryTime > 0 {
+                self.alert(title: "Illegal Lineup", message: "\(player.name) is injured. He cannot attend next match.")
+                tableView.deselectRow(at: indexPath, animated: true)
+                return
+            }
 			
 			//move player to lineup
 			try! realm.write {

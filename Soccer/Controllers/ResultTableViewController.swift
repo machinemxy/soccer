@@ -16,53 +16,72 @@ class ResultTableViewController: UITableViewController {
 	
     override func viewDidLoad() {
         super.viewDidLoad()
-
-		//get players
-		let realm = try! Realm()
-		players = realm.objects(Player.self).filter("inLineUp = true").sorted(by: { (p1, p2) -> Bool in
-			return p1.positionOrder < p2.positionOrder
-		})
-		
-		//player growth
-		try! realm.write {
-			growths = [String]()
-			for player in players {
-				//if player has no potential, no growth
-				if player.potential <= 0 {
-					growths.append("")
-					continue
-				}
-				
-				//reduce potential
-				player.potential -= 1
-				
-				//add ability
-				let randNumber = Int(randomBelow: player.rating)
-				if player.verticalPosition == "GK" {
-					if randNumber < player.ldf {
-						player.ldf += 1
-						growths.append("(LDF+1)")
-					} else if randNumber < player.ldf + player.cdf {
-						player.cdf += 1
-						growths.append("(CDF+1)")
-					} else {
-						player.rdf += 1
-						growths.append("(RDF+1)")
-					}
-				} else {
-					if randNumber < player.def {
-						player.def += 1
-						growths.append("(DEF+1)")
-					} else if randNumber < player.def + player.org {
-						player.org += 1
-						growths.append("(ORG+1)")
-					} else {
-						player.off += 1
-						growths.append("(OFF+1)")
-					}
-				}
-			}
-		}
+        let realm = try! Realm()
+        let allPlayers = realm.objects(Player.self)
+        
+        try! realm.write {
+            //players recovery from injury
+            for player in allPlayers {
+                if player.injuryTime > 0 {
+                    player.injuryTime -= 1
+                }
+            }
+            
+            //get players
+            players = allPlayers.filter("inLineUp = true").sorted(by: { (p1, p2) -> Bool in
+                return p1.positionOrder < p2.positionOrder
+            })
+            
+            //player injury
+            let injured = Int(randomBelow: 10)
+            if injured == 0 && players.count > 0{
+                let injuredPlayerId = Int(randomBelow: players.count)
+                var maxInjuredPeriod = 10
+                if UserDefaults.standard.bool(forKey: "PremiumManager") {
+                    maxInjuredPeriod /= 2
+                }
+                players[injuredPlayerId].injuryTime = Int(randomBelow: maxInjuredPeriod) + 1
+            }
+            
+            //player growth
+            growths = [String]()
+            for player in players {
+                //if player has no potential, no growth
+                if player.potential <= 0 {
+                    growths.append("")
+                    continue
+                }
+                
+                //reduce potential
+                player.potential -= 1
+                
+                //add ability
+                let randNumber = Int(randomBelow: player.rating)
+                if player.verticalPosition == "GK" {
+                    if randNumber < player.ldf {
+                        player.ldf += 1
+                        growths.append("(LDF+1)")
+                    } else if randNumber < player.ldf + player.cdf {
+                        player.cdf += 1
+                        growths.append("(CDF+1)")
+                    } else {
+                        player.rdf += 1
+                        growths.append("(RDF+1)")
+                    }
+                } else {
+                    if randNumber < player.def {
+                        player.def += 1
+                        growths.append("(DEF+1)")
+                    } else if randNumber < player.def + player.org {
+                        player.org += 1
+                        growths.append("(ORG+1)")
+                    } else {
+                        player.off += 1
+                        growths.append("(OFF+1)")
+                    }
+                }
+            }
+        }
     }
 
     // MARK: - Table view data source
@@ -88,9 +107,17 @@ class ResultTableViewController: UITableViewController {
 		cell.imageView?.image = player.gradeMark
 		cell.textLabel?.text = "[\(player.position)]\(player.name) \(player.rating)\(growth)"
 		if player.verticalPosition == "GK" {
-			cell.detailTextLabel?.text = "LDF:\(player.ldf) CDF:\(player.cdf) RDF:\(player.rdf) POT:\(player.potentialPredict)"
+            var detail = "LDF:\(player.ldf) CDF:\(player.cdf) RDF:\(player.rdf) POT:\(player.potentialPredict)"
+            if player.injuryTime > 0 {
+                detail += " INJ:\(player.injuryTime)"
+            }
+			cell.detailTextLabel?.text = detail
 		} else {
-			cell.detailTextLabel?.text = "OFF:\(player.off) ORG:\(player.org) DEF:\(player.def) POT:\(player.potentialPredict)"
+            var detail = "OFF:\(player.off) ORG:\(player.org) DEF:\(player.def) POT:\(player.potentialPredict)"
+            if player.injuryTime > 0 {
+                detail += " INJ:\(player.injuryTime)"
+            }
+			cell.detailTextLabel?.text = detail
 		}
 
         return cell

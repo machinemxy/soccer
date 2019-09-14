@@ -51,7 +51,9 @@ class MainViewController: UIViewController {
 	@IBAction func unwindToMain(segue: UIStoryboardSegue) {
 		if segue.identifier == "unwindToMainFromTeamNameChoose" {
 			resetUIAfterPickTeam()
-		}
+        } else if segue.identifier == "unwindToMainFromResult" {
+            removeInjuredPlayerFromLineUp()
+        }
 		showGameData()
 	}
 
@@ -81,6 +83,20 @@ class MainViewController: UIViewController {
 		btnTeamManage.isEnabled = true
 		btnExtra.isEnabled = true
 	}
+    
+    private func removeInjuredPlayerFromLineUp() {
+        let realm = try! Realm()
+        let injuredPlayersInLineUp = realm.objects(Player.self).filter { (player) -> Bool in
+            player.inLineUp && player.injuryTime > 0
+        }
+        if injuredPlayersInLineUp.count > 0 {
+            try! realm.write {
+                for injuredPlayer in injuredPlayersInLineUp {
+                    injuredPlayer.inLineUp = false
+                }
+            }
+        }
+    }
 	
 	private func showGameData() {
 		let realm = try! Realm()
