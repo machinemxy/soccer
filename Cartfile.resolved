@@ -1,2 +1,2 @@
 github "bizz84/SwiftyStoreKit" "0.15.0"
-github "realm/realm-cocoa" "v3.17.3"
+github "realm/realm-cocoa" "v3.18.0"
