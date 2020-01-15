@@ -95,6 +95,9 @@ class TeamTableViewController: UITableViewController {
 		//iPad crash avoid
 		actionSheet.popoverPresentationController?.sourceView = view
 		actionSheet.popoverPresentationController?.sourceRect = tableView.cellForRow(at: indexPath)!.frame
+        
+        //make it green
+        actionSheet.view.tintColor = .systemGreen
 		self.present(actionSheet, animated: true, completion: nil)
 	}
 

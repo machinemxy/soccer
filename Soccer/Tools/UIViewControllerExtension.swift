@@ -13,6 +13,8 @@ extension UIViewController {
 		let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
 		let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
 		alertController.addAction(alertAction)
+        //make it green
+        alertController.view.tintColor = .systemGreen
 		self.present(alertController, animated: true, completion: nil)
 	}
 }
