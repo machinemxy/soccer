@@ -16,6 +16,8 @@ class ExtraViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title = "Extra"
+        
         //if user already bought the premium manager, disable the buttom
         if UserDefaults.standard.bool(forKey: "PremiumManager") {
             btnGetPremiumManager.isEnabled = false
@@ -77,21 +79,6 @@ class ExtraViewController: UIViewController {
         }
     }
     
-    @IBAction func readTutorial(_ sender: Any) {
-        if let url = URL(string: "https://cecilma2018.blogspot.com/2018/07/tutorial-of-light-football-manager.html") {
-            UIApplication.shared.open(url, options: [:])
-        }
-    }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
     private func setPrice() {
         SwiftyStoreKit.retrieveProductsInfo(["PremiumManager"]) { result in
             if let product = result.retrievedProducts.first {

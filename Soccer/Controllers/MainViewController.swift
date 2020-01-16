@@ -49,6 +49,22 @@ class MainViewController: UIViewController {
 		}
 	}
     
+    @IBAction func scout(_ sender: Any) {
+        let scoutedPlayer = PlayerGenerator.scout(leagueLv: gameData.leagueLv)
+        let realm = try! Realm()
+        try! realm.write {
+            gameData.scout -= 1
+            realm.add(scoutedPlayer)
+        }
+        
+        //btnScout
+        btnScout.setTitle("Scout(\(gameData.scout))", for: .normal)
+        btnScout.isEnabled = gameData.scout > 0
+        
+        alert(title: "Scout Result", message: "[\(scoutedPlayer.position)]\(scoutedPlayer.name) \(scoutedPlayer.rating)")
+    }
+    
+    
 	// MARK: - Navigation
 	@IBAction func unwindToMain(segue: UIStoryboardSegue) {
 		if segue.identifier == "unwindToMainFromTeamNameChoose" {
