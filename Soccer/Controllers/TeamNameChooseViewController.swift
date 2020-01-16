@@ -14,6 +14,12 @@ class TeamNameChooseViewController: UIViewController {
     @IBOutlet weak var lblBadge: UILabel!
     @IBOutlet var lblLetters: [UILabel]!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        title = "Create Team"
+    }
+    
     var badgeIndex = 0 {
         didSet {
             lblBadge.text = TeamNameGenerator.badges[badgeIndex]

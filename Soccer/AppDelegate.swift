@@ -18,6 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        // Make navigation bar font green
+        UINavigationBar.appearance().tintColor = .systemGreen
+        
 		//get player names list
 		let names: [String] = JsonHelper.parse(jsonFileName: "names")
 		NameGenerator.names = names

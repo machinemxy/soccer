@@ -22,6 +22,8 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Light Football Manager"
 
 		//try to get the gameData
 		let realm = try! Realm()
@@ -36,7 +38,7 @@ class MainViewController: UIViewController {
 
 	@IBAction func nextGame(_ sender: Any) {
 		switch btnNextGame.title(for: .normal) {
-		case "Pick Team":
+		case "Create Team":
 			performSegue(withIdentifier: "toTeamNameChooseFromMain", sender: nil)
 		case "Next Game":
 			performSegue(withIdentifier: "toPreviewFromMain", sender: nil)
@@ -60,9 +62,9 @@ class MainViewController: UIViewController {
 	private func setUIForPickTeam() {
 		txtInfo.text = """
 		Welcome to Light Football Manager!
-		Please pick your team badge and name first!
+		Please create your team first!
 		"""
-		btnNextGame.setTitle("Pick Team", for: .normal)
+		btnNextGame.setTitle("Create Team", for: .normal)
 		btnTeamManage.isEnabled = false
 		btnScout.isEnabled = false
 		btnExtra.isEnabled = false

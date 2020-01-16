@@ -16,6 +16,8 @@ class TeamTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Team"
 
 		setLineUpAndSub()
     }

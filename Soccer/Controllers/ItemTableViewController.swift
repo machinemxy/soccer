@@ -16,6 +16,8 @@ class ItemTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Training Items"
 
         let realm = try! Realm()
 		items = realm.objects(TrainingItem.self).sorted(by: { (item1, item2) -> Bool in
@@ -32,10 +34,6 @@ class ItemTableViewController: UITableViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-	
-	override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-		return "Training Items"
-	}
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
