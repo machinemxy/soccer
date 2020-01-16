@@ -83,12 +83,6 @@ class ExtraViewController: UIViewController {
         }
     }
     
-    @IBAction func seeMoreApps(_ sender: Any) {
-        if let url = URL(string: "https://machinemxy.github.io") {
-            UIApplication.shared.open(url, options: [:])
-        }
-    }
-    
     /*
     // MARK: - Navigation
 

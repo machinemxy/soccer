@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="F8c-IG-juI">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="F8c-IG-juI" customClass="MainViewController" customModule="Soccer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DCE-hT-U1D">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04z-id-L9v">
-                                <rect key="frame" x="0.0" y="792" width="414" height="70"/>
+                                <rect key="frame" x="0.0" y="708" width="375" height="70"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="zK7-FJ-XmL"/>
@@ -29,7 +29,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nca-ry-uiP">
-                                <rect key="frame" x="0.0" y="714" width="414" height="70"/>
+                                <rect key="frame" x="0.0" y="630" width="375" height="70"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="Bf8-2f-3dG"/>
@@ -41,7 +41,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAc-lK-KDo">
-                                <rect key="frame" x="0.0" y="558" width="414" height="70"/>
+                                <rect key="frame" x="0.0" y="474" width="375" height="70"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="ulx-cr-l1Z"/>
@@ -53,13 +53,13 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="🎱ABC League Lv: 1 Weeks: 10/10 Points: 30 (W10/D0/L0) Points to Stay: 9 Points to Upgrade: 18" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Avx-qw-Ypj">
-                                <rect key="frame" x="0.0" y="44" width="414" height="506"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="422"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25C-bI-Jb9">
-                                <rect key="frame" x="0.0" y="636" width="414" height="70"/>
+                                <rect key="frame" x="0.0" y="552" width="375" height="70"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="tGk-8B-vMI"/>
@@ -112,11 +112,11 @@
             <objects>
                 <viewController id="kMq-wh-Hih" customClass="ScoutViewController" customModule="Soccer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dTw-SL-s6U">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6QA-iG-Qze">
-                                <rect key="frame" x="0.0" y="708" width="414" height="100"/>
+                                <rect key="frame" x="0.0" y="624" width="375" height="100"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="b6y-Zx-O4E"/>
@@ -128,7 +128,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Your scout bring these players to you:  [CF]Name 300" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJw-T4-Uly">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
+                                <rect key="frame" x="0.0" y="8" width="375" height="608"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -138,7 +138,7 @@
                         <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6QA-iG-Qze" firstAttribute="bottom" secondItem="J9T-5v-FcB" secondAttribute="bottom" id="0K7-Sf-86b"/>
-                            <constraint firstItem="VJw-T4-Uly" firstAttribute="top" secondItem="J9T-5v-FcB" secondAttribute="top" id="FeV-22-SRg"/>
+                            <constraint firstItem="VJw-T4-Uly" firstAttribute="top" secondItem="J9T-5v-FcB" secondAttribute="top" constant="8" id="FeV-22-SRg"/>
                             <constraint firstItem="6QA-iG-Qze" firstAttribute="leading" secondItem="J9T-5v-FcB" secondAttribute="leading" id="GF1-ng-lVq"/>
                             <constraint firstItem="VJw-T4-Uly" firstAttribute="leading" secondItem="J9T-5v-FcB" secondAttribute="leading" id="GxL-8L-rIV"/>
                             <constraint firstItem="6QA-iG-Qze" firstAttribute="top" secondItem="VJw-T4-Uly" secondAttribute="bottom" constant="8" id="IZS-nB-ajF"/>
@@ -161,11 +161,11 @@
             <objects>
                 <viewController id="j2S-JQ-Vnn" customClass="ExtraViewController" customModule="Soccer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aag-Hx-hdw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Jp-nU-z5L">
-                                <rect key="frame" x="0.0" y="708" width="414" height="100"/>
+                                <rect key="frame" x="0.0" y="624" width="375" height="100"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="AsP-Wp-dCh"/>
@@ -177,7 +177,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnu-hD-g9K">
-                                <rect key="frame" x="0.0" y="76" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="118" width="375" height="50"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="XKx-UA-aZC"/>
@@ -189,7 +189,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xE2-lq-vLa">
-                                <rect key="frame" x="0.0" y="134" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="176" width="375" height="50"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="gzB-2f-ygk"/>
@@ -201,7 +201,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWq-yC-ghK">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="68"/>
+                                <rect key="frame" x="0.0" y="8" width="375" height="102"/>
                                 <string key="text">Benefits of Premium Manager: ・Getting a new player after each match ・Knowing player's potential exactly
 ・Player recovering faster from injury</string>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
@@ -209,13 +209,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you are beginner of this game, you can read the following tutorial." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFf-zB-ygX">
-                                <rect key="frame" x="0.0" y="192" width="414" height="34"/>
+                                <rect key="frame" x="0.0" y="234" width="375" height="34"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wU-oO-kM8">
-                                <rect key="frame" x="0.0" y="234" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="276" width="375" height="50"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Fvp-U1-pzN"/>
@@ -227,30 +227,17 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The player grade icon used in this app is made by Freepik from www.flaticon.com" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dhw-TG-5uW">
-                                <rect key="frame" x="0.0" y="292" width="414" height="34"/>
+                                <rect key="frame" x="0.0" y="334" width="375" height="51"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nH5-IV-fpd">
-                                <rect key="frame" x="0.0" y="334" width="414" height="50"/>
-                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="c8a-OE-I7r"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
-                                <state key="normal" title="More Amazing Apps"/>
-                                <connections>
-                                    <action selector="seeMoreApps:" destination="j2S-JQ-Vnn" eventType="touchUpInside" id="z6b-p1-FJk"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="xE2-lq-vLa" firstAttribute="trailing" secondItem="f7E-OC-qaa" secondAttribute="trailing" id="5yy-gM-BH3"/>
-                            <constraint firstItem="XWq-yC-ghK" firstAttribute="top" secondItem="f7E-OC-qaa" secondAttribute="top" id="FTZ-xG-15E"/>
-                            <constraint firstItem="nH5-IV-fpd" firstAttribute="trailing" secondItem="f7E-OC-qaa" secondAttribute="trailing" id="H34-bI-7gK"/>
+                            <constraint firstItem="XWq-yC-ghK" firstAttribute="top" secondItem="f7E-OC-qaa" secondAttribute="top" constant="8" id="FTZ-xG-15E"/>
                             <constraint firstItem="1wU-oO-kM8" firstAttribute="leading" secondItem="f7E-OC-qaa" secondAttribute="leading" id="HFd-Yd-jD4"/>
                             <constraint firstItem="4Jp-nU-z5L" firstAttribute="leading" secondItem="f7E-OC-qaa" secondAttribute="leading" id="I68-E3-bxk"/>
                             <constraint firstItem="Dhw-TG-5uW" firstAttribute="top" secondItem="1wU-oO-kM8" secondAttribute="bottom" constant="8" id="Jzf-V1-MF7"/>
@@ -261,14 +248,12 @@
                             <constraint firstItem="1wU-oO-kM8" firstAttribute="top" secondItem="OFf-zB-ygX" secondAttribute="bottom" constant="8" id="Wl0-8C-14E"/>
                             <constraint firstItem="nnu-hD-g9K" firstAttribute="top" secondItem="XWq-yC-ghK" secondAttribute="bottom" constant="8" id="bV9-K5-jvO"/>
                             <constraint firstItem="OFf-zB-ygX" firstAttribute="leading" secondItem="f7E-OC-qaa" secondAttribute="leading" id="bWg-Qr-wJv"/>
-                            <constraint firstItem="nH5-IV-fpd" firstAttribute="leading" secondItem="f7E-OC-qaa" secondAttribute="leading" id="d8w-JG-srH"/>
                             <constraint firstItem="nnu-hD-g9K" firstAttribute="leading" secondItem="f7E-OC-qaa" secondAttribute="leading" id="eel-Nc-ZsP"/>
                             <constraint firstItem="nnu-hD-g9K" firstAttribute="trailing" secondItem="f7E-OC-qaa" secondAttribute="trailing" id="gJj-SW-HTA"/>
                             <constraint firstItem="OFf-zB-ygX" firstAttribute="top" secondItem="xE2-lq-vLa" secondAttribute="bottom" constant="8" id="kMY-ie-2jG"/>
                             <constraint firstItem="4Jp-nU-z5L" firstAttribute="trailing" secondItem="f7E-OC-qaa" secondAttribute="trailing" id="lV5-30-1hb"/>
                             <constraint firstItem="OFf-zB-ygX" firstAttribute="trailing" secondItem="f7E-OC-qaa" secondAttribute="trailing" id="mhK-Qv-s1m"/>
                             <constraint firstItem="xE2-lq-vLa" firstAttribute="leading" secondItem="f7E-OC-qaa" secondAttribute="leading" id="thW-nx-bro"/>
-                            <constraint firstItem="nH5-IV-fpd" firstAttribute="top" secondItem="Dhw-TG-5uW" secondAttribute="bottom" constant="8" id="twT-lK-QY4"/>
                             <constraint firstItem="f7E-OC-qaa" firstAttribute="trailing" secondItem="XWq-yC-ghK" secondAttribute="trailing" id="uZq-BI-dkg"/>
                             <constraint firstItem="1wU-oO-kM8" firstAttribute="trailing" secondItem="f7E-OC-qaa" secondAttribute="trailing" id="veh-v7-zuD"/>
                             <constraint firstItem="XWq-yC-ghK" firstAttribute="leading" secondItem="f7E-OC-qaa" secondAttribute="leading" id="z2e-c7-nqE"/>
@@ -290,12 +275,12 @@
             <objects>
                 <tableViewController id="Ri6-Gy-tlw" customClass="TeamTableViewController" customModule="Soccer" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="U1p-87-fWD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EhA-ue-igy">
-                            <rect key="frame" x="0.0" y="121" width="414" height="44"/>
+                            <rect key="frame" x="0.0" y="121" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="30"/>
                             <state key="normal" title="Return"/>
@@ -305,28 +290,28 @@
                         </button>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="playerCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="playerCell" textLabel="Mh5-pE-3Eu" detailTextLabel="Dv8-h7-cbC" imageView="1Or-Hl-Wtu" style="IBUITableViewCellStyleSubtitle" id="CtD-gk-Jgs">
-                                <rect key="frame" x="0.0" y="55.5" width="414" height="47.5"/>
+                                <rect key="frame" x="0.0" y="55.333332061767578" width="375" height="47.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CtD-gk-Jgs" id="zsr-d7-SAM">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="47.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="47.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="[CF]Name 300" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mh5-pE-3Eu">
-                                            <rect key="frame" x="67" y="9" width="122.5" height="17"/>
+                                            <rect key="frame" x="63.000000000000007" y="9" width="122.66666666666667" height="17"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="OFF:100 ORG:100 DEF:100 POT:A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Dv8-h7-cbC">
-                                            <rect key="frame" x="67" y="26" width="226.5" height="13"/>
+                                            <rect key="frame" x="63.000000000000014" y="26" width="226.33333333333334" height="13"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="13"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="star-1" id="1Or-Hl-Wtu">
-                                            <rect key="frame" x="20" y="7.5" width="32" height="32"/>
+                                            <rect key="frame" x="16" y="7.6666666666666679" width="32" height="32"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
                                     </subviews>
@@ -352,12 +337,12 @@
             <objects>
                 <tableViewController id="rZ1-wb-Ivb" customClass="ItemTableViewController" customModule="Soccer" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="rk9-c5-crW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mvJ-cB-ZrP">
-                            <rect key="frame" x="0.0" y="117" width="414" height="44"/>
+                            <rect key="frame" x="0.0" y="117" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="30"/>
                             <state key="normal" title="Cancel"/>
@@ -367,21 +352,21 @@
                         </button>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" textLabel="YTb-zl-V67" imageView="7cZ-ot-t3S" style="IBUITableViewCellStyleDefault" id="Jgg-38-6Si">
-                                <rect key="frame" x="0.0" y="55.5" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="55.333332061767578" width="375" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jgg-38-6Si" id="0am-MT-2F0">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YTb-zl-V67">
-                                            <rect key="frame" x="67" y="0.0" width="327" height="43.5"/>
+                                            <rect key="frame" x="63" y="0.0" width="296" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="star-1" id="7cZ-ot-t3S">
-                                            <rect key="frame" x="20" y="5.5" width="32" height="32"/>
+                                            <rect key="frame" x="16" y="5.6666666666666679" width="32" height="32"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
                                     </subviews>
@@ -404,11 +389,11 @@
             <objects>
                 <viewController id="Ebo-QJ-wYh" customClass="PreviewViewController" customModule="Soccer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GKf-Ox-JWZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RHz-bf-fob">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="NoU-Yz-Gke"/>
                                 </constraints>
@@ -417,7 +402,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYq-Ax-JwN">
-                                <rect key="frame" x="0.0" y="622" width="414" height="30"/>
+                                <rect key="frame" x="0.0" y="538" width="375" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="IWu-OU-ZBv"/>
                                 </constraints>
@@ -426,25 +411,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Zs7-ck-iPb">
-                                <rect key="frame" x="0.0" y="30" width="414" height="592"/>
+                                <rect key="frame" x="0.0" y="30" width="375" height="508"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OgG-KM-ged">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="296"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="254"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Dow-89-cKg">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="296"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="254"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="baL-DZ-pJb">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="98.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="84.666666666666671"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RDF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l79-Lb-ufc">
-                                                                <rect key="frame" x="0.0" y="0.0" width="138" height="98.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="125" height="84.666666666666671"/>
                                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CDF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGN-bU-Fyd">
-                                                                <rect key="frame" x="138" y="0.0" width="138" height="98.5"/>
+                                                                <rect key="frame" x="125" y="0.0" width="125" height="84.666666666666671"/>
                                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -458,7 +443,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LDF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHq-e6-DFX">
-                                                                <rect key="frame" x="276" y="0.0" width="138" height="98.5"/>
+                                                                <rect key="frame" x="250" y="0.0" width="125" height="84.666666666666671"/>
                                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -466,22 +451,22 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gqh-hG-5Ii">
-                                                        <rect key="frame" x="0.0" y="98.5" width="414" height="99"/>
+                                                        <rect key="frame" x="0.0" y="84.666666666666657" width="375" height="84.666666666666657"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bn2-9X-ZgK">
-                                                                <rect key="frame" x="0.0" y="0.0" width="138" height="99"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="125" height="84.666666666666671"/>
                                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XtZ-uC-o3u">
-                                                                <rect key="frame" x="138" y="0.0" width="138" height="99"/>
+                                                                <rect key="frame" x="125" y="0.0" width="125" height="84.666666666666671"/>
                                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBe-bA-lZT">
-                                                                <rect key="frame" x="276" y="0.0" width="138" height="99"/>
+                                                                <rect key="frame" x="250" y="0.0" width="125" height="84.666666666666671"/>
                                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -489,22 +474,22 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Arv-t1-6uZ">
-                                                        <rect key="frame" x="0.0" y="197.5" width="414" height="98.5"/>
+                                                        <rect key="frame" x="0.0" y="169.33333333333334" width="375" height="84.666666666666657"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHP-DU-SXq">
-                                                                <rect key="frame" x="0.0" y="0.0" width="138" height="98.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="125" height="84.666666666666671"/>
                                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0k-iP-0oF">
-                                                                <rect key="frame" x="138" y="0.0" width="138" height="98.5"/>
+                                                                <rect key="frame" x="125" y="0.0" width="125" height="84.666666666666671"/>
                                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUd-GC-cOh">
-                                                                <rect key="frame" x="276" y="0.0" width="138" height="98.5"/>
+                                                                <rect key="frame" x="250" y="0.0" width="125" height="84.666666666666671"/>
                                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -530,28 +515,28 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pwj-bU-VGs">
-                                        <rect key="frame" x="0.0" y="296" width="414" height="296"/>
+                                        <rect key="frame" x="0.0" y="254" width="375" height="254"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="V8h-jH-YJJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="296"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="254"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5tk-gS-e3b">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="98.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="84.666666666666671"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="px8-Jg-Crb">
-                                                                <rect key="frame" x="0.0" y="0.0" width="138" height="98.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="125" height="84.666666666666671"/>
                                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ra3-pL-qu9">
-                                                                <rect key="frame" x="138" y="0.0" width="138" height="98.5"/>
+                                                                <rect key="frame" x="125" y="0.0" width="125" height="84.666666666666671"/>
                                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lf-6E-hUF">
-                                                                <rect key="frame" x="276" y="0.0" width="138" height="98.5"/>
+                                                                <rect key="frame" x="250" y="0.0" width="125" height="84.666666666666671"/>
                                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -559,22 +544,22 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4OI-m4-pa7">
-                                                        <rect key="frame" x="0.0" y="98.5" width="414" height="99"/>
+                                                        <rect key="frame" x="0.0" y="84.666666666666686" width="375" height="84.666666666666686"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hes-77-wNN">
-                                                                <rect key="frame" x="0.0" y="0.0" width="138" height="99"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="125" height="84.666666666666671"/>
                                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1H0-zv-Esk">
-                                                                <rect key="frame" x="138" y="0.0" width="138" height="99"/>
+                                                                <rect key="frame" x="125" y="0.0" width="125" height="84.666666666666671"/>
                                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mrq-94-HaV">
-                                                                <rect key="frame" x="276" y="0.0" width="138" height="99"/>
+                                                                <rect key="frame" x="250" y="0.0" width="125" height="84.666666666666671"/>
                                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -582,16 +567,16 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="UDZ-kw-ThY">
-                                                        <rect key="frame" x="0.0" y="197.5" width="414" height="98.5"/>
+                                                        <rect key="frame" x="0.0" y="169.33333333333331" width="375" height="84.666666666666686"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LDF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwG-qW-hbI">
-                                                                <rect key="frame" x="0.0" y="0.0" width="138" height="98.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="125" height="84.666666666666671"/>
                                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CDF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFd-4q-91H">
-                                                                <rect key="frame" x="138" y="0.0" width="138" height="98.5"/>
+                                                                <rect key="frame" x="125" y="0.0" width="125" height="84.666666666666671"/>
                                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -605,7 +590,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RDF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ngh-7i-9hP">
-                                                                <rect key="frame" x="276" y="0.0" width="138" height="98.5"/>
+                                                                <rect key="frame" x="250" y="0.0" width="125" height="84.666666666666671"/>
                                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -633,7 +618,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X6r-2k-reM">
-                                <rect key="frame" x="0.0" y="652" width="414" height="70"/>
+                                <rect key="frame" x="0.0" y="568" width="375" height="70"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="u9f-SX-0YO"/>
@@ -645,7 +630,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dp-9f-Cfa">
-                                <rect key="frame" x="0.0" y="730" width="414" height="70"/>
+                                <rect key="frame" x="0.0" y="646" width="375" height="70"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="cFg-1l-tDi"/>
@@ -679,6 +664,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aEa-bM-RkN"/>
                     </view>
+                    <navigationItem key="navigationItem" id="7z9-HH-PPx"/>
                     <connections>
                         <outlet property="lblCdf1" destination="MFd-4q-91H" id="DvG-Pq-nIc"/>
                         <outlet property="lblCdf2" destination="iGN-bU-Fyd" id="jEW-FE-17s"/>
@@ -712,11 +698,11 @@
             <objects>
                 <viewController id="IdI-JN-Zrx" customClass="TeamNameChooseViewController" customModule="Soccer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PUp-4r-MXy">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAs-Gv-bCQ">
-                                <rect key="frame" x="0.0" y="708" width="414" height="100"/>
+                                <rect key="frame" x="0.0" y="624" width="375" height="100"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="hil-gQ-fmd"/>
@@ -728,7 +714,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovc-6e-Zt5">
-                                <rect key="frame" x="0.0" y="600" width="414" height="100"/>
+                                <rect key="frame" x="0.0" y="516" width="375" height="100"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="xFQ-zD-0qN"/>
@@ -740,25 +726,25 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Badge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ww-bT-b5k">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="20"/>
+                                <rect key="frame" x="0.0" y="8" width="375" height="20"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abbreviation of Team Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVN-hm-qnv">
-                                <rect key="frame" x="0.0" y="84" width="414" height="20"/>
+                                <rect key="frame" x="0.0" y="92" width="375" height="20"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUt-1c-08x">
-                                <rect key="frame" x="184.5" y="28" width="45" height="48"/>
+                                <rect key="frame" x="165" y="36" width="45" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEv-pt-jVA">
-                                <rect key="frame" x="146.5" y="34" width="30" height="36"/>
+                                <rect key="frame" x="127" y="42" width="30" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="⬅️"/>
                                 <connections>
@@ -766,7 +752,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVC-kU-7LV">
-                                <rect key="frame" x="237.5" y="34" width="30" height="36"/>
+                                <rect key="frame" x="218" y="42" width="30" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="➡️"/>
                                 <connections>
@@ -774,7 +760,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4eR-Ju-cxp">
-                                <rect key="frame" x="124" y="112" width="50" height="100"/>
+                                <rect key="frame" x="104.66666666666669" y="120" width="50" height="100"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJ9-kZ-cvF">
                                         <rect key="frame" x="10" y="0.0" width="30" height="36"/>
@@ -785,7 +771,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKw-ZW-xrh">
-                                        <rect key="frame" x="12.5" y="30" width="25" height="40"/>
+                                        <rect key="frame" x="12.333333333333329" y="30" width="25" height="40"/>
                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="40"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -811,7 +797,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VbI-aw-zoY">
-                                <rect key="frame" x="182" y="112" width="50" height="100"/>
+                                <rect key="frame" x="162.66666666666666" y="120" width="50" height="100"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0f-45-t7D">
                                         <rect key="frame" x="10" y="0.0" width="30" height="36"/>
@@ -822,7 +808,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8b-iD-cw3">
-                                        <rect key="frame" x="12.5" y="30" width="25" height="40"/>
+                                        <rect key="frame" x="12.333333333333343" y="30" width="25" height="40"/>
                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="40"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -848,7 +834,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lqk-Up-8oY">
-                                <rect key="frame" x="240" y="112" width="50" height="100"/>
+                                <rect key="frame" x="220.66666666666666" y="120" width="49.999999999999972" height="100"/>
                                 <subviews>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ksl-FB-Yeg">
                                         <rect key="frame" x="10" y="0.0" width="30" height="36"/>
@@ -859,7 +845,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gt6-0G-rLO">
-                                        <rect key="frame" x="12.5" y="30" width="25" height="40"/>
+                                        <rect key="frame" x="12.333333333333343" y="30" width="25" height="40"/>
                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="40"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -888,7 +874,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="3ww-bT-b5k" firstAttribute="top" secondItem="Ohz-zp-SnZ" secondAttribute="top" id="0Qg-nd-9W3"/>
+                            <constraint firstItem="3ww-bT-b5k" firstAttribute="top" secondItem="Ohz-zp-SnZ" secondAttribute="top" constant="8" id="0Qg-nd-9W3"/>
                             <constraint firstItem="YUt-1c-08x" firstAttribute="centerX" secondItem="PUp-4r-MXy" secondAttribute="centerX" id="2ds-xW-6m3"/>
                             <constraint firstItem="VbI-aw-zoY" firstAttribute="leading" secondItem="4eR-Ju-cxp" secondAttribute="trailing" constant="8" id="4xx-pn-ZiS"/>
                             <constraint firstItem="3ww-bT-b5k" firstAttribute="leading" secondItem="Ohz-zp-SnZ" secondAttribute="leading" id="7Fe-ry-EOd"/>
@@ -932,29 +918,29 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MatchViewController" customModule="Soccer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="IVt-bf-JK8">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0'" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="of4-iX-Xmu">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9Qt-mu-jbL">
-                                        <rect key="frame" x="0.0" y="40" width="414" height="40"/>
+                                        <rect key="frame" x="0.0" y="40" width="375" height="40"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UsI-bi-Yq1">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="40"/>
                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppL-BA-BDI">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="40"/>
+                                                <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="40"/>
                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -962,16 +948,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="FMZ-wQ-VST">
-                                        <rect key="frame" x="0.0" y="80" width="414" height="40"/>
+                                        <rect key="frame" x="0.0" y="80" width="375" height="40"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWF-b7-2dL">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="40"/>
                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lda-AW-4Fn">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="40"/>
+                                                <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="40"/>
                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -984,16 +970,16 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="BQD-Or-sEl">
-                                <rect key="frame" x="0.0" y="128" width="414" height="572"/>
+                                <rect key="frame" x="0.0" y="128" width="375" height="488"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztP-sN-Vxq">
-                                        <rect key="frame" x="0.0" y="0.0" width="207" height="572"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="488"/>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NcB-Ry-EeT">
-                                        <rect key="frame" x="207" y="0.0" width="207" height="572"/>
+                                        <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="488"/>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1001,7 +987,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLo-Bh-c3q">
-                                <rect key="frame" x="0.0" y="708" width="414" height="100"/>
+                                <rect key="frame" x="0.0" y="624" width="375" height="100"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="1JJ-lc-CRK"/>
@@ -1029,6 +1015,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="nro-mM-y4J"/>
                     <connections>
                         <outlet property="btnProceed" destination="ZLo-Bh-c3q" id="jps-gn-RrW"/>
                         <outlet property="lblTime" destination="of4-iX-Xmu" id="VFg-oV-r3D"/>
@@ -1049,12 +1036,12 @@
             <objects>
                 <tableViewController id="BVx-jc-0N4" customClass="ResultTableViewController" customModule="Soccer" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="j0t-SV-JiV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mBw-gY-Dhc">
-                            <rect key="frame" x="0.0" y="121" width="414" height="44"/>
+                            <rect key="frame" x="0.0" y="121" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="30"/>
                             <state key="normal" title="Return"/>
@@ -1064,28 +1051,28 @@
                         </button>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="playerCell" textLabel="wHl-vE-llc" detailTextLabel="MXC-UU-HZG" imageView="rho-Sm-B3o" style="IBUITableViewCellStyleSubtitle" id="usD-uq-D4W">
-                                <rect key="frame" x="0.0" y="55.5" width="414" height="47.5"/>
+                                <rect key="frame" x="0.0" y="55.333332061767578" width="375" height="47.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="usD-uq-D4W" id="cxx-dC-lEZ">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="47.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="47.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="[CF]Name 300(OFF+1)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wHl-vE-llc">
-                                            <rect key="frame" x="67" y="9" width="194" height="17"/>
+                                            <rect key="frame" x="63" y="9" width="194" height="17"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="OFF:100 ORG:100 DEF:100 POT:A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MXC-UU-HZG">
-                                            <rect key="frame" x="67" y="26" width="226.5" height="13"/>
+                                            <rect key="frame" x="63.000000000000014" y="26" width="226.33333333333334" height="13"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="13"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="star-1" id="rho-Sm-B3o">
-                                            <rect key="frame" x="20" y="7.5" width="32" height="32"/>
+                                            <rect key="frame" x="16" y="7.6666666666666679" width="32" height="32"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
                                     </subviews>
@@ -1097,6 +1084,7 @@
                             <outlet property="delegate" destination="BVx-jc-0N4" id="bgJ-mo-s7I"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="53h-9p-QJV"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XGV-ey-jEn" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="28b-xr-hy8" userLabel="Exit" sceneMemberID="exit"/>
