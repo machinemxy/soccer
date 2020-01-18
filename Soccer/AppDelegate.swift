@@ -17,10 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	var window: UIWindow?
 
 
-	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Make navigation bar font green
-        UINavigationBar.appearance().tintColor = .systemGreen
-        
+	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {        
 		//get player names list
 		let names: [String] = JsonHelper.parse(jsonFileName: "names")
 		NameGenerator.names = names
@@ -44,7 +41,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //realm version
         let config = Realm.Configuration(
-            schemaVersion: 1,  //Increment this each time your schema changes
+            schemaVersion: 2,  //Increment this each time your schema changes
             migrationBlock: { migration, oldSchemaVersion in
                 if (oldSchemaVersion < 1) {
                 }

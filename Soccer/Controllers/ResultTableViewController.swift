@@ -105,20 +105,8 @@ class ResultTableViewController: UITableViewController {
 
 		//set cell
 		cell.imageView?.image = player.gradeMark
-		cell.textLabel?.text = "[\(player.position)]\(player.name) \(player.rating)\(growth)"
-		if player.verticalPosition == "GK" {
-            var detail = "LDF:\(player.ldf) CDF:\(player.cdf) RDF:\(player.rdf) POT:\(player.potentialPredict)"
-            if player.injuryTime > 0 {
-                detail += " INJ:\(player.injuryTime)"
-            }
-			cell.detailTextLabel?.text = detail
-		} else {
-            var detail = "OFF:\(player.off) ORG:\(player.org) DEF:\(player.def) POT:\(player.potentialPredict)"
-            if player.injuryTime > 0 {
-                detail += " INJ:\(player.injuryTime)"
-            }
-			cell.detailTextLabel?.text = detail
-		}
+        cell.textLabel?.text = player.brief + growth
+        cell.detailTextLabel?.text = player.detail
 
         return cell
     }

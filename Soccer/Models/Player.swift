@@ -24,6 +24,7 @@ class Player: Object {
 	@objc dynamic var rdf = 0
 	@objc dynamic var potential = 0
     @objc dynamic var injuryTime = 0
+    @objc dynamic var goal = 0
 	
 	var gradeMark: UIImage {
         if injuryTime > 0 {
@@ -101,4 +102,30 @@ class Player: Object {
 			return "A"
 		}
 	}
+    
+    var brief: String {
+        return "[\(position)]\(name) \(rating)"
+    }
+    
+    var detail: String {
+        if verticalPosition == "GK" {
+            var detail = "LDF:\(ldf) CDF:\(cdf) RDF:\(rdf) POT:\(potentialPredict)"
+            if injuryTime > 0 {
+                detail += " 🤕:\(injuryTime)"
+            } else {
+                detail += " ⚽️:\(goal)"
+            }
+            
+            return detail
+        } else {
+            var detail = "OFF:\(off) ORG:\(org) DEF:\(def) POT:\(potentialPredict)"
+            if injuryTime > 0 {
+                detail += " 🤕:\(injuryTime)"
+            } else {
+                detail += " ⚽️:\(goal)"
+            }
+            
+            return detail
+        }
+    }
 }

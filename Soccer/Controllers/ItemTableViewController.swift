@@ -16,8 +16,6 @@ class ItemTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        title = "Training Items"
 
         let realm = try! Realm()
 		items = realm.objects(TrainingItem.self).sorted(by: { (item1, item2) -> Bool in

@@ -16,8 +16,6 @@ class ExtraViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "Extra"
-        
         //if user already bought the premium manager, disable the buttom
         if UserDefaults.standard.bool(forKey: "PremiumManager") {
             btnGetPremiumManager.isEnabled = false

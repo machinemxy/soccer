@@ -2,13 +2,12 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zsi-wg-QOR">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
+        <!--Light Football Manager-->
         <scene sceneID="Qk8-Hs-wzG">
             <objects>
                 <viewController id="F8c-IG-juI" customClass="MainViewController" customModule="Soccer" customModuleProvider="target" sceneMemberID="viewController">
@@ -67,7 +66,7 @@
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <state key="normal" title="Team Manage"/>
                                 <connections>
-                                    <segue destination="Ri6-Gy-tlw" kind="show" identifier="toTeamFromMain" id="uzA-zQ-KVm"/>
+                                    <segue destination="af3-lB-vGx" kind="show" identifier="toTeamFromMain" id="uzA-zQ-KVm"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -93,7 +92,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Hax-Rs-exm"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Or3-xX-cBf"/>
+                    <navigationItem key="navigationItem" title="Light Football Manager" id="Or3-xX-cBf"/>
                     <connections>
                         <outlet property="btnExtra" destination="04z-id-L9v" id="Mlc-Sx-UIp"/>
                         <outlet property="btnNextGame" destination="bAc-lK-KDo" id="nfd-R3-GU7"/>
@@ -108,7 +107,7 @@
             </objects>
             <point key="canvasLocation" x="-1255" y="131"/>
         </scene>
-        <!--Extra View Controller-->
+        <!--Extra-->
         <scene sceneID="5dG-po-2on">
             <objects>
                 <viewController id="j2S-JQ-Vnn" customClass="ExtraViewController" customModule="Soccer" customModuleProvider="target" sceneMemberID="viewController">
@@ -173,7 +172,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="f7E-OC-qaa"/>
                     </view>
-                    <navigationItem key="navigationItem" id="57z-Kh-MpO"/>
+                    <navigationItem key="navigationItem" title="Extra" id="57z-Kh-MpO"/>
                     <connections>
                         <outlet property="btnGetPremiumManager" destination="nnu-hD-g9K" id="ZGF-d4-NOO"/>
                         <outlet property="btnRestorePurchase" destination="xE2-lq-vLa" id="EnY-h3-atC"/>
@@ -183,7 +182,7 @@
             </objects>
             <point key="canvasLocation" x="-1255" y="852"/>
         </scene>
-        <!--Team Table View Controller-->
+        <!--Members-->
         <scene sceneID="njM-ZZ-c2H">
             <objects>
                 <tableViewController id="Ri6-Gy-tlw" customClass="TeamTableViewController" customModule="Soccer" customModuleProvider="target" sceneMemberID="viewController">
@@ -194,28 +193,28 @@
                         <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="playerCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="playerCell" textLabel="Mh5-pE-3Eu" detailTextLabel="Dv8-h7-cbC" imageView="1Or-Hl-Wtu" style="IBUITableViewCellStyleSubtitle" id="CtD-gk-Jgs">
-                                <rect key="frame" x="0.0" y="55.333332061767578" width="375" height="47.666667938232422"/>
+                                <rect key="frame" x="0.0" y="55.333332061767578" width="375" height="60.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CtD-gk-Jgs" id="zsr-d7-SAM">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="47.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="60.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="[CF]Name 300" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mh5-pE-3Eu">
-                                            <rect key="frame" x="63.000000000000007" y="9" width="122.66666666666667" height="17"/>
+                                            <rect key="frame" x="62.999999999999993" y="8.9999999999999982" width="118.33333333333333" height="20.333333333333332"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="OFF:100 ORG:100 DEF:100 POT:A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Dv8-h7-cbC">
-                                            <rect key="frame" x="63.000000000000014" y="26" width="226.33333333333334" height="13"/>
+                                            <rect key="frame" x="63" y="32.333333333333329" width="231" height="18"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="13"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="star-1" id="1Or-Hl-Wtu">
-                                            <rect key="frame" x="16" y="7.6666666666666679" width="32" height="32"/>
+                                            <rect key="frame" x="16" y="14.333333333333336" width="32" height="32"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
                                     </subviews>
@@ -227,6 +226,7 @@
                             <outlet property="delegate" destination="Ri6-Gy-tlw" id="HRG-AQ-FDn"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Members" image="person.3" catalog="system" id="oVq-NW-FA8"/>
                     <navigationItem key="navigationItem" id="FAq-va-83G"/>
                     <connections>
                         <segue destination="rZ1-wb-Ivb" kind="show" identifier="toItemFromTeam" id="Jzu-pU-lrw"/>
@@ -234,9 +234,69 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jPU-1x-Rnq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-430" y="131"/>
+            <point key="canvasLocation" x="348" y="131"/>
         </scene>
-        <!--Item Table View Controller-->
+        <!--Preview-->
+        <scene sceneID="W14-aa-2cz">
+            <objects>
+                <viewController id="jQ9-1A-HFd" customClass="TeamPreviewViewController" customModule="Soccer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9qf-nu-o3X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B04-0m-hJq">
+                                <rect key="frame" x="163.66666666666666" y="691" width="48" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="zXr-DX-Er7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="m2u-B0-7xv">
+                                <rect key="frame" x="8" y="96" width="359" height="587"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLC-s3-94F">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="293.66666666666669"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <string key="text">First row shows the offense abilities of left, center and right sides.
+Seconde row shows the organization abilities of left, center and right sides. 
+Third row shows the defence abilities of left, center and right sides.
+The overall ability is shown beside the team name.</string>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Emj-hR-UgP" customClass="TeamPreviewView" customModule="Soccer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="293.66666666666674" width="359" height="293.33333333333326"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="m2u-B0-7xv" firstAttribute="top" secondItem="PEc-Yd-6Qc" secondAttribute="top" constant="8" id="K2J-fS-lf4"/>
+                            <constraint firstItem="PEc-Yd-6Qc" firstAttribute="bottom" secondItem="B04-0m-hJq" secondAttribute="bottom" constant="8" id="KKk-yb-rlY"/>
+                            <constraint firstItem="B04-0m-hJq" firstAttribute="centerX" secondItem="9qf-nu-o3X" secondAttribute="centerX" id="dss-Bo-WcF"/>
+                            <constraint firstItem="m2u-B0-7xv" firstAttribute="trailing" secondItem="PEc-Yd-6Qc" secondAttribute="trailing" constant="-8" id="g3Q-de-0xr"/>
+                            <constraint firstItem="B04-0m-hJq" firstAttribute="top" secondItem="m2u-B0-7xv" secondAttribute="bottom" constant="8" id="iWQ-D7-WlF"/>
+                            <constraint firstItem="m2u-B0-7xv" firstAttribute="leading" secondItem="PEc-Yd-6Qc" secondAttribute="leading" constant="8" id="rfZ-fT-FJ4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PEc-Yd-6Qc"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Preview" image="chart.bar" catalog="system" id="xQh-Ez-vkC"/>
+                    <navigationItem key="navigationItem" id="Nru-QB-Keb"/>
+                    <connections>
+                        <outlet property="lblTeam" destination="B04-0m-hJq" id="COs-3o-9dl"/>
+                        <outlet property="teamPreviewView" destination="Emj-hR-UgP" id="EmH-52-mfg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="egv-Sj-9Dq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-431.19999999999999" y="851.97044334975374"/>
+        </scene>
+        <!--Trainiing Items-->
         <scene sceneID="7oe-f0-GR8">
             <objects>
                 <tableViewController id="rZ1-wb-Ivb" customClass="ItemTableViewController" customModule="Soccer" customModuleProvider="target" sceneMemberID="viewController">
@@ -256,7 +316,7 @@
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YTb-zl-V67">
                                             <rect key="frame" x="63" y="0.0" width="296" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -273,7 +333,7 @@
                             <outlet property="delegate" destination="rZ1-wb-Ivb" id="VaX-hR-qG9"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Kk8-I0-bSU"/>
+                    <navigationItem key="navigationItem" title="Trainiing Items" id="Kk8-I0-bSU"/>
                     <connections>
                         <segue destination="xdD-r4-ukj" kind="unwind" identifier="unwindToTeamFromItem" unwindAction="unwindToTeamWithSegue:" id="iSa-aQ-InS"/>
                     </connections>
@@ -281,7 +341,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNd-g4-Byv" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="xdD-r4-ukj" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="348" y="131"/>
+            <point key="canvasLocation" x="1140" y="131"/>
         </scene>
         <!--Preview View Controller-->
         <scene sceneID="Wfs-rV-ltr">
@@ -296,7 +356,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="NoU-Yz-Gke"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -305,7 +365,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="IWu-OU-ZBv"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -323,13 +383,13 @@
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RDF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l79-Lb-ufc">
                                                                 <rect key="frame" x="0.0" y="0.0" width="125" height="79"/>
-                                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CDF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGN-bU-Fyd">
                                                                 <rect key="frame" x="125" y="0.0" width="125" height="79"/>
-                                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                                 <userDefinedRuntimeAttributes>
@@ -343,7 +403,7 @@
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LDF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHq-e6-DFX">
                                                                 <rect key="frame" x="250" y="0.0" width="125" height="79"/>
-                                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -592,7 +652,7 @@
             </objects>
             <point key="canvasLocation" x="-429" y="-582"/>
         </scene>
-        <!--Team Name Choose View Controller-->
+        <!--Create Team-->
         <scene sceneID="c78-j7-X1s">
             <objects>
                 <viewController id="IdI-JN-Zrx" customClass="TeamNameChooseViewController" customModule="Soccer" customModuleProvider="target" sceneMemberID="viewController">
@@ -800,7 +860,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ohz-zp-SnZ"/>
                     </view>
-                    <navigationItem key="navigationItem" id="pgv-ap-829"/>
+                    <navigationItem key="navigationItem" title="Create Team" id="pgv-ap-829"/>
                     <connections>
                         <outlet property="lblBadge" destination="YUt-1c-08x" id="1H2-Mu-qE2"/>
                         <outletCollection property="lblLetters" destination="dKw-ZW-xrh" collectionClass="NSMutableArray" id="jbV-0u-Mep"/>
@@ -999,6 +1059,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PCm-Gr-Cna">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1009,8 +1070,31 @@
             </objects>
             <point key="canvasLocation" x="-2063" y="131"/>
         </scene>
+        <!--Team-->
+        <scene sceneID="bFB-zm-IQP">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="af3-lB-vGx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Team" id="OKK-w3-gHu"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="V2V-fi-XGz">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Ri6-Gy-tlw" kind="relationship" relationship="viewControllers" id="oV7-Ps-xFw"/>
+                        <segue destination="jQ9-1A-HFd" kind="relationship" relationship="viewControllers" id="llf-c0-vQh"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bKh-RV-vU6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-431.19999999999999" y="130.78817733990149"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="chart.bar" catalog="system" width="64" height="44"/>
+        <image name="person.3" catalog="system" width="72" height="35"/>
         <image name="star-1" width="32" height="32"/>
     </resources>
 </document>

@@ -22,8 +22,6 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        title = "Light Football Manager"
 
 		//try to get the gameData
 		let realm = try! Realm()

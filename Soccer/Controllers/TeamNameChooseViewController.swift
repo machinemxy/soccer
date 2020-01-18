@@ -16,8 +16,6 @@ class TeamNameChooseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        title = "Create Team"
     }
     
     var badgeIndex = 0 {
