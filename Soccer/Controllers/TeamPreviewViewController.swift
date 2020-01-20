@@ -29,9 +29,7 @@ class TeamPreviewViewController: UIViewController {
         super.viewWillAppear(animated)
         
         let realm = try! Realm()
-        let players = realm.objects(Player.self).filter("inLineUp = true").sorted(by: { (p1, p2) -> Bool in
-            return p1.positionOrder < p2.positionOrder
-        })
+        let players = Player.getLineup(realm: realm)
         team = Team(teamName: teamName, players: players)
         lblTeam.text = team?.teamDisp
         

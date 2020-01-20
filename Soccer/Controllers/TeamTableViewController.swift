@@ -106,12 +106,8 @@ class TeamTableViewController: UITableViewController {
 	//private
 	private func setLineUpAndSub() {
 		let realm = try! Realm()
-		lineUp = realm.objects(Player.self).filter("inLineUp = true").sorted(by: { (p1, p2) -> Bool in
-			return p1.positionOrder < p2.positionOrder
-		})
-		sub = realm.objects(Player.self).filter("inLineUp = false").sorted(by: { (p1, p2) -> Bool in
-			return p1.rating > p2.rating
-		})
+        lineUp = Player.getLineup(realm: realm)
+        sub = Player.getSub(realm: realm)
 	}
 	
 	private func getPlayer(indexPath: IndexPath) -> Player {

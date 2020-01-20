@@ -109,23 +109,31 @@ class Player: Object {
     
     var detail: String {
         if verticalPosition == "GK" {
-            var detail = "LDF:\(ldf) CDF:\(cdf) RDF:\(rdf) POT:\(potentialPredict)"
+            var detail = "LDF:\(ldf) CDF:\(cdf) RDF:\(rdf) POT:\(potentialPredict) ⚽️:\(goal)"
             if injuryTime > 0 {
                 detail += " 🤕:\(injuryTime)"
-            } else {
-                detail += " ⚽️:\(goal)"
             }
             
             return detail
         } else {
-            var detail = "OFF:\(off) ORG:\(org) DEF:\(def) POT:\(potentialPredict)"
+            var detail = "OFF:\(off) ORG:\(org) DEF:\(def) POT:\(potentialPredict) ⚽️:\(goal)"
             if injuryTime > 0 {
                 detail += " 🤕:\(injuryTime)"
-            } else {
-                detail += " ⚽️:\(goal)"
             }
             
             return detail
         }
+    }
+    
+    static func getLineup(realm: Realm) -> [Player] {
+        return realm.objects(Player.self).filter("inLineUp = true").sorted(by: { (p1, p2) -> Bool in
+            return p1.positionOrder < p2.positionOrder
+        })
+    }
+    
+    static func getSub(realm: Realm) -> [Player] {
+        return realm.objects(Player.self).filter("inLineUp = false").sorted(by: { (p1, p2) -> Bool in
+            return p1.rating > p2.rating
+        })
     }
 }

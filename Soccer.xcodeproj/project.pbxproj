@@ -15,7 +15,6 @@
 		2207E7EE20F86E8B0045C9D6 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207E7ED20F86E8B0045C9D6 /* UIViewControllerExtension.swift */; };
 		2207E7F420F8E1900045C9D6 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2207E7F320F8E1900045C9D6 /* StoreKit.framework */; };
 		2216B56120E8BA7E003B2854 /* ItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2216B56020E8BA7E003B2854 /* ItemTableViewController.swift */; };
-		2216B56320F093A5003B2854 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2216B56220F093A5003B2854 /* PreviewViewController.swift */; };
 		2216B56520F4EDB9003B2854 /* ResultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2216B56420F4EDB9003B2854 /* ResultTableViewController.swift */; };
 		222BDEDF232D20710036D575 /* NextEnemyTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222BDEDE232D20710036D575 /* NextEnemyTeam.swift */; };
 		2233ADBB20CE5B1D00659178 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233ADBA20CE5B1D00659178 /* AppDelegate.swift */; };
@@ -43,6 +42,7 @@
 		22AE0C4723D33426001DFA8A /* TeamPreviewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22AE0C4623D33426001DFA8A /* TeamPreviewView.xib */; };
 		22AE0C4923D33918001DFA8A /* TeamPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AE0C4823D33918001DFA8A /* TeamPreviewViewController.swift */; };
 		22AE0C4B23D346DA001DFA8A /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AE0C4A23D346DA001DFA8A /* Team.swift */; };
+		22AE0C4D23D5F0B6001DFA8A /* MatchPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AE0C4C23D5F0B6001DFA8A /* MatchPreviewViewController.swift */; };
 		22B3065F20FB95F800562852 /* SwiftyStoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B3065E20FB95F800562852 /* SwiftyStoreKit.framework */; };
 		22B3066120FC7F9A00562852 /* ExtraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B3066020FC7F9A00562852 /* ExtraViewController.swift */; };
 		22C0D0F820E75C3D00D7ECEE /* TrainingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C0D0F720E75C3D00D7ECEE /* TrainingItem.swift */; };
@@ -70,7 +70,6 @@
 		2207E7ED20F86E8B0045C9D6 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		2207E7F320F8E1900045C9D6 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		2216B56020E8BA7E003B2854 /* ItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewController.swift; sourceTree = "<group>"; };
-		2216B56220F093A5003B2854 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 		2216B56420F4EDB9003B2854 /* ResultTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewController.swift; sourceTree = "<group>"; };
 		222BDEDE232D20710036D575 /* NextEnemyTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextEnemyTeam.swift; sourceTree = "<group>"; };
 		2233ADB720CE5B1D00659178 /* Soccer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soccer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +97,7 @@
 		22AE0C4623D33426001DFA8A /* TeamPreviewView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamPreviewView.xib; sourceTree = "<group>"; };
 		22AE0C4823D33918001DFA8A /* TeamPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamPreviewViewController.swift; sourceTree = "<group>"; };
 		22AE0C4A23D346DA001DFA8A /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		22AE0C4C23D5F0B6001DFA8A /* MatchPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchPreviewViewController.swift; sourceTree = "<group>"; };
 		22B3065E20FB95F800562852 /* SwiftyStoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyStoreKit.framework; path = Carthage/Build/iOS/SwiftyStoreKit.framework; sourceTree = "<group>"; };
 		22B3066020FC7F9A00562852 /* ExtraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraViewController.swift; sourceTree = "<group>"; };
 		22C0D0F720E75C3D00D7ECEE /* TrainingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingItem.swift; sourceTree = "<group>"; };
@@ -183,10 +183,10 @@
 				223C170B20E1389900F36C6E /* TeamTableViewController.swift */,
 				22AE0C4823D33918001DFA8A /* TeamPreviewViewController.swift */,
 				2216B56020E8BA7E003B2854 /* ItemTableViewController.swift */,
-				2216B56220F093A5003B2854 /* PreviewViewController.swift */,
+				22B3066020FC7F9A00562852 /* ExtraViewController.swift */,
+				22AE0C4C23D5F0B6001DFA8A /* MatchPreviewViewController.swift */,
 				2233ADCD20D00B0400659178 /* MatchViewController.swift */,
 				2216B56420F4EDB9003B2854 /* ResultTableViewController.swift */,
-				22B3066020FC7F9A00562852 /* ExtraViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -415,7 +415,6 @@
 				222BDEDF232D20710036D575 /* NextEnemyTeam.swift in Sources */,
 				223C170820DF565900F36C6E /* ArrayExtension.swift in Sources */,
 				22AE0C4523D33405001DFA8A /* TeamPreviewView.swift in Sources */,
-				2216B56320F093A5003B2854 /* PreviewViewController.swift in Sources */,
 				223C16F920D8116000F36C6E /* Player.swift in Sources */,
 				2233ADCE20D00B0400659178 /* MatchViewController.swift in Sources */,
 				2207DF4920D2B1A100D5E706 /* TeamNameChooseViewController.swift in Sources */,
@@ -430,6 +429,7 @@
 				2207DF4520D2A84800D5E706 /* TeamNameGenerator.swift in Sources */,
 				22C0D0FA20E76C6C00D7ECEE /* UIViewExtension.swift in Sources */,
 				2233ADD120D0100000659178 /* Ability.swift in Sources */,
+				22AE0C4D23D5F0B6001DFA8A /* MatchPreviewViewController.swift in Sources */,
 				2207DF4B20D2B96200D5E706 /* GameData.swift in Sources */,
 				223C16FE20DBF28B00F36C6E /* JsonHelper.swift in Sources */,
 				2233ADBB20CE5B1D00659178 /* AppDelegate.swift in Sources */,

@@ -39,7 +39,9 @@ class MainViewController: UIViewController {
 		case "Create Team":
 			performSegue(withIdentifier: "toTeamNameChooseFromMain", sender: nil)
 		case "Next Game":
-			performSegue(withIdentifier: "toPreviewFromMain", sender: nil)
+            presentWithFullScreen(storyboardId: "preview") { (_) -> ()? in
+                nil
+            }
 		case "Next Season":
 			nextSeason()
 		default:
