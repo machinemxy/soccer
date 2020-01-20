@@ -16,14 +16,12 @@
 		2207E7F420F8E1900045C9D6 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2207E7F320F8E1900045C9D6 /* StoreKit.framework */; };
 		2216B56120E8BA7E003B2854 /* ItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2216B56020E8BA7E003B2854 /* ItemTableViewController.swift */; };
 		2216B56520F4EDB9003B2854 /* ResultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2216B56420F4EDB9003B2854 /* ResultTableViewController.swift */; };
-		222BDEDF232D20710036D575 /* NextEnemyTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222BDEDE232D20710036D575 /* NextEnemyTeam.swift */; };
 		2233ADBB20CE5B1D00659178 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233ADBA20CE5B1D00659178 /* AppDelegate.swift */; };
 		2233ADC020CE5B1D00659178 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2233ADBE20CE5B1D00659178 /* Main.storyboard */; };
 		2233ADC220CE5B1E00659178 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2233ADC120CE5B1E00659178 /* Assets.xcassets */; };
 		2233ADC520CE5B1E00659178 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2233ADC320CE5B1E00659178 /* LaunchScreen.storyboard */; };
 		2233ADCE20D00B0400659178 /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233ADCD20D00B0400659178 /* MatchViewController.swift */; };
 		2233ADD120D0100000659178 /* Ability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233ADD020D0100000659178 /* Ability.swift */; };
-		2233ADD320D0106400659178 /* Side.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233ADD220D0106400659178 /* Side.swift */; };
 		2233ADD920D1551200659178 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233ADD820D1551200659178 /* IntExtension.swift */; };
 		223C16F420D54FFE00F36C6E /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223C16F220D54FFE00F36C6E /* RealmSwift.framework */; };
 		223C16F520D54FFE00F36C6E /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223C16F320D54FFE00F36C6E /* Realm.framework */; };
@@ -46,7 +44,6 @@
 		22B3065F20FB95F800562852 /* SwiftyStoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B3065E20FB95F800562852 /* SwiftyStoreKit.framework */; };
 		22B3066120FC7F9A00562852 /* ExtraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B3066020FC7F9A00562852 /* ExtraViewController.swift */; };
 		22C0D0F820E75C3D00D7ECEE /* TrainingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C0D0F720E75C3D00D7ECEE /* TrainingItem.swift */; };
-		22C0D0FA20E76C6C00D7ECEE /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C0D0F920E76C6C00D7ECEE /* UIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +68,6 @@
 		2207E7F320F8E1900045C9D6 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		2216B56020E8BA7E003B2854 /* ItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewController.swift; sourceTree = "<group>"; };
 		2216B56420F4EDB9003B2854 /* ResultTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewController.swift; sourceTree = "<group>"; };
-		222BDEDE232D20710036D575 /* NextEnemyTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextEnemyTeam.swift; sourceTree = "<group>"; };
 		2233ADB720CE5B1D00659178 /* Soccer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soccer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2233ADBA20CE5B1D00659178 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2233ADBF20CE5B1D00659178 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -80,7 +76,6 @@
 		2233ADC620CE5B1E00659178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2233ADCD20D00B0400659178 /* MatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViewController.swift; sourceTree = "<group>"; };
 		2233ADD020D0100000659178 /* Ability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ability.swift; sourceTree = "<group>"; };
-		2233ADD220D0106400659178 /* Side.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Side.swift; sourceTree = "<group>"; };
 		2233ADD820D1551200659178 /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
 		223C16F220D54FFE00F36C6E /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		223C16F320D54FFE00F36C6E /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
@@ -101,7 +96,6 @@
 		22B3065E20FB95F800562852 /* SwiftyStoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyStoreKit.framework; path = Carthage/Build/iOS/SwiftyStoreKit.framework; sourceTree = "<group>"; };
 		22B3066020FC7F9A00562852 /* ExtraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraViewController.swift; sourceTree = "<group>"; };
 		22C0D0F720E75C3D00D7ECEE /* TrainingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingItem.swift; sourceTree = "<group>"; };
-		22C0D0F920E76C6C00D7ECEE /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,11 +189,9 @@
 			isa = PBXGroup;
 			children = (
 				2233ADD020D0100000659178 /* Ability.swift */,
-				2233ADD220D0106400659178 /* Side.swift */,
 				2207DF4A20D2B96200D5E706 /* GameData.swift */,
 				223C16F820D8116000F36C6E /* Player.swift */,
 				22C0D0F720E75C3D00D7ECEE /* TrainingItem.swift */,
-				222BDEDE232D20710036D575 /* NextEnemyTeam.swift */,
 				22AE0C4A23D346DA001DFA8A /* Team.swift */,
 			);
 			path = Models;
@@ -210,7 +202,6 @@
 			children = (
 				2233ADD820D1551200659178 /* IntExtension.swift */,
 				223C170720DF565900F36C6E /* ArrayExtension.swift */,
-				22C0D0F920E76C6C00D7ECEE /* UIViewExtension.swift */,
 				2207E7ED20F86E8B0045C9D6 /* UIViewControllerExtension.swift */,
 				223C16FD20DBF28B00F36C6E /* JsonHelper.swift */,
 				2207DF4420D2A84800D5E706 /* TeamNameGenerator.swift */,
@@ -412,7 +403,6 @@
 				22B3066120FC7F9A00562852 /* ExtraViewController.swift in Sources */,
 				22C0D0F820E75C3D00D7ECEE /* TrainingItem.swift in Sources */,
 				22AE0C4B23D346DA001DFA8A /* Team.swift in Sources */,
-				222BDEDF232D20710036D575 /* NextEnemyTeam.swift in Sources */,
 				223C170820DF565900F36C6E /* ArrayExtension.swift in Sources */,
 				22AE0C4523D33405001DFA8A /* TeamPreviewView.swift in Sources */,
 				223C16F920D8116000F36C6E /* Player.swift in Sources */,
@@ -420,14 +410,12 @@
 				2207DF4920D2B1A100D5E706 /* TeamNameChooseViewController.swift in Sources */,
 				2233ADD920D1551200659178 /* IntExtension.swift in Sources */,
 				223C170C20E1389900F36C6E /* TeamTableViewController.swift in Sources */,
-				2233ADD320D0106400659178 /* Side.swift in Sources */,
 				2216B56120E8BA7E003B2854 /* ItemTableViewController.swift in Sources */,
 				2216B56520F4EDB9003B2854 /* ResultTableViewController.swift in Sources */,
 				223C170620DD272D00F36C6E /* PlayerGenerator.swift in Sources */,
 				22AE0C4923D33918001DFA8A /* TeamPreviewViewController.swift in Sources */,
 				223C170020DBF4B200F36C6E /* NameGenerator.swift in Sources */,
 				2207DF4520D2A84800D5E706 /* TeamNameGenerator.swift in Sources */,
-				22C0D0FA20E76C6C00D7ECEE /* UIViewExtension.swift in Sources */,
 				2233ADD120D0100000659178 /* Ability.swift in Sources */,
 				22AE0C4D23D5F0B6001DFA8A /* MatchPreviewViewController.swift in Sources */,
 				2207DF4B20D2B96200D5E706 /* GameData.swift in Sources */,

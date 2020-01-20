@@ -51,4 +51,35 @@ struct Team {
     var teamDisp: String {
         return "\(teamName)(\(overall))"
     }
+    
+    func getPlayerWhoGoaled(side: Int) -> Player? {
+        var restOffPower = Int(randomBelow: abilities[side].off)
+        let sidePlayers = getPlayersBySide(side: side)
+        for player in sidePlayers {
+            if restOffPower < player.off {
+                return player
+            } else {
+                restOffPower -= player.off
+            }
+        }
+        
+        return nil
+    }
+    
+    private func getPlayersBySide(side: Int) -> [Player] {
+        switch side {
+        case 0:
+            return players.filter { (p) -> Bool in
+                p.horizonPosition == "L"
+            }
+        case 1:
+            return players.filter { (p) -> Bool in
+                p.horizonPosition == "C"
+            }
+        default:
+            return players.filter { (p) -> Bool in
+                p.horizonPosition == "R"
+            }
+        }
+    }
 }

@@ -645,7 +645,7 @@ The overall ability is shown beside the team name.</string>
         <!--Match View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MatchViewController" customModule="Soccer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="match" id="BYZ-38-t0r" customClass="MatchViewController" customModule="Soccer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -655,7 +655,7 @@ The overall ability is shown beside the team name.</string>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0'" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="of4-iX-Xmu">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
-                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -664,13 +664,13 @@ The overall ability is shown beside the team name.</string>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UsI-bi-Yq1">
                                                 <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="40"/>
-                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppL-BA-BDI">
                                                 <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="40"/>
-                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -681,13 +681,13 @@ The overall ability is shown beside the team name.</string>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWF-b7-2dL">
                                                 <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="40"/>
-                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lda-AW-4Fn">
                                                 <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="40"/>
-                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -699,33 +699,30 @@ The overall ability is shown beside the team name.</string>
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="BQD-Or-sEl">
-                                <rect key="frame" x="0.0" y="172" width="375" height="498"/>
+                                <rect key="frame" x="0.0" y="172" width="375" height="528"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztP-sN-Vxq">
-                                        <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="498"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="528"/>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NcB-Ry-EeT">
-                                        <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="498"/>
+                                        <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="528"/>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLo-Bh-c3q">
-                                <rect key="frame" x="0.0" y="678" width="375" height="100"/>
+                                <rect key="frame" x="0.0" y="708" width="375" height="70"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="1JJ-lc-CRK"/>
+                                    <constraint firstAttribute="height" constant="70" id="1JJ-lc-CRK"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="30"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <state key="normal" title="Proceed"/>
-                                <connections>
-                                    <segue destination="BVx-jc-0N4" kind="show" identifier="toResultFromMatch" id="uo2-ON-Vsy"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -758,14 +755,14 @@ The overall ability is shown beside the team name.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="340" y="-1332"/>
+            <point key="canvasLocation" x="348" y="-582"/>
         </scene>
         <!--Result Table View Controller-->
         <scene sceneID="NgD-nC-gUn">
             <objects>
                 <tableViewController id="BVx-jc-0N4" customClass="ResultTableViewController" customModule="Soccer" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="j0t-SV-JiV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

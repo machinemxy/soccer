@@ -39,8 +39,21 @@ class MainViewController: UIViewController {
 		case "Create Team":
 			performSegue(withIdentifier: "toTeamNameChooseFromMain", sender: nil)
 		case "Next Game":
-            presentWithFullScreen(storyboardId: "preview") { (_) -> ()? in
-                nil
+            let realm = try! Realm()
+            let countOfPlayer = realm.objects(Player.self).filter { (p) -> Bool in
+                p.inLineUp
+            }.count
+            if countOfPlayer < 11 {
+                let alert = UIAlertController(title: "Warning", message: "Your lineup has less than 11 players. Are you sure?", preferredStyle: .alert)
+                let yes = UIAlertAction(title: "Yes", style: .default) { (_) in
+                    self.presentWithFullScreen(storyboardId: "preview", handler: nil)
+                }
+                let no = UIAlertAction(title: "No", style: .default, handler: nil)
+                alert.addAction(yes)
+                alert.addAction(no)
+                present(alert, animated: true)
+            } else {
+                presentWithFullScreen(storyboardId: "preview", handler: nil)
             }
 		case "Next Season":
 			nextSeason()

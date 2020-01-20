@@ -41,6 +41,19 @@ class MatchPreviewViewController: UIViewController {
     }
     
     @IBAction func startMatch(_ sender: Any) {
+        //week + 1
+        let realm = try! Realm()
+        let gameData = realm.objects(GameData.self).first!
+        try! realm.write {
+            gameData.week += 1
+        }
+        
+        // show match view
+        presentWithFullScreen(storyboardId: "match") { (matchView: MatchViewController) -> Void in
+            let myTeam = self.myTeamPreviewView.team!
+            let enemyTeam = self.enemyTeamPreviewView.team!
+            matchView.teams = [myTeam, enemyTeam]
+        }
     }
     
 }

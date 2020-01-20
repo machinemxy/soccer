@@ -11,8 +11,8 @@ import Foundation
 class JsonHelper {
 	static func parse<T: Codable>(jsonFileName: String) -> T {
 		let jsonDecoder = JSONDecoder()
-		let tornamentsFile = Bundle.main.path(forResource: jsonFileName, ofType: "json")
-		let data = try! Data(contentsOf: URL(fileURLWithPath: tornamentsFile!))
+		let file = Bundle.main.path(forResource: jsonFileName, ofType: "json")
+		let data = try! Data(contentsOf: URL(fileURLWithPath: file!))
 		return try! jsonDecoder.decode(T.self, from: data)
 	}
 }

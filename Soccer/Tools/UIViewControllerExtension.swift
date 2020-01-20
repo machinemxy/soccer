@@ -18,13 +18,13 @@ extension UIViewController {
 		self.present(alertController, animated: true, completion: nil)
 	}
     
-    func presentWithFullScreen<T: UIViewController>(storyboardId: String, handler: @escaping (T)->()?){
-        DispatchQueue.main.async {
-            let vc = self.storyboard?.instantiateViewController(identifier: storyboardId) as! T
-            handler(vc)
-            vc.modalPresentationStyle = .overFullScreen
-            vc.modalTransitionStyle = .coverVertical
-            self.present(vc, animated: true)
+    func presentWithFullScreen<T: UIViewController>(storyboardId: String, handler: ((T) -> Void)?){
+        let vc = self.storyboard?.instantiateViewController(identifier: storyboardId) as! T
+        if let wrappedHandler = handler {
+            wrappedHandler(vc)
         }
+        vc.modalPresentationStyle = .overFullScreen
+        vc.modalTransitionStyle = .coverVertical
+        self.present(vc, animated: true)
     }
 }
