@@ -48,30 +48,29 @@ class MatchViewController: UIViewController {
             self.proceed()
         })
     }
-    
-    // MARK: - Navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "toResultFromMatch" {
-//            let realm = try! Realm()
-//            let gameData = realm.objects(GameData.self).first!
-//            try! realm.write {
-//                //judge match result
-//                if sides[0].score > sides[1].score {
-//                    gameData.win += 1
-//                } else if sides[0].score == sides[1].score {
-//                    gameData.draw += 1
-//                } else {
-//                    gameData.lose += 1
-//                }
-//
-//                //add scout
-//                if UserDefaults.standard.bool(forKey: "PremiumManager") {
-//                    gameData.scout += 1
-//                } else if gameData.week % 2 == 1 {
-//                    gameData.scout += 1
-//                }
-//            }
-//        }
+    @IBAction func showResult(_ sender: Any) {
+        let realm = try! Realm()
+        let gameData = realm.objects(GameData.self).first!
+        try! realm.write {
+            //judge match result
+            if scores[0] > scores[1] {
+                gameData.win += 1
+            } else if scores[0] == scores[1] {
+                gameData.draw += 1
+            } else {
+                gameData.lose += 1
+            }
+
+            //add scout
+            if UserDefaults.standard.bool(forKey: "PremiumManager") {
+                gameData.scout += 1
+            } else if gameData.week % 2 == 1 {
+                gameData.scout += 1
+            }
+        }
+        
+        // show result view
+        presentWithFullScreen(storyboardId: "result", handler: nil)
     }
     
 	private func proceed() {

@@ -259,7 +259,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="359" height="293.66666666666669"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <string key="text">First row shows the offense abilities of left, center and right sides.
-Seconde row shows the organization abilities of left, center and right sides. 
+Second row shows the organization abilities of left, center and right sides. 
 Third row shows the defence abilities of left, center and right sides.
 The overall ability is shown beside the team name.</string>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -704,13 +704,13 @@ The overall ability is shown beside the team name.</string>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztP-sN-Vxq">
                                         <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="528"/>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NcB-Ry-EeT">
                                         <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="528"/>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
@@ -723,6 +723,9 @@ The overall ability is shown beside the team name.</string>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <state key="normal" title="Proceed"/>
+                                <connections>
+                                    <action selector="showResult:" destination="BYZ-38-t0r" eventType="touchUpInside" id="arr-yF-d8u"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -760,16 +763,16 @@ The overall ability is shown beside the team name.</string>
         <!--Result Table View Controller-->
         <scene sceneID="NgD-nC-gUn">
             <objects>
-                <tableViewController id="BVx-jc-0N4" customClass="ResultTableViewController" customModule="Soccer" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="result" id="BVx-jc-0N4" customClass="ResultTableViewController" customModule="Soccer" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="j0t-SV-JiV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mBw-gY-Dhc">
-                            <rect key="frame" x="0.0" y="121" width="375" height="44"/>
+                            <rect key="frame" x="0.0" y="132" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="30"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                             <state key="normal" title="Return"/>
                             <connections>
                                 <segue destination="28b-xr-hy8" kind="unwind" identifier="unwindToMainFromResult" unwindAction="unwindToMainWithSegue:" id="cUV-dP-Fxf"/>
@@ -777,28 +780,28 @@ The overall ability is shown beside the team name.</string>
                         </button>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="playerCell" textLabel="wHl-vE-llc" detailTextLabel="MXC-UU-HZG" imageView="rho-Sm-B3o" style="IBUITableViewCellStyleSubtitle" id="usD-uq-D4W">
-                                <rect key="frame" x="0.0" y="55.333332061767578" width="375" height="47.666667938232422"/>
+                                <rect key="frame" x="0.0" y="55.333332061767578" width="375" height="58.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="usD-uq-D4W" id="cxx-dC-lEZ">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="47.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="58.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="[CF]Name 300(OFF+1)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wHl-vE-llc">
-                                            <rect key="frame" x="63" y="9" width="194" height="17"/>
+                                            <rect key="frame" x="62.999999999999986" y="8.9999999999999982" width="182.66666666666666" height="20.333333333333332"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="OFF:100 ORG:100 DEF:100 POT:A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MXC-UU-HZG">
-                                            <rect key="frame" x="63.000000000000014" y="26" width="226.33333333333334" height="13"/>
+                                            <rect key="frame" x="63" y="32.333333333333329" width="204" height="15.666666666666666"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="13"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="star-1" id="rho-Sm-B3o">
-                                            <rect key="frame" x="16" y="7.6666666666666679" width="32" height="32"/>
+                                            <rect key="frame" x="16" y="13.333333333333336" width="32" height="32"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
                                     </subviews>
@@ -815,7 +818,7 @@ The overall ability is shown beside the team name.</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XGV-ey-jEn" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="28b-xr-hy8" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1132" y="-1332"/>
+            <point key="canvasLocation" x="1140" y="-582"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="o0e-7j-aIO">

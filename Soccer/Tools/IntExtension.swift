@@ -13,7 +13,7 @@ extension Int {
 		if upperLimit <= 0 {
 			self.init(0)
 		} else {
-			self.init(arc4random_uniform(UInt32(upperLimit)))
+            self.init(Int.random(in: 0..<upperLimit))
         }
 	}
 }

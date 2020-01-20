@@ -41,6 +41,9 @@ class ResultTableViewController: UITableViewController {
                     maxInjuredPeriod /= 2
                 }
                 players[injuredPlayerId].injuryTime = Int(randomBelow: maxInjuredPeriod) + 1
+                DispatchQueue.main.async {
+                    self.alert(title: "Injury Report", message: "\(self.players[injuredPlayerId].name) was injured in the game. He need \(self.players[injuredPlayerId].injuryTime) weeks to recover.")
+                }
             }
             
             //player growth
@@ -60,24 +63,24 @@ class ResultTableViewController: UITableViewController {
                 if player.verticalPosition == "GK" {
                     if randNumber < player.ldf {
                         player.ldf += 1
-                        growths.append("(LDF+1)")
+                        growths.append("(LDF⤴️)")
                     } else if randNumber < player.ldf + player.cdf {
                         player.cdf += 1
-                        growths.append("(CDF+1)")
+                        growths.append("(CDF⤴️)")
                     } else {
                         player.rdf += 1
-                        growths.append("(RDF+1)")
+                        growths.append("(RDF⤴️)")
                     }
                 } else {
                     if randNumber < player.def {
                         player.def += 1
-                        growths.append("(DEF+1)")
+                        growths.append("(DEF⤴️)")
                     } else if randNumber < player.def + player.org {
                         player.org += 1
-                        growths.append("(ORG+1)")
+                        growths.append("(ORG⤴️)")
                     } else {
                         player.off += 1
-                        growths.append("(OFF+1)")
+                        growths.append("(OFF⤴️)")
                     }
                 }
             }
