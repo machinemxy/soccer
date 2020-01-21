@@ -163,24 +163,39 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The player grade icon used in this app is made by Freepik from www.flaticon.com" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dhw-TG-5uW">
-                                <rect key="frame" x="8" y="319" width="359" height="49"/>
+                                <rect key="frame" x="8" y="377" width="359" height="49"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZU-lQ-UxP">
+                                <rect key="frame" x="0.0" y="319" width="375" height="50"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Zyd-BH-jEo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <state key="normal" title="Tutorial"/>
+                                <connections>
+                                    <segue destination="o8C-Lh-6HO" kind="show" id="Dtx-Nz-nQg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="xE2-lq-vLa" firstAttribute="trailing" secondItem="f7E-OC-qaa" secondAttribute="trailing" id="5yy-gM-BH3"/>
-                            <constraint firstItem="Dhw-TG-5uW" firstAttribute="top" secondItem="xE2-lq-vLa" secondAttribute="bottom" constant="8" id="6rl-Pe-RNl"/>
                             <constraint firstItem="XWq-yC-ghK" firstAttribute="top" secondItem="f7E-OC-qaa" secondAttribute="top" constant="8" id="FTZ-xG-15E"/>
                             <constraint firstItem="xE2-lq-vLa" firstAttribute="top" secondItem="nnu-hD-g9K" secondAttribute="bottom" constant="8" id="NVq-AQ-yV3"/>
+                            <constraint firstItem="AZU-lQ-UxP" firstAttribute="leading" secondItem="f7E-OC-qaa" secondAttribute="leading" id="Rsm-u4-qQL"/>
                             <constraint firstItem="Dhw-TG-5uW" firstAttribute="leading" secondItem="f7E-OC-qaa" secondAttribute="leading" constant="8" id="Trf-e4-O0X"/>
                             <constraint firstAttribute="trailing" secondItem="Dhw-TG-5uW" secondAttribute="trailing" constant="8" id="VSD-tA-vWN"/>
+                            <constraint firstItem="AZU-lQ-UxP" firstAttribute="trailing" secondItem="f7E-OC-qaa" secondAttribute="trailing" id="YCe-8b-cUN"/>
+                            <constraint firstItem="AZU-lQ-UxP" firstAttribute="top" secondItem="xE2-lq-vLa" secondAttribute="bottom" constant="8" id="Zk9-iV-hZ0"/>
                             <constraint firstItem="nnu-hD-g9K" firstAttribute="top" secondItem="XWq-yC-ghK" secondAttribute="bottom" constant="8" id="bV9-K5-jvO"/>
                             <constraint firstItem="nnu-hD-g9K" firstAttribute="leading" secondItem="f7E-OC-qaa" secondAttribute="leading" id="eel-Nc-ZsP"/>
                             <constraint firstItem="nnu-hD-g9K" firstAttribute="trailing" secondItem="f7E-OC-qaa" secondAttribute="trailing" id="gJj-SW-HTA"/>
+                            <constraint firstItem="Dhw-TG-5uW" firstAttribute="top" secondItem="AZU-lQ-UxP" secondAttribute="bottom" constant="8" id="rb4-27-huZ"/>
                             <constraint firstItem="xE2-lq-vLa" firstAttribute="leading" secondItem="f7E-OC-qaa" secondAttribute="leading" id="thW-nx-bro"/>
                             <constraint firstItem="f7E-OC-qaa" firstAttribute="trailing" secondItem="XWq-yC-ghK" secondAttribute="trailing" constant="8" id="uZq-BI-dkg"/>
                             <constraint firstItem="XWq-yC-ghK" firstAttribute="leading" secondItem="f7E-OC-qaa" secondAttribute="leading" constant="8" id="z2e-c7-nqE"/>
@@ -196,6 +211,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Kg-Gg-cm7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1255" y="852"/>
+        </scene>
+        <!--Tutorial-->
+        <scene sceneID="8xP-uW-QsG">
+            <objects>
+                <viewController id="o8C-Lh-6HO" customClass="TutorialViewController" customModule="Soccer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sBl-iy-xBr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="11d-1d-kUF"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tutorial" id="5B9-ok-CxZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tFV-Y3-fjN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-439" y="852"/>
         </scene>
         <!--Members-->
         <scene sceneID="njM-ZZ-c2H">
@@ -309,7 +340,7 @@ The overall ability is shown beside the team name.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="egv-Sj-9Dq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-431.19999999999999" y="851.97044334975374"/>
+            <point key="canvasLocation" x="348" y="852"/>
         </scene>
         <!--Trainiing Items-->
         <scene sceneID="7oe-f0-GR8">

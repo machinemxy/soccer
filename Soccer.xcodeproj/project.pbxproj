@@ -41,6 +41,7 @@
 		22AE0C4B23D346DA001DFA8A /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AE0C4A23D346DA001DFA8A /* Team.swift */; };
 		22AE0C4D23D5F0B6001DFA8A /* MatchPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AE0C4C23D5F0B6001DFA8A /* MatchPreviewViewController.swift */; };
 		22AE0C4F23D71107001DFA8A /* InjuryReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AE0C4E23D71107001DFA8A /* InjuryReport.swift */; };
+		22AE0C5123D73BD1001DFA8A /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AE0C5023D73BD1001DFA8A /* TutorialViewController.swift */; };
 		22B3065F20FB95F800562852 /* SwiftyStoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B3065E20FB95F800562852 /* SwiftyStoreKit.framework */; };
 		22B3066120FC7F9A00562852 /* ExtraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B3066020FC7F9A00562852 /* ExtraViewController.swift */; };
 		22C0D0F820E75C3D00D7ECEE /* TrainingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C0D0F720E75C3D00D7ECEE /* TrainingItem.swift */; };
@@ -93,6 +94,7 @@
 		22AE0C4A23D346DA001DFA8A /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		22AE0C4C23D5F0B6001DFA8A /* MatchPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchPreviewViewController.swift; sourceTree = "<group>"; };
 		22AE0C4E23D71107001DFA8A /* InjuryReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjuryReport.swift; sourceTree = "<group>"; };
+		22AE0C5023D73BD1001DFA8A /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		22B3065E20FB95F800562852 /* SwiftyStoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyStoreKit.framework; path = Carthage/Build/iOS/SwiftyStoreKit.framework; sourceTree = "<group>"; };
 		22B3066020FC7F9A00562852 /* ExtraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraViewController.swift; sourceTree = "<group>"; };
 		22C0D0F720E75C3D00D7ECEE /* TrainingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingItem.swift; sourceTree = "<group>"; };
@@ -177,10 +179,11 @@
 				223C170B20E1389900F36C6E /* TeamTableViewController.swift */,
 				22AE0C4823D33918001DFA8A /* TeamPreviewViewController.swift */,
 				2216B56020E8BA7E003B2854 /* ItemTableViewController.swift */,
-				22B3066020FC7F9A00562852 /* ExtraViewController.swift */,
 				22AE0C4C23D5F0B6001DFA8A /* MatchPreviewViewController.swift */,
 				2233ADCD20D00B0400659178 /* MatchViewController.swift */,
 				2216B56420F4EDB9003B2854 /* ResultTableViewController.swift */,
+				22B3066020FC7F9A00562852 /* ExtraViewController.swift */,
+				22AE0C5023D73BD1001DFA8A /* TutorialViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 				2233ADD920D1551200659178 /* IntExtension.swift in Sources */,
 				223C170C20E1389900F36C6E /* TeamTableViewController.swift in Sources */,
 				2216B56120E8BA7E003B2854 /* ItemTableViewController.swift in Sources */,
+				22AE0C5123D73BD1001DFA8A /* TutorialViewController.swift in Sources */,
 				2216B56520F4EDB9003B2854 /* ResultTableViewController.swift in Sources */,
 				223C170620DD272D00F36C6E /* PlayerGenerator.swift in Sources */,
 				22AE0C4F23D71107001DFA8A /* InjuryReport.swift in Sources */,
