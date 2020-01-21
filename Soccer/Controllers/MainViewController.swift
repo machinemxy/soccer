@@ -17,7 +17,8 @@ class MainViewController: UIViewController {
 	@IBOutlet weak var btnTeamManage: UIButton!
 	@IBOutlet weak var btnScout: UIButton!
 	@IBOutlet weak var btnExtra: UIButton!
-	
+    @IBOutlet var btnInjuryReport: UIButton!
+    
 	var gameData: GameData!
 
     override func viewDidLoad() {
@@ -29,9 +30,9 @@ class MainViewController: UIViewController {
 		if countOfGameData == 0 {
 			//the first time launching the app
 			setUIForPickTeam()
-			return
-		}
-		showGameData()
+        } else {
+            showGameData()
+        }
     }
 
 	@IBAction func nextGame(_ sender: Any) {
@@ -77,6 +78,21 @@ class MainViewController: UIViewController {
         alert(title: "Scout Result", message: "[\(scoutedPlayer.position)]\(scoutedPlayer.name) \(scoutedPlayer.rating)")
     }
     
+    @IBAction func showInjuryReport(_ sender: Any) {
+        let realm = try! Realm()
+        var countOfInjuryReport = realm.objects(InjuryReport.self).count
+        guard let injuryReport = realm.objects(InjuryReport.self).first else {return}
+        alert(title: injuryReport.title, message: injuryReport.message)
+        
+        // delete current injury report
+        try! realm.write {
+            realm.delete(injuryReport)
+        }
+        countOfInjuryReport -= 1
+        
+        btnInjuryReport.setTitle("Injury Report(\(countOfInjuryReport))", for: .normal)
+        btnInjuryReport.isEnabled = countOfInjuryReport > 0
+    }
     
 	// MARK: - Navigation
 	@IBAction func unwindToMain(segue: UIStoryboardSegue) {
@@ -97,6 +113,7 @@ class MainViewController: UIViewController {
 		btnTeamManage.isEnabled = false
 		btnScout.isEnabled = false
 		btnExtra.isEnabled = false
+        btnInjuryReport.isEnabled = false
 	}
 	
 	private func resetUIAfterPickTeam() {
@@ -122,34 +139,8 @@ class MainViewController: UIViewController {
 		let realm = try! Realm()
 		gameData = realm.objects(GameData.self).first
 		
-		//txtInfo
-		var info = "\(gameData.teamName)\n"
-		info += "League Lv: \(gameData.leagueLvDescription)\n"
-		if gameData.week > 10 {
-			info += "Season ended. "
-			if gameData.points < gameData.pointsToStay {
-				info += "Your team got relegated."
-			} else if gameData.points >= gameData.pointsToPromote {
-				if gameData.leagueLv == gameData.maxLeagueLv {
-					info += "Congratulations! Your team won the world champion!"
-				} else {
-					info += "Your team got promoted!"
-				}
-			} else {
-				info += "Your team got stayed."
-			}
-			info += "\n"
-		} else {
-			info += "Weeks: \(gameData.week)/10\n"
-		}
-		info += "Points: \(gameData.points) (W\(gameData.win)/D\(gameData.draw)/L\(gameData.lose))\n"
-		info += "Points to Stay: \(gameData.pointsToStay)\n"
-		if gameData.leagueLv < gameData.maxLeagueLv {
-			info += "Points to Upgrade: \(gameData.pointsToPromote)"
-		} else {
-			info += "Points to World Champion: \(gameData.pointsToPromote)"
-		}
-		txtInfo.text = info
+        //txtInfo
+		setTxtInfo()
 		
 		//btnNextGame
 		if gameData.week > 10 {
@@ -161,7 +152,43 @@ class MainViewController: UIViewController {
 		//btnScout
 		btnScout.setTitle("Scout(\(gameData.scout))", for: .normal)
 		btnScout.isEnabled = gameData.scout > 0
+        
+        //btnInjuryReport
+        let countOfInjuryReport = realm.objects(InjuryReport.self).count
+        btnInjuryReport.setTitle("Injury Report(\(countOfInjuryReport))", for: .normal)
+        btnInjuryReport.isEnabled = countOfInjuryReport > 0
 	}
+    
+    private func setTxtInfo() {
+        //txtInfo
+        var info = "\(gameData.teamName)\n"
+        info += "League Lv: \(gameData.leagueLvDescription)\n"
+        if gameData.week > 10 {
+            info += "Season ended. "
+            if gameData.points < gameData.pointsToStay {
+                info += "Your team got relegated."
+            } else if gameData.points >= gameData.pointsToPromote {
+                if gameData.leagueLv == gameData.maxLeagueLv {
+                    info += "Congratulations! Your team won the world champion!"
+                } else {
+                    info += "Your team got promoted!"
+                }
+            } else {
+                info += "Your team got stayed."
+            }
+            info += "\n"
+        } else {
+            info += "Weeks: \(gameData.week)/10\n"
+        }
+        info += "Points: \(gameData.points) (W\(gameData.win)/D\(gameData.draw)/L\(gameData.lose))\n"
+        info += "Points to Stay: \(gameData.pointsToStay)\n"
+        if gameData.leagueLv < gameData.maxLeagueLv {
+            info += "Points to Upgrade: \(gameData.pointsToPromote)"
+        } else {
+            info += "Points to World Champion: \(gameData.pointsToPromote)"
+        }
+        txtInfo.text = info
+    }
 	
 	private func nextSeason() {
 		let realm = try! Realm()

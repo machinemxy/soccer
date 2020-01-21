@@ -28,7 +28,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nca-ry-uiP">
-                                <rect key="frame" x="0.0" y="630" width="375" height="70"/>
+                                <rect key="frame" x="0.0" y="552" width="375" height="70"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="Bf8-2f-3dG"/>
@@ -40,7 +40,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAc-lK-KDo">
-                                <rect key="frame" x="0.0" y="474" width="375" height="70"/>
+                                <rect key="frame" x="0.0" y="396" width="375" height="70"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="ulx-cr-l1Z"/>
@@ -52,13 +52,13 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="🎱ABC League Lv: 1 Weeks: 10/10 Points: 30 (W10/D0/L0) Points to Stay: 9 Points to Upgrade: 18" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Avx-qw-Ypj">
-                                <rect key="frame" x="8" y="96" width="359" height="370"/>
+                                <rect key="frame" x="8" y="96" width="359" height="292"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25C-bI-Jb9">
-                                <rect key="frame" x="0.0" y="552" width="375" height="70"/>
+                                <rect key="frame" x="0.0" y="474" width="375" height="70"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="tGk-8B-vMI"/>
@@ -69,6 +69,18 @@
                                     <segue destination="af3-lB-vGx" kind="show" identifier="toTeamFromMain" id="uzA-zQ-KVm"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ck6-Mb-K0e">
+                                <rect key="frame" x="0.0" y="630" width="375" height="70"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="7PW-wx-ust"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="Injury Report"/>
+                                <connections>
+                                    <action selector="showInjuryReport:" destination="F8c-IG-juI" eventType="touchUpInside" id="as7-Qw-n8q"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -76,25 +88,29 @@
                             <constraint firstItem="04z-id-L9v" firstAttribute="leading" secondItem="Hax-Rs-exm" secondAttribute="leading" id="0W7-Xm-40I"/>
                             <constraint firstItem="Nca-ry-uiP" firstAttribute="top" secondItem="25C-bI-Jb9" secondAttribute="bottom" constant="8" id="3a5-xZ-wHU"/>
                             <constraint firstItem="bAc-lK-KDo" firstAttribute="trailing" secondItem="Hax-Rs-exm" secondAttribute="trailing" id="6iE-Yd-kJj"/>
+                            <constraint firstItem="Ck6-Mb-K0e" firstAttribute="trailing" secondItem="Hax-Rs-exm" secondAttribute="trailing" id="9SD-1l-Zmn"/>
                             <constraint firstItem="Avx-qw-Ypj" firstAttribute="trailing" secondItem="Hax-Rs-exm" secondAttribute="trailing" constant="-8" id="Hia-Zo-Ome"/>
                             <constraint firstItem="Nca-ry-uiP" firstAttribute="leading" secondItem="Hax-Rs-exm" secondAttribute="leading" id="HxU-gu-5fU"/>
                             <constraint firstItem="25C-bI-Jb9" firstAttribute="top" secondItem="bAc-lK-KDo" secondAttribute="bottom" constant="8" id="JvW-Oy-w25"/>
                             <constraint firstItem="Avx-qw-Ypj" firstAttribute="leading" secondItem="Hax-Rs-exm" secondAttribute="leading" constant="8" id="Nf1-fZ-0cC"/>
+                            <constraint firstItem="Ck6-Mb-K0e" firstAttribute="leading" secondItem="Hax-Rs-exm" secondAttribute="leading" id="OEF-yS-VUT"/>
                             <constraint firstItem="25C-bI-Jb9" firstAttribute="trailing" secondItem="Hax-Rs-exm" secondAttribute="trailing" id="SF0-4z-LoJ"/>
                             <constraint firstItem="Nca-ry-uiP" firstAttribute="trailing" secondItem="Hax-Rs-exm" secondAttribute="trailing" id="ZqN-zN-TeO"/>
-                            <constraint firstItem="04z-id-L9v" firstAttribute="top" secondItem="Nca-ry-uiP" secondAttribute="bottom" constant="8" id="dqD-4r-qrJ"/>
                             <constraint firstItem="bAc-lK-KDo" firstAttribute="leading" secondItem="Hax-Rs-exm" secondAttribute="leading" id="duc-zO-7YH"/>
                             <constraint firstItem="04z-id-L9v" firstAttribute="bottom" secondItem="Hax-Rs-exm" secondAttribute="bottom" id="mNG-Rz-rho"/>
                             <constraint firstItem="bAc-lK-KDo" firstAttribute="top" secondItem="Avx-qw-Ypj" secondAttribute="bottom" constant="8" id="mQt-l2-GBX"/>
                             <constraint firstItem="04z-id-L9v" firstAttribute="trailing" secondItem="Hax-Rs-exm" secondAttribute="trailing" id="oyo-Xr-iFm"/>
+                            <constraint firstItem="Ck6-Mb-K0e" firstAttribute="top" secondItem="Nca-ry-uiP" secondAttribute="bottom" constant="8" id="pFR-zx-xzP"/>
                             <constraint firstItem="Avx-qw-Ypj" firstAttribute="top" secondItem="Hax-Rs-exm" secondAttribute="top" constant="8" id="s2y-di-30q"/>
                             <constraint firstItem="25C-bI-Jb9" firstAttribute="leading" secondItem="Hax-Rs-exm" secondAttribute="leading" id="sRT-lQ-rk7"/>
+                            <constraint firstItem="04z-id-L9v" firstAttribute="top" secondItem="Ck6-Mb-K0e" secondAttribute="bottom" constant="8" id="xQT-T1-SWc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Hax-Rs-exm"/>
                     </view>
                     <navigationItem key="navigationItem" title="Light Football Manager" id="Or3-xX-cBf"/>
                     <connections>
                         <outlet property="btnExtra" destination="04z-id-L9v" id="Mlc-Sx-UIp"/>
+                        <outlet property="btnInjuryReport" destination="Ck6-Mb-K0e" id="1RI-WR-3g0"/>
                         <outlet property="btnNextGame" destination="bAc-lK-KDo" id="nfd-R3-GU7"/>
                         <outlet property="btnScout" destination="Nca-ry-uiP" id="Kjg-xF-clq"/>
                         <outlet property="btnTeamManage" destination="25C-bI-Jb9" id="CC5-kt-VnR"/>

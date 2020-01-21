@@ -24,6 +24,11 @@ class ResultTableViewController: UITableViewController {
             for player in allPlayers {
                 if player.injuryTime > 0 {
                     player.injuryTime -= 1
+                    
+                    if player.injuryTime == 0 {
+                        let recoveryReport = InjuryReport.createInjuryReport(reportType: 1, player: player)
+                        realm.add(recoveryReport)
+                    }
                 }
             }
             
@@ -41,9 +46,8 @@ class ResultTableViewController: UITableViewController {
                     maxInjuredPeriod /= 2
                 }
                 players[injuredPlayerId].injuryTime = Int(randomBelow: maxInjuredPeriod) + 1
-                DispatchQueue.main.async {
-                    self.alert(title: "Injury Report", message: "\(self.players[injuredPlayerId].name) was injured in the game. He need \(self.players[injuredPlayerId].injuryTime) weeks to recover.")
-                }
+                let injuryReport = InjuryReport.createInjuryReport(reportType: 0, player: players[injuredPlayerId])
+                realm.add(injuryReport)
             }
             
             //player growth

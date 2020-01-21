@@ -80,20 +80,17 @@ class MatchViewController: UIViewController {
 		//randomize ball direction
 		side = Int(randomBelow: 3)
 		
-		//randomize which side get the ball
-		var whoGetBall = Int(randomBelow: 4)
-		if whoGetBall > 1 {
-			//use org ability to decide
-            let myOrg = teams[0].abilities[side].org
-            let enemyOrg = teams[1].abilities[revertSide].org
-            let sumOrg = myOrg + enemyOrg
-			let randOrg = Int(randomBelow: sumOrg)
-			if randOrg < myOrg {
-				whoGetBall = 0
-			} else {
-				whoGetBall = 1
-			}
-		}
+		//use org ability to decide who get ball
+        let whoGetBall: Int
+        let myOrg = teams[0].abilities[side].org
+        let enemyOrg = teams[1].abilities[revertSide].org
+        let sumOrg = myOrg + enemyOrg
+        let randOrg = Int(randomBelow: sumOrg)
+        if randOrg < myOrg {
+            whoGetBall = 0
+        } else {
+            whoGetBall = 1
+        }
 		
         // perform the attack
         let isPlayerAttack = whoGetBall == 0
