@@ -625,6 +625,7 @@ The overall ability is shown beside the team name.</string>
                                     <constraint firstAttribute="height" constant="70" id="Dse-sH-1La"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="startMatch:" destination="3og-uh-MAb" eventType="touchUpInside" id="s4o-ZR-aGg"/>
