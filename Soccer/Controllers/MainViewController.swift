@@ -105,10 +105,7 @@ class MainViewController: UIViewController {
 	}
 	
 	private func setUIForPickTeam() {
-		txtInfo.text = """
-		Welcome to Light Football Manager!
-		Please create your team first!
-		"""
+		txtInfo.text = NSLocalizedString("Welcome", comment: "")
 		btnNextGame.setTitle("Create Team", for: .normal)
 		btnTeamManage.isEnabled = false
 		btnScout.isEnabled = false

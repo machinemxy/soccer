@@ -1,0 +1,157 @@
+
+/* Class = "UIButton"; normalTitle = "Extra"; ObjectID = "04z-id-L9v"; */
+"04z-id-L9v.normalTitle" = "エキストラ";
+
+/* Class = "UIButton"; normalTitle = "Team Manage"; ObjectID = "25C-bI-Jb9"; */
+"25C-bI-Jb9.normalTitle" = "チーム管理";
+
+/* Class = "UILabel"; text = "Team Badge"; ObjectID = "3ww-bT-b5k"; */
+"3ww-bT-b5k.text" = "紋章";
+
+/* Class = "UINavigationItem"; title = "Extra"; ObjectID = "57z-Kh-MpO"; */
+"57z-Kh-MpO.title" = "エキストラ";
+
+/* Class = "UINavigationItem"; title = "Tutorial"; ObjectID = "5B9-ok-CxZ"; */
+"5B9-ok-CxZ.title" = "チュートリアル";
+
+/* Class = "UIButton"; normalTitle = "⬇️"; ObjectID = "9l5-OT-TC4"; */
+"9l5-OT-TC4.normalTitle" = "⬇️";
+
+/* Class = "UIButton"; normalTitle = "Tutorial"; ObjectID = "AZU-lQ-UxP"; */
+"AZU-lQ-UxP.normalTitle" = "チュートリアル（英語）";
+
+/* Class = "UITextView"; text = "🎱ABC League Lv: 1 Weeks: 10/10 Points: 30 (W10/D0/L0) Points to Stay: 9 Points to Upgrade: 18"; ObjectID = "Avx-qw-Ypj"; */
+"Avx-qw-Ypj.text" = "🎱ABC League Lv: 1 Weeks: 10/10 Points: 30 (W10/D0/L0) Points to Stay: 9 Points to Upgrade: 18";
+
+/* Class = "UILabel"; text = "Team"; ObjectID = "B04-0m-hJq"; */
+"B04-0m-hJq.text" = "チーム";
+
+/* Class = "UILabel"; text = "Team"; ObjectID = "Bj1-IR-Kmz"; */
+"Bj1-IR-Kmz.text" = "チーム";
+
+/* Class = "UIButton"; normalTitle = "⬇️"; ObjectID = "CU7-AU-S8b"; */
+"CU7-AU-S8b.normalTitle" = "⬇️";
+
+/* Class = "UIButton"; normalTitle = "Injury Report"; ObjectID = "Ck6-Mb-K0e"; */
+"Ck6-Mb-K0e.normalTitle" = "負傷報告";
+
+/* Class = "UIButton"; normalTitle = "⬆️"; ObjectID = "DJ9-kZ-cvF"; */
+"DJ9-kZ-cvF.normalTitle" = "⬆️";
+
+/* Class = "UILabel"; text = "The player grade icon used in this app is made by Freepik from www.flaticon.com"; ObjectID = "Dhw-TG-5uW"; */
+"Dhw-TG-5uW.text" = "選手レベルを示すアイコンはwww.flaticon.comのFreepikさんより作成したものです。";
+
+/* Class = "UILabel"; text = "OFF:100 ORG:100 DEF:100 POT:A"; ObjectID = "Dv8-h7-cbC"; */
+"Dv8-h7-cbC.text" = "OFF:100 ORG:100 DEF:100 POT:A";
+
+/* Class = "UIButton"; normalTitle = "⬇️"; ObjectID = "Ev2-7q-rB3"; */
+"Ev2-7q-rB3.normalTitle" = "⬇️";
+
+/* Class = "UIButton"; normalTitle = "⬆️"; ObjectID = "H0f-45-t7D"; */
+"H0f-45-t7D.normalTitle" = "⬆️";
+
+/* Class = "UIButton"; normalTitle = "➡️"; ObjectID = "IVC-kU-7LV"; */
+"IVC-kU-7LV.normalTitle" = "➡️";
+
+/* Class = "UINavigationItem"; title = "Trainiing Items"; ObjectID = "Kk8-I0-bSU"; */
+"Kk8-I0-bSU.title" = "トレーニングアイテム";
+
+/* Class = "UIButton"; normalTitle = "⬆️"; ObjectID = "Ksl-FB-Yeg"; */
+"Ksl-FB-Yeg.normalTitle" = "⬆️";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "LkB-6C-GaZ"; */
+"LkB-6C-GaZ.normalTitle" = "スタート";
+
+/* Class = "UILabel"; text = "OFF:100 ORG:100 DEF:100 POT:A"; ObjectID = "MXC-UU-HZG"; */
+"MXC-UU-HZG.text" = "OFF:100 ORG:100 DEF:100 POT:A";
+
+/* Class = "UILabel"; text = "[CF]Name 300"; ObjectID = "Mh5-pE-3Eu"; */
+"Mh5-pE-3Eu.text" = "[CF]Name 300";
+
+/* Class = "UIButton"; normalTitle = "Scout"; ObjectID = "Nca-ry-uiP"; */
+"Nca-ry-uiP.normalTitle" = "スカウト";
+
+/* Class = "UINavigationItem"; title = "Team"; ObjectID = "OKK-w3-gHu"; */
+"OKK-w3-gHu.title" = "チーム";
+
+/* Class = "UINavigationItem"; title = "Light Football Manager"; ObjectID = "Or3-xX-cBf"; */
+"Or3-xX-cBf.title" = "手軽いサッカーマネージャー";
+
+/* Class = "UIButton"; normalTitle = "⬅️"; ObjectID = "UEv-pt-jVA"; */
+"UEv-pt-jVA.normalTitle" = "⬅️";
+
+/* Class = "UILabel"; text = "Team1"; ObjectID = "UsI-bi-Yq1"; */
+"UsI-bi-Yq1.text" = "Team1";
+
+/* Class = "UILabel"; text = "A"; ObjectID = "W8b-iD-cw3"; */
+"W8b-iD-cw3.text" = "A";
+
+/* Class = "UILabel"; text = "Benefits of Premium Manager: ・Getting a new player after each match ・Knowing player's potential exactly\n・Player recovering faster from injury"; ObjectID = "XWq-yC-ghK"; */
+"XWq-yC-ghK.text" = "プレミアムマネージャーになるメリット\n・毎週新しい選手がスカウト可能\n・選手のポテンシャルがはっきりわかる\n・選手の回復が早くなる";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "YTb-zl-V67"; */
+"YTb-zl-V67.text" = "Title";
+
+/* Class = "UILabel"; text = "😈"; ObjectID = "YUt-1c-08x"; */
+"YUt-1c-08x.text" = "😈";
+
+/* Class = "UIButton"; normalTitle = "Proceed"; ObjectID = "ZLo-Bh-c3q"; */
+"ZLo-Bh-c3q.normalTitle" = "進む";
+
+/* Class = "UIButton"; normalTitle = "Decide"; ObjectID = "aAs-Gv-bCQ"; */
+"aAs-Gv-bCQ.normalTitle" = "決定";
+
+/* Class = "UIButton"; normalTitle = "Next Game"; ObjectID = "bAc-lK-KDo"; */
+"bAc-lK-KDo.normalTitle" = "次のゲーム";
+
+/* Class = "UILabel"; text = "Team"; ObjectID = "bPu-N9-mYS"; */
+"bPu-N9-mYS.text" = "チーム";
+
+/* Class = "UILabel"; text = "A"; ObjectID = "dKw-ZW-xrh"; */
+"dKw-ZW-xrh.text" = "A";
+
+/* Class = "UITextView"; text = "First row shows the offense abilities of left, center and right sides.\nSecond row shows the organization abilities of left, center and right sides. \nThird row shows the defence abilities of left, center and right sides.\nThe overall ability is shown beside the team name."; ObjectID = "dLC-s3-94F"; */
+"dLC-s3-94F.text" =
+"第一行に左、ミドルと右の得点力が表示されている。\n第二行は左、ミドルと右のボールコントロール能力が表示されている。\n第三行は左、ミドルと右の守備力が表示されている。\n総合能力はチーム名側の括弧に表示されている。";
+
+/* Class = "UILabel"; text = "A"; ObjectID = "gt6-0G-rLO"; */
+"gt6-0G-rLO.text" = "A";
+
+/* Class = "UILabel"; text = "Abbreviation of Team Name"; ObjectID = "kVN-hm-qnv"; */
+"kVN-hm-qnv.text" = "チーム名略称";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "lda-AW-4Fn"; */
+"lda-AW-4Fn.text" = "0";
+
+/* Class = "UIButton"; normalTitle = "Return"; ObjectID = "mBw-gY-Dhc"; */
+"mBw-gY-Dhc.normalTitle" = "戻る";
+
+/* Class = "UIButton"; normalTitle = "Get Premium Manager"; ObjectID = "nnu-hD-g9K"; */
+"nnu-hD-g9K.normalTitle" = "プレミアムマネージャーになる";
+
+/* Class = "UITabBarItem"; title = "Members"; ObjectID = "oVq-NW-FA8"; */
+"oVq-NW-FA8.title" = "メンバー";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "oWF-b7-2dL"; */
+"oWF-b7-2dL.text" = "0";
+
+/* Class = "UILabel"; text = "0'"; ObjectID = "of4-iX-Xmu"; */
+"of4-iX-Xmu.text" = "0'";
+
+/* Class = "UIButton"; normalTitle = "Randomize"; ObjectID = "ovc-6e-Zt5"; */
+"ovc-6e-Zt5.normalTitle" = "自動作成";
+
+/* Class = "UINavigationItem"; title = "Create Team"; ObjectID = "pgv-ap-829"; */
+"pgv-ap-829.title" = "チーム作成";
+
+/* Class = "UILabel"; text = "Team2"; ObjectID = "ppL-BA-BDI"; */
+"ppL-BA-BDI.text" = "Team2";
+
+/* Class = "UILabel"; text = "[CF]Name 300(OFF+1)"; ObjectID = "wHl-vE-llc"; */
+"wHl-vE-llc.text" = "[CF]Name 300(OFF+1)";
+
+/* Class = "UIButton"; normalTitle = "Restore Purchase"; ObjectID = "xE2-lq-vLa"; */
+"xE2-lq-vLa.normalTitle" = "既に購入した";
+
+/* Class = "UITabBarItem"; title = "Preview"; ObjectID = "xQh-Ez-vkC"; */
+"xQh-Ez-vkC.title" = "プレビュー";

@@ -35,6 +35,7 @@
 		223C170620DD272D00F36C6E /* PlayerGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C170520DD272D00F36C6E /* PlayerGenerator.swift */; };
 		223C170A20DFBC2700F36C6E /* PlayerGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C170920DFBC2700F36C6E /* PlayerGeneratorTests.swift */; };
 		223C170C20E1389900F36C6E /* TeamTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C170B20E1389900F36C6E /* TeamTableViewController.swift */; };
+		2285194823F5A1DC00430CC3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2285194A23F5A1DC00430CC3 /* Localizable.strings */; };
 		22AE0C4523D33405001DFA8A /* TeamPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AE0C4423D33405001DFA8A /* TeamPreviewView.swift */; };
 		22AE0C4723D33426001DFA8A /* TeamPreviewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22AE0C4623D33426001DFA8A /* TeamPreviewView.xib */; };
 		22AE0C4923D33918001DFA8A /* TeamPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AE0C4823D33918001DFA8A /* TeamPreviewViewController.swift */; };
@@ -88,6 +89,9 @@
 		223C170520DD272D00F36C6E /* PlayerGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerGenerator.swift; sourceTree = "<group>"; };
 		223C170920DFBC2700F36C6E /* PlayerGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerGeneratorTests.swift; sourceTree = "<group>"; };
 		223C170B20E1389900F36C6E /* TeamTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewController.swift; sourceTree = "<group>"; };
+		2285193F23F5940200430CC3 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		2285194923F5A1DC00430CC3 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2285194B23F5A1DF00430CC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		22AE0C4423D33405001DFA8A /* TeamPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamPreviewView.swift; sourceTree = "<group>"; };
 		22AE0C4623D33426001DFA8A /* TeamPreviewView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamPreviewView.xib; sourceTree = "<group>"; };
 		22AE0C4823D33918001DFA8A /* TeamPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamPreviewViewController.swift; sourceTree = "<group>"; };
@@ -167,6 +171,7 @@
 				2233ADC120CE5B1E00659178 /* Assets.xcassets */,
 				2233ADC320CE5B1E00659178 /* LaunchScreen.storyboard */,
 				2233ADC620CE5B1E00659178 /* Info.plist */,
+				2285194A23F5A1DC00430CC3 /* Localizable.strings */,
 			);
 			path = Soccer;
 			sourceTree = "<group>";
@@ -314,6 +319,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 2233ADAE20CE5B1D00659178;
 			productRefGroup = 2233ADB820CE5B1D00659178 /* Products */;
@@ -339,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2233ADC520CE5B1E00659178 /* LaunchScreen.storyboard in Resources */,
+				2285194823F5A1DC00430CC3 /* Localizable.strings in Resources */,
 				2233ADC220CE5B1E00659178 /* Assets.xcassets in Resources */,
 				223C16FC20DBF22C00F36C6E /* names.json in Resources */,
 				2233ADC020CE5B1D00659178 /* Main.storyboard in Resources */,
@@ -445,6 +452,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				2233ADBF20CE5B1D00659178 /* Base */,
+				2285193F23F5940200430CC3 /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -455,6 +463,15 @@
 				2233ADC420CE5B1E00659178 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2285194A23F5A1DC00430CC3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2285194923F5A1DC00430CC3 /* ja */,
+				2285194B23F5A1DF00430CC3 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -512,6 +529,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -572,6 +590,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
