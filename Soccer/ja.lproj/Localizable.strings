@@ -50,7 +50,7 @@
 "Sacrifice Message" = "%@は犠牲しました。代わりにアイテム'%@'を入手しました。";
 "Preview intro" = "第一行はチーム左、ミドルと右の得点力を示す。\n第二行はチームの左、ミドルと右のボールコントロール能力を示す。\n第三行はチーム左、ミドル、右の守備力を示す。\nチーム名側の括弧にある数字はチームの総合実力を示す。";
 "Player Growth" = "選手成長";
-"Premium Manager Price" = "%@でプレミアムマネジャーを購入";
+"Premium Manager Price" = "%@でプレミアムマネージャーを購入";
 "Amateur" = "アマチュア";
 "Semipro" = "セミプロ";
 "Professional" = "プロ";
