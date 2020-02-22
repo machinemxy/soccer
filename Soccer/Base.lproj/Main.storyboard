@@ -336,6 +336,7 @@ The overall ability is shown beside the team name.</string>
                     <connections>
                         <outlet property="lblTeam" destination="B04-0m-hJq" id="COs-3o-9dl"/>
                         <outlet property="teamPreviewView" destination="Emj-hR-UgP" id="EmH-52-mfg"/>
+                        <outlet property="txtIntro" destination="dLC-s3-94F" id="UPB-p4-gCJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="egv-Sj-9Dq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

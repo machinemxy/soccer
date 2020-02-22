@@ -48,3 +48,13 @@
 "Cannot Trainning" = " has already reached his peak. Cannot train him any more.";
 "Sacrifice Done" = "Sacrifice Done";
 "Sacrifice Message" = "%@ is sacrificed and training item '%@' is added to stock.";
+"Preview intro" = "First row shows the offense abilities of left, center and right sides.\nSecond row shows the organization abilities of left, center and right sides.\nThird row shows the defence abilities of left, center and right sides.\nThe overall ability is shown beside the team name.";
+"Player Growth" = "Player Growth";
+"Premium Manager Price" = "Get Premium Manager by %@";
+"Amateur" = "Amateur";
+"Semipro" = "Semipro";
+"Professional" = "Professional";
+"World Class" = "World Class";
+"Recovery Report" = "Recovery Report";
+"Recovery message" = " has been recovered from injury.";
+"Injury message" = " was injured in the game. He need %d weeks to recover.";

@@ -13,6 +13,7 @@ import RealmSwift
 class TeamPreviewViewController: UIViewController {
     @IBOutlet var teamPreviewView: TeamPreviewView!
     @IBOutlet var lblTeam: UILabel!
+    @IBOutlet var txtIntro: UITextView!
     var teamName: String!
     var team: Team?
     
@@ -23,6 +24,8 @@ class TeamPreviewViewController: UIViewController {
         if let gameData = realm.objects(GameData.self).first {
             teamName = gameData.teamName
         }
+        
+        txtIntro.text = NSLocalizedString("Preview intro", comment: "")
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -39,31 +39,31 @@ class GameData: Object {
     var leagueLvDescription: String {
         switch leagueLv {
         case 1:
-            return "Amateur 1"
+            return NSLocalizedString("Amateur", comment: "") + " 1"
         case 2:
-            return "Amateur 2"
+            return NSLocalizedString("Amateur", comment: "") + " 2"
         case 3:
-            return "Amateur 3"
+            return NSLocalizedString("Amateur", comment: "") + " 3"
         case 4:
-            return "Amateur 4"
+            return NSLocalizedString("Amateur", comment: "") + " 4"
         case 5:
-            return "Semipro 1"
+            return NSLocalizedString("Semipro", comment: "") + " 1"
         case 6:
-            return "Semipro 2"
+            return NSLocalizedString("Semipro", comment: "") + " 2"
         case 7:
-            return "Semipro 3"
+            return NSLocalizedString("Semipro", comment: "") + " 3"
         case 8:
-            return "Semipro 4"
+            return NSLocalizedString("Semipro", comment: "") + " 4"
         case 9:
-            return "Professional 1"
+            return NSLocalizedString("Professional", comment: "") + " 1"
         case 10:
-            return "Professional 2"
+            return NSLocalizedString("Professional", comment: "") + " 2"
         case 11:
-            return "Professional 3"
+            return NSLocalizedString("Professional", comment: "") + " 3"
         case 12:
-            return "Professional 4"
+            return NSLocalizedString("Professional", comment: "") + " 4"
         default:
-            return "World Class"
+            return NSLocalizedString("World Class", comment: "")
         }
     }
 }

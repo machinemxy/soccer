@@ -81,7 +81,7 @@ class ExtraViewController: UIViewController {
         SwiftyStoreKit.retrieveProductsInfo(["PremiumManager"]) { result in
             if let product = result.retrievedProducts.first {
                 let priceString = product.localizedPrice!
-                self.btnGetPremiumManager.setTitle("Get Premium Manager by \(priceString)", for: .normal)
+                self.btnGetPremiumManager.setTitle(NSString(format: NSLocalizedString("Premium Manager Price", comment: "") as NSString, priceString) as String, for: .normal)
                 print("Product: \(product.localizedDescription), price: \(priceString)")
             }
             else if let invalidProductId = result.invalidProductIDs.first {

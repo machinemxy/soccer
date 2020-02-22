@@ -97,7 +97,7 @@ class ResultTableViewController: UITableViewController {
     }
 	
 	override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-		return "Player Growth"
+        return NSLocalizedString("Player Growth", comment: "")
 	}
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

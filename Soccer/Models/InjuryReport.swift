@@ -16,9 +16,9 @@ class InjuryReport: Object {
     
     var title: String {
         if reportType == 0 {
-            return "Injury Report"
+            return NSLocalizedString("Injury Report", comment: "")
         } else {
-            return "Recovery Report"
+            return NSLocalizedString("Recovery Report", comment: "")
         }
     }
     
@@ -27,9 +27,9 @@ class InjuryReport: Object {
         injuryReport.reportType = reportType
         
         if reportType == 0 {
-            injuryReport.message = "[\(player.position)]\(player.name) was injured in the game. He need \(player.injuryTime) weeks to recover."
+            injuryReport.message = "[\(player.position)]\(player.name)" + (NSString(format: NSLocalizedString("Injury message", comment: "") as NSString, player.injuryTime) as String)
         } else {
-            injuryReport.message = "[\(player.position)]\(player.name) has been recovered from injury."
+            injuryReport.message = "[\(player.position)]\(player.name)" + NSLocalizedString("Recovery message", comment: "")
         }
         
         return injuryReport
