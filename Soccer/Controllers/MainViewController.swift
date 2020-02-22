@@ -12,6 +12,12 @@ import RealmSwift
 import StoreKit
 
 class MainViewController: UIViewController {
+    enum NextStatus {
+        case createTeam
+        case nextGame
+        case nextSeason
+    }
+    
 	@IBOutlet weak var txtInfo: UITextView!
 	@IBOutlet weak var btnNextGame: UIButton!
 	@IBOutlet weak var btnTeamManage: UIButton!
@@ -20,6 +26,7 @@ class MainViewController: UIViewController {
     @IBOutlet var btnInjuryReport: UIButton!
     
 	var gameData: GameData!
+    var nextStatus = NextStatus.createTeam
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,30 +43,28 @@ class MainViewController: UIViewController {
     }
 
 	@IBAction func nextGame(_ sender: Any) {
-		switch btnNextGame.title(for: .normal) {
-		case "Create Team":
+		switch nextStatus {
+        case .createTeam:
 			performSegue(withIdentifier: "toTeamNameChooseFromMain", sender: nil)
-		case "Next Game":
+        case .nextGame:
             let realm = try! Realm()
             let countOfPlayer = realm.objects(Player.self).filter { (p) -> Bool in
                 p.inLineUp
             }.count
             if countOfPlayer < 11 {
-                let alert = UIAlertController(title: "Warning", message: "Your lineup has less than 11 players. Are you sure?", preferredStyle: .alert)
-                let yes = UIAlertAction(title: "Yes", style: .default) { (_) in
+                let alert = UIAlertController(title: NSLocalizedString("Warning", comment: ""), message: NSLocalizedString("Less than 11", comment: ""), preferredStyle: .alert)
+                let yes = UIAlertAction(title: NSLocalizedString("Yes", comment: ""), style: .default) { (_) in
                     self.presentWithFullScreen(storyboardId: "preview", handler: nil)
                 }
-                let no = UIAlertAction(title: "No", style: .default, handler: nil)
+                let no = UIAlertAction(title: NSLocalizedString("No", comment: ""), style: .default, handler: nil)
                 alert.addAction(yes)
                 alert.addAction(no)
                 present(alert, animated: true)
             } else {
                 presentWithFullScreen(storyboardId: "preview", handler: nil)
             }
-		case "Next Season":
+        case .nextSeason:
 			nextSeason()
-		default:
-			return
 		}
 	}
     
@@ -72,10 +77,10 @@ class MainViewController: UIViewController {
         }
         
         //btnScout
-        btnScout.setTitle("Scout(\(gameData.scout))", for: .normal)
+        btnScout.setTitle(NSLocalizedString("Scout", comment: "") + "(\(gameData.scout))", for: .normal)
         btnScout.isEnabled = gameData.scout > 0
         
-        alert(title: "Scout Result", message: "[\(scoutedPlayer.position)]\(scoutedPlayer.name) \(scoutedPlayer.rating)")
+        alert(title: NSLocalizedString("Scout Result", comment: ""), message: "[\(scoutedPlayer.position)]\(scoutedPlayer.name) \(scoutedPlayer.rating)")
     }
     
     @IBAction func showInjuryReport(_ sender: Any) {
@@ -90,7 +95,7 @@ class MainViewController: UIViewController {
         }
         countOfInjuryReport -= 1
         
-        btnInjuryReport.setTitle("Injury Report(\(countOfInjuryReport))", for: .normal)
+        btnInjuryReport.setTitle(NSLocalizedString("Injury Report", comment: "") + "(\(countOfInjuryReport))", for: .normal)
         btnInjuryReport.isEnabled = countOfInjuryReport > 0
     }
     
@@ -106,7 +111,8 @@ class MainViewController: UIViewController {
 	
 	private func setUIForPickTeam() {
 		txtInfo.text = NSLocalizedString("Welcome", comment: "")
-		btnNextGame.setTitle("Create Team", for: .normal)
+        nextStatus = .createTeam
+		btnNextGame.setTitle(NSLocalizedString("Create Team", comment: ""), for: .normal)
 		btnTeamManage.isEnabled = false
 		btnScout.isEnabled = false
 		btnExtra.isEnabled = false
@@ -141,48 +147,56 @@ class MainViewController: UIViewController {
 		
 		//btnNextGame
 		if gameData.week > 10 {
-			btnNextGame.setTitle("Next Season", for: .normal)
+            nextStatus = .nextSeason
+			btnNextGame.setTitle(NSLocalizedString("Next Season", comment: ""), for: .normal)
 		} else {
-			btnNextGame.setTitle("Next Game", for: .normal)
+            nextStatus = .nextGame
+			btnNextGame.setTitle(NSLocalizedString("Next Game", comment: ""), for: .normal)
 		}
 		
 		//btnScout
-		btnScout.setTitle("Scout(\(gameData.scout))", for: .normal)
+		btnScout.setTitle(NSLocalizedString("Scout", comment: "") + "(\(gameData.scout))", for: .normal)
 		btnScout.isEnabled = gameData.scout > 0
         
         //btnInjuryReport
         let countOfInjuryReport = realm.objects(InjuryReport.self).count
-        btnInjuryReport.setTitle("Injury Report(\(countOfInjuryReport))", for: .normal)
+        btnInjuryReport.setTitle(NSLocalizedString("Injury Report", comment: "") + "(\(countOfInjuryReport))", for: .normal)
         btnInjuryReport.isEnabled = countOfInjuryReport > 0
 	}
     
     private func setTxtInfo() {
         //txtInfo
         var info = "\(gameData.teamName)\n"
-        info += "League Lv: \(gameData.leagueLvDescription)\n"
+        info += NSLocalizedString("League Lv: ", comment: "")
+        info += "\(gameData.leagueLvDescription)\n"
         if gameData.week > 10 {
-            info += "Season ended. "
+            info += NSLocalizedString("Season ended. ", comment: "")
             if gameData.points < gameData.pointsToStay {
-                info += "Your team got relegated."
+                info += NSLocalizedString("Relegated", comment: "")
             } else if gameData.points >= gameData.pointsToPromote {
                 if gameData.leagueLv == gameData.maxLeagueLv {
-                    info += "Congratulations! Your team won the world champion!"
+                    info += NSLocalizedString("World champion", comment: "")
                 } else {
-                    info += "Your team got promoted!"
+                    info += NSLocalizedString("Promoted", comment: "")
                 }
             } else {
-                info += "Your team got stayed."
+                info += NSLocalizedString("Stayed", comment: "")
             }
             info += "\n"
         } else {
-            info += "Weeks: \(gameData.week)/10\n"
+            info += NSLocalizedString("Weeks: ", comment: "")
+            info += "\(gameData.week)/10\n"
         }
-        info += "Points: \(gameData.points) (W\(gameData.win)/D\(gameData.draw)/L\(gameData.lose))\n"
-        info += "Points to Stay: \(gameData.pointsToStay)\n"
+        info += NSLocalizedString("Points: ", comment: "")
+        info += "\(gameData.points) (W\(gameData.win)/D\(gameData.draw)/L\(gameData.lose))\n"
+        info += NSLocalizedString("Points to Stay: ", comment: "")
+        info += "\(gameData.pointsToStay)\n"
         if gameData.leagueLv < gameData.maxLeagueLv {
-            info += "Points to Upgrade: \(gameData.pointsToPromote)"
+            info += NSLocalizedString("Points to Upgrade: ", comment: "")
+            info += "\(gameData.pointsToPromote)"
         } else {
-            info += "Points to World Champion: \(gameData.pointsToPromote)"
+            info += NSLocalizedString("Points to World Champion: ", comment: "")
+            info += "\(gameData.pointsToPromote)"
         }
         txtInfo.text = info
     }
@@ -191,7 +205,7 @@ class MainViewController: UIViewController {
 		let realm = try! Realm()
 		let gameData = realm.objects(GameData.self).first!
 		if gameData.scout > 0 {
-			alert(title: "Scout Report Left", message: "Please check your scout report before entering next season.")
+			alert(title: NSLocalizedString("Scout Report Left", comment: ""), message: NSLocalizedString("Check scout hint", comment: ""))
 			return
 		}
 		

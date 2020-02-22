@@ -6,3 +6,26 @@
   Copyright © 2020 Ma Xueyuan. All rights reserved.
 */
 "Welcome" = "Welcome to Light Football Manager!\nPlease create your team first!";
+"Next Season" = "Next Season";
+"Next Game" = "Next Game";
+"Create Team" = "Create Team";
+"Warning" = "Warning";
+"Less than 11" = "Your lineup has less than 11 players. Are you sure?";
+"Yes" = "Yes";
+"No" = "No";
+"Scout" = "Scout";
+"Scout Result" = "Scout Result";
+"Injury Report" = "Injury Report";
+"League Lv: " = "League Lv: ";
+"Season ended. " = "Season ended. ";
+"Relegated" = "Your team got relegated.";
+"World champion" = "Congratulations! Your team won the world champion!";
+"Promoted" = "Your team got promoted!";
+"Stayed" = "Your team got stayed.";
+"Weeks: " = "Weeks: ";
+"Points: " = "Points: ";
+"Points to Stay: " = "Points to Stay: ";
+"Points to Upgrade: " = "Points to Upgrade: ";
+"Points to World Champion: " = "Points to World Champion: ";
+"Scout Report Left" = "Scout Report Left";
+"Check scout hint" = "Please check your scout report before entering next season.";

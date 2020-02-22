@@ -6,3 +6,26 @@
   Copyright © 2020 Ma Xueyuan. All rights reserved.
 */
 "Welcome" = "手軽いサッカーマネージャーへようこそ！\nまずチームを作成しよう！";
+"Next Season" = "次のシーズン";
+"Next Game" = "次の試合";
+"Create Team" = "チーム作成";
+"Warning" = "警告";
+"Less than 11" = "選ばれた選手は11人未満、そのまま進みますか？";
+"Yes" = "はい";
+"No" = "いいえ";
+"Scout" = "スカウト";
+"Scout Result" = "スカウト結果";
+"Injury Report" = "負傷報告";
+"League Lv: " = "リーグレベル：";
+"Season ended. " = "シーズン終了。";
+"Relegated" = "あなたのチームは降格した。";
+"World champion" = "おめでとう、あなたのチームはワールドチャンピオンを取った！";
+"Promoted" = "あなたのチームは昇格した！";
+"Stayed" = "あなたのチームはリーグ残留した。";
+"Weeks: " = "週：";
+"Points: " = "ポイント：";
+"Points to Stay: " = "残留必要ポイント：";
+"Points to Upgrade: " = "昇格必要ポイント：";
+"Points to World Champion: " = "ワールドチャンピオン必要ポイント：";
+"Scout Report Left" = "スカウトレポート残り";
+"Check scout hint" = "次のシーズンに進む前にスカウトレポートをチェックしてください。";
