@@ -27,9 +27,9 @@ class TeamTableViewController: UITableViewController {
 	
 	override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
 		if section == 0 {
-			return "Lineup(\(lineUp.count)/11)"
+			return NSLocalizedString("Lineup", comment: "") + "(\(lineUp.count)/11)"
 		} else {
-			return "Sub"
+			return NSLocalizedString("Sub", comment: "")
 		}
 	}
 
@@ -60,19 +60,19 @@ class TeamTableViewController: UITableViewController {
 		//get player
 		let player = getPlayer(indexPath: indexPath)
 		
-		let moveTitle = player.inLineUp ? "Move to Sub" : "Move to Lineup"
+        let moveTitle = player.inLineUp ? NSLocalizedString("Move to Sub", comment: "") : NSLocalizedString("Move to Lineup", comment: "")
 		//show action sheet
-		let actionSheet = UIAlertController(title: "Action", message: "", preferredStyle: .actionSheet)
+        let actionSheet = UIAlertController(title: NSLocalizedString("Action", comment: ""), message: "", preferredStyle: .actionSheet)
 		let moveAction = UIAlertAction(title: moveTitle, style: .default) { (_) in
 			self.movePlayer(player: player, indexPath: indexPath)
 		}
-		let trainAction = UIAlertAction(title: "Training", style: .default) { (_) in
+        let trainAction = UIAlertAction(title: NSLocalizedString("Training", comment: ""), style: .default) { (_) in
 			self.train(player: player, indexPath: indexPath)
 		}
-		let sacrificeAction = UIAlertAction(title: "Sacrifice", style: .destructive) { (_) in
+        let sacrificeAction = UIAlertAction(title: NSLocalizedString("Sacrifice", comment: ""), style: .destructive) { (_) in
 			self.sacrifice(player: player)
 		}
-		let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (_) in
+        let cancelAction = UIAlertAction(title: NSLocalizedString("Cancel", comment: ""), style: .cancel) { (_) in
 			self.tableView.deselectRow(at: indexPath, animated: true)
 		}
 		actionSheet.addAction(moveAction)
@@ -131,7 +131,7 @@ class TeamTableViewController: UITableViewController {
 		} else {
 			//judge if the lineup already has 11 players
 			if lineUp.count >= 11 {
-				alert(title: "Illegal Lineup", message: "Your lineup already has 11 players. Please move somebody to sub first.")
+                alert(title: NSLocalizedString("Illegal Lineup", comment: ""), message: NSLocalizedString("Over 11", comment: ""))
 				tableView.deselectRow(at: indexPath, animated: true)
 				return
 			}
@@ -148,14 +148,14 @@ class TeamTableViewController: UITableViewController {
 			}
 			let playerCountSamePosition = realm.objects(Player.self).filter("inLineUp = true && verticalPosition = %@ && horizonPosition = %@ ", player.verticalPosition, player.horizonPosition).count
 			if playerCountSamePosition >= maxPlayer {
-				self.alert(title: "Illegal Lineup", message: "Position \(player.position) only allow \(maxPlayer) player(s). Please move somebody to sub first.")
+                self.alert(title: NSLocalizedString("Illegal Lineup", comment: ""), message: NSString(format: NSLocalizedString("Duplicated position", comment: "") as NSString, player.position, maxPlayer) as String)
 				tableView.deselectRow(at: indexPath, animated: true)
 				return
 			}
             
             //the play is injured
             if player.injuryTime > 0 {
-                self.alert(title: "Illegal Lineup", message: "\(player.name) is injured. He cannot attend next match.")
+                self.alert(title: NSLocalizedString("Illegal Lineup", comment: ""), message: player.name + NSLocalizedString("Injured", comment: ""))
                 tableView.deselectRow(at: indexPath, animated: true)
                 return
             }
@@ -174,7 +174,7 @@ class TeamTableViewController: UITableViewController {
 	private func train(player: Player, indexPath: IndexPath) {
 		//player who has no potential cannot be trained
 		if player.potential <= 0 {
-			alert(title: "Training Failed", message: "\(player.name) has already reached his peak. Cannot train him any more.")
+            alert(title: NSLocalizedString("Training Failed", comment: ""), message: player.name + NSLocalizedString("Cannot Trainning", comment: ""))
 			tableView.deselectRow(at: indexPath, animated: true)
 			return
 		}
@@ -208,7 +208,7 @@ class TeamTableViewController: UITableViewController {
 			}
 		}
 		
-		alert(title: "Sacrifice Done", message: "\(player.name) is sacrificed and training item '\(item.title)' is added to stock.")
+        alert(title: NSLocalizedString("Sacrifice Done", comment: ""), message: NSString(format: NSLocalizedString("Sacrifice Message", comment: "") as NSString, player.name, item.title) as String)
 		
 		//sacrifice player and get training item
 		let realm = try! Realm()

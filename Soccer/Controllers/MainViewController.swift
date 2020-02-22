@@ -187,8 +187,8 @@ class MainViewController: UIViewController {
             info += NSLocalizedString("Weeks: ", comment: "")
             info += "\(gameData.week)/10\n"
         }
-        info += NSLocalizedString("Points: ", comment: "")
-        info += "\(gameData.points) (W\(gameData.win)/D\(gameData.draw)/L\(gameData.lose))\n"
+        let pointsDetail = NSLocalizedString("Points: ", comment: "") + "\(gameData.points) (" + NSLocalizedString("W", comment: "") + "\(gameData.win)/" + NSLocalizedString("D", comment: "") + "\(gameData.draw)/" + NSLocalizedString("L", comment: "") + "\(gameData.lose))\n"
+        info += pointsDetail
         info += NSLocalizedString("Points to Stay: ", comment: "")
         info += "\(gameData.pointsToStay)\n"
         if gameData.leagueLv < gameData.maxLeagueLv {
