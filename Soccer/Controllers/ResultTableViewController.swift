@@ -67,24 +67,24 @@ class ResultTableViewController: UITableViewController {
                 if player.verticalPosition == "GK" {
                     if randNumber < player.ldf {
                         player.ldf += 1
-                        growths.append("(LDF⤴️)")
+                        growths.append("(LDF+1)")
                     } else if randNumber < player.ldf + player.cdf {
                         player.cdf += 1
-                        growths.append("(CDF⤴️)")
+                        growths.append("(CDF+1)")
                     } else {
                         player.rdf += 1
-                        growths.append("(RDF⤴️)")
+                        growths.append("(RDF+1)")
                     }
                 } else {
                     if randNumber < player.def {
                         player.def += 1
-                        growths.append("(DEF⤴️)")
+                        growths.append("(DEF+1)")
                     } else if randNumber < player.def + player.org {
                         player.org += 1
-                        growths.append("(ORG⤴️)")
+                        growths.append("(ORG+1)")
                     } else {
                         player.off += 1
-                        growths.append("(OFF⤴️)")
+                        growths.append("(OFF+1)")
                     }
                 }
             }

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,19 +23,18 @@
 		2233ADCE20D00B0400659178 /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233ADCD20D00B0400659178 /* MatchViewController.swift */; };
 		2233ADD120D0100000659178 /* Ability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233ADD020D0100000659178 /* Ability.swift */; };
 		2233ADD920D1551200659178 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233ADD820D1551200659178 /* IntExtension.swift */; };
-		223C16F420D54FFE00F36C6E /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223C16F220D54FFE00F36C6E /* RealmSwift.framework */; };
-		223C16F520D54FFE00F36C6E /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223C16F320D54FFE00F36C6E /* Realm.framework */; };
 		223C16F920D8116000F36C6E /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C16F820D8116000F36C6E /* Player.swift */; };
 		223C16FC20DBF22C00F36C6E /* names.json in Resources */ = {isa = PBXBuildFile; fileRef = 223C16FB20DBF22C00F36C6E /* names.json */; };
 		223C16FE20DBF28B00F36C6E /* JsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C16FD20DBF28B00F36C6E /* JsonHelper.swift */; };
 		223C170020DBF4B200F36C6E /* NameGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C16FF20DBF4B200F36C6E /* NameGenerator.swift */; };
 		223C170220DBF72A00F36C6E /* NameGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C170120DBF72A00F36C6E /* NameGeneratorTests.swift */; };
-		223C170320DBF9B100F36C6E /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223C16F320D54FFE00F36C6E /* Realm.framework */; };
-		223C170420DBF9B400F36C6E /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223C16F220D54FFE00F36C6E /* RealmSwift.framework */; };
 		223C170620DD272D00F36C6E /* PlayerGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C170520DD272D00F36C6E /* PlayerGenerator.swift */; };
 		223C170A20DFBC2700F36C6E /* PlayerGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C170920DFBC2700F36C6E /* PlayerGeneratorTests.swift */; };
 		223C170C20E1389900F36C6E /* TeamTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C170B20E1389900F36C6E /* TeamTableViewController.swift */; };
 		2285194823F5A1DC00430CC3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2285194A23F5A1DC00430CC3 /* Localizable.strings */; };
+		228C2C75251CE9E2009AA074 /* SwiftyStoreKit in Frameworks */ = {isa = PBXBuildFile; productRef = 228C2C74251CE9E2009AA074 /* SwiftyStoreKit */; };
+		228C2C7A251CEAF6009AA074 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 228C2C79251CEAF6009AA074 /* RealmSwift */; };
+		228C2C7C251CEAF6009AA074 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 228C2C7B251CEAF6009AA074 /* Realm */; };
 		22AE0C4523D33405001DFA8A /* TeamPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AE0C4423D33405001DFA8A /* TeamPreviewView.swift */; };
 		22AE0C4723D33426001DFA8A /* TeamPreviewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22AE0C4623D33426001DFA8A /* TeamPreviewView.xib */; };
 		22AE0C4923D33918001DFA8A /* TeamPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AE0C4823D33918001DFA8A /* TeamPreviewViewController.swift */; };
@@ -43,7 +42,6 @@
 		22AE0C4D23D5F0B6001DFA8A /* MatchPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AE0C4C23D5F0B6001DFA8A /* MatchPreviewViewController.swift */; };
 		22AE0C4F23D71107001DFA8A /* InjuryReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AE0C4E23D71107001DFA8A /* InjuryReport.swift */; };
 		22AE0C5123D73BD1001DFA8A /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AE0C5023D73BD1001DFA8A /* TutorialViewController.swift */; };
-		22B3065F20FB95F800562852 /* SwiftyStoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B3065E20FB95F800562852 /* SwiftyStoreKit.framework */; };
 		22B3066120FC7F9A00562852 /* ExtraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B3066020FC7F9A00562852 /* ExtraViewController.swift */; };
 		22C0D0F820E75C3D00D7ECEE /* TrainingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C0D0F720E75C3D00D7ECEE /* TrainingItem.swift */; };
 /* End PBXBuildFile section */
@@ -79,8 +77,6 @@
 		2233ADCD20D00B0400659178 /* MatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViewController.swift; sourceTree = "<group>"; };
 		2233ADD020D0100000659178 /* Ability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ability.swift; sourceTree = "<group>"; };
 		2233ADD820D1551200659178 /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
-		223C16F220D54FFE00F36C6E /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
-		223C16F320D54FFE00F36C6E /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		223C16F820D8116000F36C6E /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		223C16FB20DBF22C00F36C6E /* names.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = names.json; sourceTree = "<group>"; };
 		223C16FD20DBF28B00F36C6E /* JsonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonHelper.swift; sourceTree = "<group>"; };
@@ -99,7 +95,6 @@
 		22AE0C4C23D5F0B6001DFA8A /* MatchPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchPreviewViewController.swift; sourceTree = "<group>"; };
 		22AE0C4E23D71107001DFA8A /* InjuryReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjuryReport.swift; sourceTree = "<group>"; };
 		22AE0C5023D73BD1001DFA8A /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
-		22B3065E20FB95F800562852 /* SwiftyStoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyStoreKit.framework; path = Carthage/Build/iOS/SwiftyStoreKit.framework; sourceTree = "<group>"; };
 		22B3066020FC7F9A00562852 /* ExtraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraViewController.swift; sourceTree = "<group>"; };
 		22C0D0F720E75C3D00D7ECEE /* TrainingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,8 +104,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				223C170420DBF9B400F36C6E /* RealmSwift.framework in Frameworks */,
-				223C170320DBF9B100F36C6E /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,10 +111,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22B3065F20FB95F800562852 /* SwiftyStoreKit.framework in Frameworks */,
+				228C2C7A251CEAF6009AA074 /* RealmSwift in Frameworks */,
 				2207E7F420F8E1900045C9D6 /* StoreKit.framework in Frameworks */,
-				223C16F420D54FFE00F36C6E /* RealmSwift.framework in Frameworks */,
-				223C16F520D54FFE00F36C6E /* Realm.framework in Frameworks */,
+				228C2C7C251CEAF6009AA074 /* Realm in Frameworks */,
+				228C2C75251CE9E2009AA074 /* SwiftyStoreKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,10 +215,7 @@
 		223C16F120D54FFE00F36C6E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				22B3065E20FB95F800562852 /* SwiftyStoreKit.framework */,
 				2207E7F320F8E1900045C9D6 /* StoreKit.framework */,
-				223C16F320D54FFE00F36C6E /* Realm.framework */,
-				223C16F220D54FFE00F36C6E /* RealmSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -276,13 +266,17 @@
 				2233ADB320CE5B1D00659178 /* Sources */,
 				2233ADB420CE5B1D00659178 /* Frameworks */,
 				2233ADB520CE5B1D00659178 /* Resources */,
-				223C16F620D5504A00F36C6E /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Soccer;
+			packageProductDependencies = (
+				228C2C74251CE9E2009AA074 /* SwiftyStoreKit */,
+				228C2C79251CEAF6009AA074 /* RealmSwift */,
+				228C2C7B251CEAF6009AA074 /* Realm */,
+			);
 			productName = Soccer;
 			productReference = 2233ADB720CE5B1D00659178 /* Soccer.app */;
 			productType = "com.apple.product-type.application";
@@ -294,7 +288,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Ma Xueyuan";
 				TargetAttributes = {
 					2207DF3720D29DD900D5E706 = {
@@ -322,6 +316,10 @@
 				ja,
 			);
 			mainGroup = 2233ADAE20CE5B1D00659178;
+			packageReferences = (
+				228C2C73251CE9E2009AA074 /* XCRemoteSwiftPackageReference "SwiftyStoreKit" */,
+				228C2C78251CEAF6009AA074 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
 			productRefGroup = 2233ADB820CE5B1D00659178 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -356,25 +354,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		223C16F620D5504A00F36C6E /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/SwiftyStoreKit.framework",
-			);
-			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Realm.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RealmSwift.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwiftyStoreKit.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
 		223C16F720D5512200F36C6E /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -552,6 +531,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -613,6 +593,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -658,7 +639,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1;
+				MARKETING_VERSION = 2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = mxy.Soccer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -683,7 +664,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1;
+				MARKETING_VERSION = 2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = mxy.Soccer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -722,6 +703,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		228C2C73251CE9E2009AA074 /* XCRemoteSwiftPackageReference "SwiftyStoreKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bizz84/SwiftyStoreKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.16.1;
+			};
+		};
+		228C2C78251CEAF6009AA074 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		228C2C74251CE9E2009AA074 /* SwiftyStoreKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 228C2C73251CE9E2009AA074 /* XCRemoteSwiftPackageReference "SwiftyStoreKit" */;
+			productName = SwiftyStoreKit;
+		};
+		228C2C79251CEAF6009AA074 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 228C2C78251CEAF6009AA074 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+		228C2C7B251CEAF6009AA074 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 228C2C78251CEAF6009AA074 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2233ADAF20CE5B1D00659178 /* Project object */;
 }
