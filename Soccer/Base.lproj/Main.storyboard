@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zsi-wg-QOR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zsi-wg-QOR">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,9 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04z-id-L9v">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04z-id-L9v">
                                 <rect key="frame" x="0.0" y="708" width="375" height="70"/>
-                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="zK7-FJ-XmL"/>
                                 </constraints>
@@ -27,9 +29,9 @@
                                     <segue destination="j2S-JQ-Vnn" kind="show" id="bCs-wg-Cvj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nca-ry-uiP">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nca-ry-uiP">
                                 <rect key="frame" x="0.0" y="552" width="375" height="70"/>
-                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="Bf8-2f-3dG"/>
                                 </constraints>
@@ -39,9 +41,9 @@
                                     <action selector="scout:" destination="F8c-IG-juI" eventType="touchUpInside" id="5o2-Gr-jCA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAc-lK-KDo">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAc-lK-KDo">
                                 <rect key="frame" x="0.0" y="396" width="375" height="70"/>
-                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="ulx-cr-l1Z"/>
                                 </constraints>
@@ -53,13 +55,13 @@
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="🎱ABC League Lv: 1 Weeks: 10/10 Points: 30 (W10/D0/L0) Points to Stay: 9 Points to Upgrade: 18" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Avx-qw-Ypj">
                                 <rect key="frame" x="8" y="96" width="359" height="292"/>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25C-bI-Jb9">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25C-bI-Jb9">
                                 <rect key="frame" x="0.0" y="474" width="375" height="70"/>
-                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="tGk-8B-vMI"/>
                                 </constraints>
@@ -69,9 +71,9 @@
                                     <segue destination="af3-lB-vGx" kind="show" identifier="toTeamFromMain" id="uzA-zQ-KVm"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ck6-Mb-K0e">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ck6-Mb-K0e">
                                 <rect key="frame" x="0.0" y="630" width="375" height="70"/>
-                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="7PW-wx-ust"/>
                                 </constraints>
@@ -82,8 +84,9 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Hax-Rs-exm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" systemColor="systemGreenColor"/>
                         <constraints>
                             <constraint firstItem="04z-id-L9v" firstAttribute="leading" secondItem="Hax-Rs-exm" secondAttribute="leading" id="0W7-Xm-40I"/>
                             <constraint firstItem="Nca-ry-uiP" firstAttribute="top" secondItem="25C-bI-Jb9" secondAttribute="bottom" constant="8" id="3a5-xZ-wHU"/>
@@ -105,7 +108,6 @@
                             <constraint firstItem="25C-bI-Jb9" firstAttribute="leading" secondItem="Hax-Rs-exm" secondAttribute="leading" id="sRT-lQ-rk7"/>
                             <constraint firstItem="04z-id-L9v" firstAttribute="top" secondItem="Ck6-Mb-K0e" secondAttribute="bottom" constant="8" id="xQT-T1-SWc"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Hax-Rs-exm"/>
                     </view>
                     <navigationItem key="navigationItem" title="Light Football Manager" id="Or3-xX-cBf"/>
                     <connections>
@@ -130,9 +132,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnu-hD-g9K">
-                                <rect key="frame" x="0.0" y="203" width="375" height="50"/>
-                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnu-hD-g9K">
+                                <rect key="frame" x="0.0" y="190.33333333333334" width="375" height="50"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="XKx-UA-aZC"/>
                                 </constraints>
@@ -142,9 +144,9 @@
                                     <action selector="getPremiumManager:" destination="j2S-JQ-Vnn" eventType="touchUpInside" id="ICp-6G-onE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xE2-lq-vLa">
-                                <rect key="frame" x="0.0" y="261" width="375" height="50"/>
-                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xE2-lq-vLa">
+                                <rect key="frame" x="0.0" y="248.33333333333337" width="375" height="50"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="gzB-2f-ygk"/>
                                 </constraints>
@@ -155,7 +157,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWq-yC-ghK">
-                                <rect key="frame" x="8" y="96" width="359" height="99"/>
+                                <rect key="frame" x="8" y="96" width="359" height="86.333333333333314"/>
                                 <string key="text">Benefits of Premium Manager: ・Getting a new player after each match ・Knowing player's potential exactly
 ・Player recovering faster from injury</string>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
@@ -163,14 +165,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The player grade icon used in this app is made by Freepik from www.flaticon.com" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dhw-TG-5uW">
-                                <rect key="frame" x="8" y="377" width="359" height="49"/>
+                                <rect key="frame" x="8" y="364.33333333333331" width="359" height="42.333333333333314"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZU-lQ-UxP">
-                                <rect key="frame" x="0.0" y="319" width="375" height="50"/>
-                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZU-lQ-UxP">
+                                <rect key="frame" x="0.0" y="306.33333333333331" width="375" height="50"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Zyd-BH-jEo"/>
                                 </constraints>
@@ -181,8 +183,9 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="f7E-OC-qaa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" systemColor="systemGreenColor"/>
                         <constraints>
                             <constraint firstItem="xE2-lq-vLa" firstAttribute="trailing" secondItem="f7E-OC-qaa" secondAttribute="trailing" id="5yy-gM-BH3"/>
                             <constraint firstItem="XWq-yC-ghK" firstAttribute="top" secondItem="f7E-OC-qaa" secondAttribute="top" constant="8" id="FTZ-xG-15E"/>
@@ -200,7 +203,6 @@
                             <constraint firstItem="f7E-OC-qaa" firstAttribute="trailing" secondItem="XWq-yC-ghK" secondAttribute="trailing" constant="8" id="uZq-BI-dkg"/>
                             <constraint firstItem="XWq-yC-ghK" firstAttribute="leading" secondItem="f7E-OC-qaa" secondAttribute="leading" constant="8" id="z2e-c7-nqE"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="f7E-OC-qaa"/>
                     </view>
                     <navigationItem key="navigationItem" title="Extra" id="57z-Kh-MpO"/>
                     <connections>
@@ -219,8 +221,8 @@
                     <view key="view" contentMode="scaleToFill" id="sBl-iy-xBr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="11d-1d-kUF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Tutorial" id="5B9-ok-CxZ"/>
                 </viewController>
@@ -235,32 +237,32 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="U1p-87-fWD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+                        <color key="tintColor" systemColor="systemGreenColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="playerCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="playerCell" textLabel="Mh5-pE-3Eu" detailTextLabel="Dv8-h7-cbC" imageView="1Or-Hl-Wtu" style="IBUITableViewCellStyleSubtitle" id="CtD-gk-Jgs">
-                                <rect key="frame" x="0.0" y="55.333332061767578" width="375" height="58.666667938232422"/>
+                                <rect key="frame" x="0.0" y="49" width="375" height="50.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CtD-gk-Jgs" id="zsr-d7-SAM">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="58.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="[CF]Name 300" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mh5-pE-3Eu">
-                                            <rect key="frame" x="62.999999999999993" y="8.9999999999999982" width="118.33333333333333" height="20.333333333333332"/>
+                                            <rect key="frame" x="63.000000000000007" y="7.9999999999999982" width="117.66666666666667" height="20.333333333333332"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="OFF:100 ORG:100 DEF:100 POT:A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Dv8-h7-cbC">
-                                            <rect key="frame" x="63" y="32.333333333333329" width="204" height="15.666666666666666"/>
+                                            <rect key="frame" x="63.000000000000014" y="28.333333333333332" width="204.33333333333334" height="15.666666666666666"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="star-1" id="1Or-Hl-Wtu">
-                                            <rect key="frame" x="16" y="13.333333333333336" width="32" height="32"/>
+                                            <rect key="frame" x="16" y="9.3333333333333357" width="32" height="32"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
                                     </subviews>
@@ -291,7 +293,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B04-0m-hJq">
-                                <rect key="frame" x="164" y="691" width="47" height="30"/>
+                                <rect key="frame" x="167" y="691" width="41.333333333333343" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="zXr-DX-Er7"/>
                                 </constraints>
@@ -304,23 +306,24 @@
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLC-s3-94F">
                                         <rect key="frame" x="0.0" y="0.0" width="359" height="293.66666666666669"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <string key="text">First row shows the offense abilities of left, center and right sides.
 Second row shows the organization abilities of left, center and right sides. 
 Third row shows the defence abilities of left, center and right sides.
 The overall ability is shown beside the team name.</string>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Emj-hR-UgP" customClass="TeamPreviewView" customModule="Soccer" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="293.66666666666674" width="359" height="293.33333333333326"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="PEc-Yd-6Qc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="m2u-B0-7xv" firstAttribute="top" secondItem="PEc-Yd-6Qc" secondAttribute="top" constant="8" id="K2J-fS-lf4"/>
                             <constraint firstItem="PEc-Yd-6Qc" firstAttribute="bottom" secondItem="B04-0m-hJq" secondAttribute="bottom" constant="8" id="KKk-yb-rlY"/>
@@ -329,7 +332,6 @@ The overall ability is shown beside the team name.</string>
                             <constraint firstItem="B04-0m-hJq" firstAttribute="top" secondItem="m2u-B0-7xv" secondAttribute="bottom" constant="8" id="iWQ-D7-WlF"/>
                             <constraint firstItem="m2u-B0-7xv" firstAttribute="leading" secondItem="PEc-Yd-6Qc" secondAttribute="leading" constant="8" id="rfZ-fT-FJ4"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="PEc-Yd-6Qc"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Preview" image="chart.bar" catalog="system" id="xQh-Ez-vkC"/>
                     <navigationItem key="navigationItem" id="Nru-QB-Keb"/>
@@ -350,11 +352,11 @@ The overall ability is shown beside the team name.</string>
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="rk9-c5-crW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+                        <color key="tintColor" systemColor="systemGreenColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" textLabel="YTb-zl-V67" imageView="7cZ-ot-t3S" style="IBUITableViewCellStyleDefault" id="Jgg-38-6Si">
-                                <rect key="frame" x="0.0" y="55.333332061767578" width="375" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="49" width="375" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jgg-38-6Si" id="0am-MT-2F0">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
@@ -398,9 +400,9 @@ The overall ability is shown beside the team name.</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAs-Gv-bCQ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAs-Gv-bCQ">
                                 <rect key="frame" x="0.0" y="708" width="375" height="70"/>
-                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="hil-gQ-fmd"/>
                                 </constraints>
@@ -410,9 +412,9 @@ The overall ability is shown beside the team name.</string>
                                     <segue destination="Y1d-IL-aa3" kind="unwind" identifier="unwindToMainFromTeamNameChoose" unwindAction="unwindToMainWithSegue:" id="Ext-eG-HRw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovc-6e-Zt5">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovc-6e-Zt5">
                                 <rect key="frame" x="0.0" y="630" width="375" height="70"/>
-                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="xFQ-zD-0qN"/>
                                 </constraints>
@@ -423,33 +425,33 @@ The overall ability is shown beside the team name.</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Badge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ww-bT-b5k">
-                                <rect key="frame" x="8" y="96" width="359" height="24"/>
+                                <rect key="frame" x="8" y="96" width="359" height="20.333333333333329"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abbreviation of Team Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVN-hm-qnv">
-                                <rect key="frame" x="8" y="177" width="359" height="24"/>
+                                <rect key="frame" x="8" y="169.33333333333334" width="359" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUt-1c-08x">
-                                <rect key="frame" x="168.66666666666666" y="128" width="38" height="41"/>
+                                <rect key="frame" x="170" y="124.33333333333331" width="35" height="37"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEv-pt-jVA">
-                                <rect key="frame" x="122.66666666666669" y="122" width="38" height="53"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEv-pt-jVA">
+                                <rect key="frame" x="127" y="118.33333333333331" width="35" height="49"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <state key="normal" title="⬅️"/>
                                 <connections>
                                     <action selector="reduceBadgeIndex:" destination="IdI-JN-Zrx" eventType="touchUpInside" id="nw3-ge-RQQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVC-kU-7LV">
-                                <rect key="frame" x="214.66666666666666" y="122" width="38" height="53"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVC-kU-7LV">
+                                <rect key="frame" x="213" y="118.33333333333331" width="35" height="49"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <state key="normal" title="➡️"/>
                                 <connections>
@@ -457,10 +459,10 @@ The overall ability is shown beside the team name.</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4eR-Ju-cxp">
-                                <rect key="frame" x="89.666666666666671" y="209" width="60.000000000000014" height="130"/>
+                                <rect key="frame" x="89.666666666666671" y="197.66666666666663" width="60.000000000000014" height="130"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJ9-kZ-cvF">
-                                        <rect key="frame" x="11" y="0.0" width="38" height="53"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJ9-kZ-cvF">
+                                        <rect key="frame" x="12.333333333333329" y="0.0" width="35" height="49"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <state key="normal" title="⬆️"/>
                                         <connections>
@@ -468,13 +470,13 @@ The overall ability is shown beside the team name.</string>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKw-ZW-xrh">
-                                        <rect key="frame" x="19" y="44.666666666666657" width="22" height="41"/>
+                                        <rect key="frame" x="19.666666666666657" y="46.666666666666686" width="20.333333333333329" height="37"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9l5-OT-TC4">
-                                        <rect key="frame" x="11" y="77" width="38" height="53"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9l5-OT-TC4">
+                                        <rect key="frame" x="12.333333333333329" y="81.000000000000028" width="35" height="49"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <state key="normal" title="⬇️"/>
                                         <connections>
@@ -494,10 +496,10 @@ The overall ability is shown beside the team name.</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VbI-aw-zoY">
-                                <rect key="frame" x="157.66666666666666" y="209" width="60" height="130"/>
+                                <rect key="frame" x="157.66666666666666" y="197.66666666666663" width="60" height="130"/>
                                 <subviews>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0f-45-t7D">
-                                        <rect key="frame" x="11" y="0.0" width="38" height="53"/>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0f-45-t7D">
+                                        <rect key="frame" x="12.333333333333343" y="0.0" width="35" height="49"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <state key="normal" title="⬆️"/>
                                         <connections>
@@ -505,13 +507,13 @@ The overall ability is shown beside the team name.</string>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8b-iD-cw3">
-                                        <rect key="frame" x="19" y="44.666666666666657" width="22" height="41"/>
+                                        <rect key="frame" x="19.666666666666686" y="46.666666666666686" width="20.333333333333329" height="37"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CU7-AU-S8b">
-                                        <rect key="frame" x="11" y="77" width="38" height="53"/>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CU7-AU-S8b">
+                                        <rect key="frame" x="12.333333333333343" y="81.000000000000028" width="35" height="49"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <state key="normal" title="⬇️"/>
                                         <connections>
@@ -531,10 +533,10 @@ The overall ability is shown beside the team name.</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lqk-Up-8oY">
-                                <rect key="frame" x="225.66666666666666" y="209" width="59.999999999999972" height="130"/>
+                                <rect key="frame" x="225.66666666666666" y="197.66666666666663" width="59.999999999999972" height="130"/>
                                 <subviews>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ksl-FB-Yeg">
-                                        <rect key="frame" x="11" y="0.0" width="38" height="53"/>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ksl-FB-Yeg">
+                                        <rect key="frame" x="12.333333333333343" y="0.0" width="35" height="49"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <state key="normal" title="⬆️"/>
                                         <connections>
@@ -542,13 +544,13 @@ The overall ability is shown beside the team name.</string>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gt6-0G-rLO">
-                                        <rect key="frame" x="19" y="44.666666666666657" width="22" height="41"/>
+                                        <rect key="frame" x="19.666666666666686" y="46.666666666666686" width="20.333333333333329" height="37"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ev2-7q-rB3">
-                                        <rect key="frame" x="11" y="77" width="38" height="53"/>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ev2-7q-rB3">
+                                        <rect key="frame" x="12.333333333333343" y="81.000000000000028" width="35" height="49"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <state key="normal" title="⬇️"/>
                                         <connections>
@@ -568,8 +570,9 @@ The overall ability is shown beside the team name.</string>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Ohz-zp-SnZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" systemColor="systemGreenColor"/>
                         <constraints>
                             <constraint firstItem="3ww-bT-b5k" firstAttribute="top" secondItem="Ohz-zp-SnZ" secondAttribute="top" constant="8" id="0Qg-nd-9W3"/>
                             <constraint firstItem="YUt-1c-08x" firstAttribute="centerX" secondItem="PUp-4r-MXy" secondAttribute="centerX" id="2ds-xW-6m3"/>
@@ -583,20 +586,23 @@ The overall ability is shown beside the team name.</string>
                             <constraint firstItem="IVC-kU-7LV" firstAttribute="centerY" secondItem="YUt-1c-08x" secondAttribute="centerY" id="LQh-Yz-DN7"/>
                             <constraint firstItem="YUt-1c-08x" firstAttribute="top" secondItem="3ww-bT-b5k" secondAttribute="bottom" constant="8" id="PjT-Gu-qtB"/>
                             <constraint firstItem="3ww-bT-b5k" firstAttribute="trailing" secondItem="Ohz-zp-SnZ" secondAttribute="trailing" constant="-8" id="aga-YD-4MM"/>
+                            <constraint firstItem="Ohz-zp-SnZ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YUt-1c-08x" secondAttribute="trailing" id="bZt-n6-KAJ"/>
                             <constraint firstItem="VbI-aw-zoY" firstAttribute="top" secondItem="kVN-hm-qnv" secondAttribute="bottom" constant="8" id="d3E-sx-Vrb"/>
                             <constraint firstItem="ovc-6e-Zt5" firstAttribute="leading" secondItem="Ohz-zp-SnZ" secondAttribute="leading" id="dkM-wZ-aNQ"/>
                             <constraint firstItem="aAs-Gv-bCQ" firstAttribute="top" secondItem="ovc-6e-Zt5" secondAttribute="bottom" constant="8" id="eTm-3x-9ju"/>
                             <constraint firstItem="kVN-hm-qnv" firstAttribute="leading" secondItem="Ohz-zp-SnZ" secondAttribute="leading" constant="8" id="fWR-zj-GFO"/>
+                            <constraint firstItem="Ohz-zp-SnZ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="IVC-kU-7LV" secondAttribute="trailing" id="gWh-vy-RN1"/>
                             <constraint firstItem="aAs-Gv-bCQ" firstAttribute="leading" secondItem="Ohz-zp-SnZ" secondAttribute="leading" id="i4G-kl-feI"/>
                             <constraint firstItem="lqk-Up-8oY" firstAttribute="top" secondItem="kVN-hm-qnv" secondAttribute="bottom" constant="8" id="jnj-Rq-2b8"/>
                             <constraint firstItem="IVC-kU-7LV" firstAttribute="leading" secondItem="YUt-1c-08x" secondAttribute="trailing" constant="8" id="kaN-C1-k5U"/>
                             <constraint firstItem="4eR-Ju-cxp" firstAttribute="top" secondItem="kVN-hm-qnv" secondAttribute="bottom" constant="8" id="odH-GV-wSh"/>
                             <constraint firstItem="UEv-pt-jVA" firstAttribute="centerY" secondItem="YUt-1c-08x" secondAttribute="centerY" id="rGE-1D-lAC"/>
                             <constraint firstItem="YUt-1c-08x" firstAttribute="leading" secondItem="UEv-pt-jVA" secondAttribute="trailing" constant="8" id="sAt-7J-QeR"/>
+                            <constraint firstItem="UEv-pt-jVA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ohz-zp-SnZ" secondAttribute="leading" id="vut-UA-pdS"/>
                             <constraint firstItem="lqk-Up-8oY" firstAttribute="leading" secondItem="VbI-aw-zoY" secondAttribute="trailing" constant="8" id="wAP-t0-uDx"/>
+                            <constraint firstItem="YUt-1c-08x" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ohz-zp-SnZ" secondAttribute="leading" id="wiQ-I2-dxJ"/>
                             <constraint firstItem="aAs-Gv-bCQ" firstAttribute="bottom" secondItem="Ohz-zp-SnZ" secondAttribute="bottom" id="xft-YD-HyG"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Ohz-zp-SnZ"/>
                     </view>
                     <navigationItem key="navigationItem" title="Create Team" id="pgv-ap-829"/>
                     <connections>
@@ -619,21 +625,21 @@ The overall ability is shown beside the team name.</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LkB-6C-GaZ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LkB-6C-GaZ">
                                 <rect key="frame" x="0.0" y="700" width="375" height="70"/>
-                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="Dse-sH-1La"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="startMatch:" destination="3og-uh-MAb" eventType="touchUpInside" id="s4o-ZR-aGg"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bj1-IR-Kmz">
-                                <rect key="frame" x="164" y="662" width="47" height="30"/>
+                                <rect key="frame" x="167" y="662" width="41.333333333333343" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="1o7-Rb-Xo3"/>
                                 </constraints>
@@ -642,7 +648,7 @@ The overall ability is shown beside the team name.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPu-N9-mYS">
-                                <rect key="frame" x="164" y="52" width="47" height="30"/>
+                                <rect key="frame" x="167" y="52" width="41.333333333333343" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="3I0-yL-wZQ"/>
                                 </constraints>
@@ -655,16 +661,17 @@ The overall ability is shown beside the team name.</string>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wPF-yC-CPi" customClass="TeamPreviewView" customModule="Soccer" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="359" height="282"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VXr-uI-NWj" customClass="TeamPreviewView" customModule="Soccer" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="282" width="359" height="282"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="3QT-3w-IaX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="LkB-6C-GaZ" firstAttribute="top" secondItem="Bj1-IR-Kmz" secondAttribute="bottom" constant="8" id="0ir-X2-Shd"/>
                             <constraint firstItem="Bj1-IR-Kmz" firstAttribute="centerX" secondItem="PMI-KO-yR8" secondAttribute="centerX" id="5cN-SX-KqL"/>
@@ -678,7 +685,6 @@ The overall ability is shown beside the team name.</string>
                             <constraint firstItem="LkB-6C-GaZ" firstAttribute="leading" secondItem="3QT-3w-IaX" secondAttribute="leading" id="oAa-TI-MAt"/>
                             <constraint firstItem="LkB-6C-GaZ" firstAttribute="trailing" secondItem="3QT-3w-IaX" secondAttribute="trailing" id="oPQ-M0-mB6"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="3QT-3w-IaX"/>
                     </view>
                     <connections>
                         <outlet property="enemyTeamName" destination="bPu-N9-mYS" id="Ib8-ca-G2K"/>
@@ -752,21 +758,21 @@ The overall ability is shown beside the team name.</string>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztP-sN-Vxq">
                                         <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="528"/>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NcB-Ry-EeT">
                                         <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="528"/>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLo-Bh-c3q">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLo-Bh-c3q">
                                 <rect key="frame" x="0.0" y="708" width="375" height="70"/>
-                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="1JJ-lc-CRK"/>
                                 </constraints>
@@ -777,8 +783,9 @@ The overall ability is shown beside the team name.</string>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" systemColor="systemGreenColor"/>
                         <constraints>
                             <constraint firstItem="ZLo-Bh-c3q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3oM-68-FrH"/>
                             <constraint firstItem="ZLo-Bh-c3q" firstAttribute="top" secondItem="BQD-Or-sEl" secondAttribute="bottom" constant="8" id="WiB-WC-3p5"/>
@@ -791,7 +798,6 @@ The overall ability is shown beside the team name.</string>
                             <constraint firstItem="IVt-bf-JK8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xyB-Bm-Xlq"/>
                             <constraint firstItem="BQD-Or-sEl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yiQ-mb-pZI"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="nro-mM-y4J"/>
                     <connections>
@@ -816,10 +822,10 @@ The overall ability is shown beside the team name.</string>
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="j0t-SV-JiV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mBw-gY-Dhc">
-                            <rect key="frame" x="0.0" y="132" width="375" height="44"/>
+                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+                        <color key="tintColor" systemColor="systemGreenColor"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="mBw-gY-Dhc">
+                            <rect key="frame" x="0.0" y="117.66666793823242" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                             <state key="normal" title="Return"/>
@@ -829,28 +835,28 @@ The overall ability is shown beside the team name.</string>
                         </button>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="playerCell" textLabel="wHl-vE-llc" detailTextLabel="MXC-UU-HZG" imageView="rho-Sm-B3o" style="IBUITableViewCellStyleSubtitle" id="usD-uq-D4W">
-                                <rect key="frame" x="0.0" y="55.333332061767578" width="375" height="58.666667938232422"/>
+                                <rect key="frame" x="0.0" y="49" width="375" height="50.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="usD-uq-D4W" id="cxx-dC-lEZ">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="58.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="[CF]Name 300(OFF+1)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wHl-vE-llc">
-                                            <rect key="frame" x="62.999999999999986" y="8.9999999999999982" width="182.66666666666666" height="20.333333333333332"/>
+                                            <rect key="frame" x="62.999999999999986" y="7.9999999999999982" width="181.66666666666666" height="20.333333333333332"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="OFF:100 ORG:100 DEF:100 POT:A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MXC-UU-HZG">
-                                            <rect key="frame" x="63" y="32.333333333333329" width="204" height="15.666666666666666"/>
+                                            <rect key="frame" x="63.000000000000014" y="28.333333333333332" width="204.33333333333334" height="15.666666666666666"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="star-1" id="rho-Sm-B3o">
-                                            <rect key="frame" x="16" y="13.333333333333336" width="32" height="32"/>
+                                            <rect key="frame" x="16" y="9.3333333333333357" width="32" height="32"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
                                     </subviews>
@@ -877,10 +883,10 @@ The overall ability is shown beside the team name.</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PCm-Gr-Cna">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <color key="barTintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" systemColor="labelColor"/>
+                        <color key="barTintColor" systemColor="systemGreenColor"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <color key="textColor" systemColor="labelColor"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -902,7 +908,7 @@ The overall ability is shown beside the team name.</string>
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" systemColor="systemGreenColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="Ri6-Gy-tlw" kind="relationship" relationship="viewControllers" id="oV7-Ps-xFw"/>
@@ -915,8 +921,23 @@ The overall ability is shown beside the team name.</string>
         </scene>
     </scenes>
     <resources>
-        <image name="chart.bar" catalog="system" width="64" height="44"/>
-        <image name="person.3" catalog="system" width="72" height="35"/>
+        <image name="chart.bar" catalog="system" width="128" height="90"/>
+        <image name="person.3" catalog="system" width="128" height="62"/>
         <image name="star-1" width="32" height="32"/>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
